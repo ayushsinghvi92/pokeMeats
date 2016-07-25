@@ -6,8 +6,19 @@ var Sequelize = require('sequelize');
 var db = require('../_db');
 
 module.exports = db.define('user', {
+    first_name: Sequelize.STRING,
+    last_name: Sequelize.STRING,
     email: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull:false,
+        unique:true,
+        validate: {
+            isEmail: true
+        }
+    },
+    isAdmin: {
+        type:Sequelize.BOOLEAN,
+        defaultValue:false
     },
     password: {
         type: Sequelize.STRING
