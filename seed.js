@@ -1,5 +1,5 @@
 /*
- 
+
 This seed file is only a placeholder. It should be expanded and altered
 to fit the development of your application.
 
@@ -57,12 +57,25 @@ var seedUsers = function () {
     return Promise.all(creatingUsers);
 };
 
+var seedOrder = function (){
+    return User.findById(1)
+    .then(function(user){
+        return user.createOrder({
+            session_type: 'user',
+            checkout_status: 'in_progress',
+        });
+    })
+}
+
 db.sync({ force: true })
     .then(function () {
         return seedProducts();
     })
     .then(function (){
         return seedUsers();
+    })
+    .then(function(){
+        return seedOrder();
     })
     .then(function () {
         console.log(chalk.green('Seed successful!'));
