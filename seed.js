@@ -1,5 +1,5 @@
 /*
-
+ 
 This seed file is only a placeholder. It should be expanded and altered
 to fit the development of your application.
 
@@ -19,8 +19,23 @@ name in the environment files.
 
 var chalk = require('chalk');
 var db = require('./server/db');
+
+var Product = db.model('product');
+var pokemon = require('./pokeSeed')
+var Promise = require('sequelize').Promise;
+
+
 var User = db.model('user');
 var Promise = require('sequelize').Promise;
+
+var seedProducts = function () {
+
+    var createdProducts = pokemon.map(function (productObj) {
+        return Product.create(productObj);
+    });
+
+    return Promise.all(createdProducts);
+}
 
 var seedUsers = function () {
 
@@ -40,11 +55,13 @@ var seedUsers = function () {
     });
 
     return Promise.all(creatingUsers);
-
 };
 
 db.sync({ force: true })
     .then(function () {
+        return seedProducts();
+    })
+    .then(function (){
         return seedUsers();
     })
     .then(function () {
