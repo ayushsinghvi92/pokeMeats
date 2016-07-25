@@ -11,5 +11,3 @@ User.belongsToMany(Orders, {through: 'user_orders'});
 Orders.belongsTo(User, {through: 'user_orders'});
 Orders.belongsToMany(Products, {through: OrderProducts});
 Products.belongsToMany(Orders, {through: OrderProducts});
-
-
