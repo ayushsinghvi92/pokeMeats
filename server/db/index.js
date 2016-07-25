@@ -7,7 +7,7 @@ var Products = require('./models/products')
 var Orders = require('./models/orders')
 var OrderProducts = require('./models/order_products')
 
-User.belongsToMany(Orders, {through: 'user_orders'});
-Orders.belongsTo(User, {through: 'user_orders'});
+User.hasMany(Orders);
+Orders.belongsTo(User);
 Orders.belongsToMany(Products, {through: OrderProducts});
 Products.belongsToMany(Orders, {through: OrderProducts});
