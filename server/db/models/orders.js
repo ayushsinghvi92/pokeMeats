@@ -21,13 +21,26 @@ module.exports = db.define('orders', {
     }
 }, {
     hooks: {
-        afterSave: function (order) {
+        afterUpdate: function (order) {
             if(order.checkout_status === 'complete')
-            order.order_date = new Date();
+            order.order_date = sequelize.fn('NOW');
+        console.log('heyyyyyy in afterUpdate', order);
+            order.save()
+            .then(function(result){
+                console.log('heyyyy in restul', result);
+                return result;
+            })
+            .catch(console.log)
         },
-        beforeSave: function (order) {
-            if(order.checkout_status === 'complete' && (shipping_address_id === null || billing_address_id === null)){
-              var err = new Error ('You must supply a shipping or billing address id')
+        beforeCreate: function (order) {
+            if(order.checkout_status === 'complete' && (order.shipping_address_id === null || order.billing_address_id === null)){
+              var err = new Error ('You must supply a shipping or billing address id');
+              throw err;
+            }
+        },
+        beforeUpdate: function(order) {
+            if(order.checkout_status === 'complete' && (order.shipping_address_id === null || order.billing_address_id === null)){
+              var err = new Error ('You must supply a shipping or billing address id');
               throw err;
             }
         }
