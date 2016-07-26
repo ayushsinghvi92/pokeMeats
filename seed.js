@@ -85,7 +85,6 @@ var seedOrder = function (){
         });
     })
     .then(function() {
-        console.log('Total order price')
         return newOrder.total_order_price()
     })
     .then(function(res){

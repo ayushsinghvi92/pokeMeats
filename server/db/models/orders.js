@@ -50,8 +50,9 @@ module.exports = db.define('orders', {
               //throw new Error('You must supply a shipping or billing address id');
               return sequelize.Promise.reject('You can\'t do that!');
             }
-            if(order.checkout_status === 'complete')
+            if(order.checkout_status === 'complete'){
              order.order_date = sequelize.fn('NOW');
+            }
         }
     }
 });
