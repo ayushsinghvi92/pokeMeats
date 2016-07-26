@@ -23,13 +23,13 @@ module.exports = db.define('orders', {
     hooks: {
         beforeCreate: function (order) {
             //don't allow a new order to be created as completed with either null address ids, or missing those fields
-            if(order.checkout_status === 'complete' && ((order.shipping_address_id === null || order.billing_address_id === null) || (!order.shipping_address_id || !order.billing_address_id))){
+            if(order.checkout_status === 'complete' && (!order.shipping_address_id || !order.billing_address_id)){
               throw new Error('You must supply a shipping or billing address id');
             }
         },
         beforeUpdate: function(order) {
             //don't allow an order to be updated as completed with either null address ids, or missing those fields
-            if(order.checkout_status === 'complete' && ((order.shipping_address_id === null || order.billing_address_id === null) || (!order.shipping_address_id || !order.billing_address_id))){
+            if(order.checkout_status === 'complete' && (!order.shipping_address_id || !order.billing_address_id)){
               throw new Error('You must supply a shipping or billing address id');
             }
             if(order.checkout_status === 'complete')
