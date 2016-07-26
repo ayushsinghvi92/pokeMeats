@@ -11,3 +11,4 @@ User.hasMany(Orders);
 Orders.belongsTo(User);
 Orders.belongsToMany(Products, {through: OrderProducts});
 Products.belongsToMany(Orders, {through: OrderProducts});
+Orders.hasMany(OrderProducts);

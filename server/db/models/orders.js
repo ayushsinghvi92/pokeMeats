@@ -1,5 +1,6 @@
 var db = require ('../_db');
 var sequelize = require ('sequelize');
+var OrderProducts = require('./order_products')
 
 module.exports = db.define('orders', {
     session_type: {
@@ -20,6 +21,21 @@ module.exports = db.define('orders', {
         type: sequelize.INTEGER
     }
 }, {
+    instanceMethods : {
+        total_order_price : function(){
+            return OrderProducts.findAll({
+                where : {
+                    orderId : this.id
+                }
+            })
+            .then(function(thisOrderProducts){
+
+                return thisOrderProducts.reduce(function (total, curr) {
+                    return total + curr.line_item_total;
+                }, 0);
+            })
+        }
+    },
     hooks: {
         beforeCreate: function (order) {
             //don't allow a new order to be created as completed with either null address ids, or missing those fields
@@ -35,7 +51,7 @@ module.exports = db.define('orders', {
               return sequelize.Promise.reject('You can\'t do that!');
             }
             if(order.checkout_status === 'complete')
-            order.order_date = sequelize.fn('NOW');
+             order.order_date = sequelize.fn('NOW');
         }
     }
 });

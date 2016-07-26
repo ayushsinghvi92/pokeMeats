@@ -58,14 +58,39 @@ var seedUsers = function () {
 
     return Promise.all(creatingUsers);
 };
-
+// Seeding one order and one product through the OrderProducts table
 var seedOrder = function (){
+    var newOrder;
     return User.findById(1)
     .then(function(user){
         return user.createOrder({
             session_type: 'user',
             checkout_status: 'in_progress'
         });
+    })
+    .then(function(createdOrder){
+        newOrder = createdOrder;
+        return newOrder.createOrder_product({
+            unit_price : 14,
+            quantity : 10,
+            productId : 5
+        });
+    })
+    .then(function(){
+        //console.log("\n\nWe are in createdOrder2", createdOrder.__proto__, "\n\n");
+        return newOrder.createOrder_product({
+            unit_price : 33,
+            quantity : 12,
+            productId : 9
+        });
+    })
+    .then(function() {
+        console.log('Total order price')
+        return newOrder.total_order_price()
+    })
+    .then(function(res){
+            console.log(res);
+            return;
     })
 }
 
@@ -81,9 +106,9 @@ db.sync({ force: true })
     })
     .then(function () {
         console.log(chalk.green('Seed successful!'));
-        process.exit(0);
+        //process.exit(0);
     })
     .catch(function (err) {
         console.error(err);
-        process.exit(1);
+        //process.exit(1);
     });
