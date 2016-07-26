@@ -21,17 +21,6 @@ module.exports = db.define('orders', {
     }
 }, {
     hooks: {
-        afterUpdate: function (order) {
-            if(order.checkout_status === 'complete')
-            order.order_date = sequelize.fn('NOW');
-        console.log('heyyyyyy in afterUpdate', order);
-            order.save()
-            .then(function(result){
-                console.log('heyyyy in restul', result);
-                return result;
-            })
-            .catch(console.log)
-        },
         beforeCreate: function (order) {
             if(order.checkout_status === 'complete' && (order.shipping_address_id === null || order.billing_address_id === null)){
               var err = new Error ('You must supply a shipping or billing address id');
@@ -43,6 +32,8 @@ module.exports = db.define('orders', {
               var err = new Error ('You must supply a shipping or billing address id');
               throw err;
             }
+            if(order.checkout_status === 'complete')
+            order.order_date = sequelize.fn('NOW');
         }
     }
 });

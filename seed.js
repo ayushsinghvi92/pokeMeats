@@ -64,7 +64,7 @@ var seedOrder = function (){
     .then(function(user){
         return user.createOrder({
             session_type: 'user',
-            checkout_status: 'in_progress',
+            checkout_status: 'in_progress'
         });
     })
 }
