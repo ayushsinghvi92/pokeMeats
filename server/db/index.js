@@ -12,10 +12,10 @@ User.hasMany(Orders); // OB/MS: recommend singular style (drop the s)
 Orders.belongsTo(User);
 Orders.belongsToMany(Products, {through: OrderProducts});
 Products.belongsToMany(Orders, {through: OrderProducts});
-
 // Address.belongsTo(User, {as: 'shippingAddress'}); // OB/MS: check out `foreignKey: ...` option
 // Address.belongsTo(User, {as: 'billingAddress'});
-
-
+Orders.hasMany(OrderProducts);
+OrderProducts.belongsTo(Orders);
 User.belongsToMany(Address, {as: 'shippingAddresses', through:'shippingAddress'});
 User.belongsToMany(Address, {as: 'billingAddresses', through:'billingAddress'});
+
