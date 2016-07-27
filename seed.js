@@ -88,7 +88,7 @@ var seedOrder = function (){
         return newOrder.total_order_price()
     })
     .then(function(res){
-            console.log(res);
+           // console.log(res);
             return;
     })
 }
@@ -105,9 +105,9 @@ db.sync({ force: true })
     })
     .then(function () {
         console.log(chalk.green('Seed successful!'));
-        //process.exit(0);
+        process.exit(0);
     })
     .catch(function (err) {
         console.error(err);
-        //process.exit(1);
+        process.exit(1);
     });

@@ -19,6 +19,9 @@ module.exports = db.define('orders', {
     },
     billing_address_id: {
         type: sequelize.INTEGER
+    },
+    total_amount : {
+        type: sequelize.DECIMAL
     }
 }, {
     instanceMethods : {
@@ -34,6 +37,20 @@ module.exports = db.define('orders', {
                     return total + curr.line_item_total;
                 }, 0);
             })
+        },
+        add_item_to_existing : function(productToAdd, quantity){
+            return this.addProduct(productToAdd, {
+             unit_price : productToAdd.price,
+             quantity : quantity })
+            .then(function(res){
+                return OrderProducts.findAll({
+                    where : {
+                        productId : productToAdd.id
+                    }
+                })
+
+            })
+            .then(res => res)
         }
     },
     hooks: {
