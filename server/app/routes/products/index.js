@@ -14,13 +14,16 @@ router.get('/', function (req, res, next){
 
 router.get('/:id', function(req, res, next){
 	if (isNaN(req.params.id)) res.sendStatus(500);
-	Products.findById(req.params.id)
-	.then(function(product){
-		if (!product) {
-			res.sendStatus(404)
-		}
-		res.json(product);
-	})
-	.catch(next);
+	else {
+		Products.findById(req.params.id)
+		.then(function(product){
+			if (!product) {
+				res.sendStatus(404)
+			} else {
+				res.json(product);
+			}
+		})
+		.catch(next);
+	}
 
 }) 

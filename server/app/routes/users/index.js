@@ -2,6 +2,8 @@
 let router = require('express').Router();
 const db = require('../../../db')
 const Users = db.model('user');
+const Order = db.model('orders');
+const HttpError = require("../HttpError")
 module.exports = router;
 var _ = require('lodash');
 
@@ -10,7 +12,7 @@ router.param('id', function (req, res, next, id) {
   var _id = id;
   Users.findById(_id)
   .then(function (user) {
-    if (!user) throw HttpError(404);
+    if (!user) throw new HttpError(404);
     req.user = user;
     next();
   })
@@ -25,6 +27,24 @@ router.get('/', function(req, res, next) {
     .catch(next);
 })
 
+router.post('/', function(req, res, next){
+    Users.create(req.body)
+    .then(function(user){
+        res.json(user)
+    })
+    .catch(next)
+})
+
+router.put('/:id', function(req, res, next){
+    req.user.update(req.body)
+    .then(function(user){
+        res.json(user);
+    })
+    .catch(next);
+
+})
+
+//test for this route not working
 router.get('/:id', function(req, res, next) {
     res.json(req.user);
 })
@@ -37,7 +57,6 @@ router.get('/:id/orders', function(req, res, next) {
     .catch(next);
 })
 
-// THIS ROUTE IS INCOMPLETE
 router.post("/:id/orders", function(req, res, next){
     req.user.createOrder(req.body)
     .then(function(order){
@@ -46,32 +65,16 @@ router.post("/:id/orders", function(req, res, next){
     .catch(next);
 })
 
-router.get('/:id/orders/:orderID', function(req, res, next) {
-    req.user.getOrders({
-        where: {
-            id: req.params.orderID
-        }
-    })
-    .spread(function(order){
-        res.json(order);
-    })
-    .catch(next);
+router.delete("/:id/orders", function(req, res, next){
+    console.log('this is req.body.orderId', req.body.orderId, '\n\n\n')
+   Order.findById(req.body.orderId)
+   .then(function(order){
+    console.log('we got an order right hereee', order, '\n\n\n')
+        order.destroy();
+   })
+   .catch(next);
 })
 
-
-// THIS ROUTE IS INCOMPLETE
-router.put('/:id/orders/:orderID', function(req, res, next) {
-    req.user.getOrders({
-        where: {
-            id: req.params.orderID
-        }
-    })
-    .spread(function(order){
-        console.log(req.body);
-        res.send("put request for a user's single order")
-    })
-    .catch(next);
-})
 
 
 var ensureAuthenticated = function (req, res, next) {
