@@ -9,7 +9,7 @@ const OrderProducts = db.model('order_products');
 const Product = db.model('product');
 
 let testProduct;
-// Product.findById(1).
+// Product.findById(1). // OB/MS: kill dead code, kill it dead
 //  then(product => {
 //   testProduct = product
 // })
@@ -97,6 +97,7 @@ describe("Orders Model", function () {
            done();
          })
    });
+   // OB/MS: can probably get rid of one of these
    it('errors when you to update an existing order as complete with no addresses', function (done) {
          createUser()
          .then(user => user.createOrder(goodInitialOrder))
@@ -118,6 +119,7 @@ describe("Orders Model", function () {
  describe('instanceMethods', function () {
   it('allows you to add a product to an existing order', function (done) {
 
+        // OB/MS: move setup to a beforeEach block
         Product.create({
           "name":"Bulbasaur Liver","type":"grass","price":33.33,"description":"hello","photo":"/img/001 Bulbasaur.ico","inventoryAmount":10
           })

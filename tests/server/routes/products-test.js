@@ -40,6 +40,7 @@ describe('Products Route', function () {
 		});
 
 		it('GET all', function (done) {
+			// OB/MS: check out supertest-as-promised
 			agent.get('/api/products')
 				.expect(200)
 		        .end(function (err, res) {

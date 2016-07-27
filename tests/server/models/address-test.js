@@ -6,6 +6,18 @@ const db = require('../../../server/db');
 const User = db.model('user');
 const Address = db.model('address')
 
+// OB/MS: nested create with assocations "eager create"
+/*
+User.create({
+	...
+	shippingAddresses: [{
+		...
+	}]
+	...
+}, {
+	include: [{model: Address, as: 'shippingAddress'}]
+})
+*/
 function createShippingAddress () {
 	let add, usr;
 	return Address.create({
@@ -62,6 +74,7 @@ beforeEach('Sync DB', function () {
 
 describe("Address Model", function () {
 	describe('has billing and shipping address methods', function () {
+		// OB/MS: can use promises
 		it('can add billing and shipping addresses', function (done) {
 	        createUser()
 	        .then(function (user) {

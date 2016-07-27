@@ -29,7 +29,7 @@ module.exports = db.define('order_products', {
             })
             .then(function(totalPrice){
                 holderVar.total_amount = totalPrice;
-                holderVar.save();
+                holderVar.save(); // OB/MS: recommend against this approach, use method on order instead
             })
 
         }

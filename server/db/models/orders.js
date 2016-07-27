@@ -15,7 +15,7 @@ module.exports = db.define('orders', { // OB/MS: I think standard is singular no
     order_date: {
         type: sequelize.DATE
     },
-    shipping_address_id: { // OB/MS: association instead?
+    shipping_address_id: { // OB/MS: association instead
         type: sequelize.INTEGER
     },
     billing_address_id: {
@@ -25,6 +25,16 @@ module.exports = db.define('orders', { // OB/MS: I think standard is singular no
         type: sequelize.DECIMAL
     }
 }, {
+    // OB/MS:
+    // getterMethods: {
+    //     total: function () {
+    //         // assuming an eager load with orderProducts has already happened
+    //         // check out defaultScope and include
+    //         return this.orderProducts.reduce(function (total, curr) {
+    //             return total + curr.line_item_total;
+    //         }, 0);
+    //     }
+    // },
     instanceMethods : {
         total_order_price : function(){
             return OrderProducts.findAll({
@@ -39,7 +49,7 @@ module.exports = db.define('orders', { // OB/MS: I think standard is singular no
                 }, 0);
             })
         },
-        add_item_to_existing : function(productToAdd, quantity){
+        add_item_to_existing : function(productToAdd, quantity){ // OB/MS: consider adding quantity to existing amount instead of setting
             return this.addProduct(productToAdd, {
              unit_price : productToAdd.price,
              quantity : quantity })
@@ -51,12 +61,12 @@ module.exports = db.define('orders', { // OB/MS: I think standard is singular no
                 })
 
             })
-            .then(res => res)
+            .then(res => res) // OB/MS: this does precisely nothing
         }
     },
     hooks: {
         beforeCreate: function (order) {
-            // OB/MS: this should probably be explicit validations
+            // OB/MS: this should probably be custom validations—check out sequelize docs on that
             //don't allow a new order to be created as completed with either null address ids, or missing those fields
             if(order.checkout_status === 'complete' && (!order.shipping_address_id || !order.billing_address_id)){
               //throw new Error('You must supply a shipping or billing address id');
