@@ -1,5 +1,6 @@
 var db = require ('../_db');
 var sequelize = require ('sequelize');
+var OrderProducts = require('./order_products')
 
 module.exports = db.define('orders', {
     session_type: {
@@ -18,8 +19,40 @@ module.exports = db.define('orders', {
     },
     billing_address_id: {
         type: sequelize.INTEGER
+    },
+    total_amount : {
+        type: sequelize.DECIMAL
     }
 }, {
+    instanceMethods : {
+        total_order_price : function(){
+            return OrderProducts.findAll({
+                where : {
+                    orderId : this.id
+                }
+            })
+            .then(function(thisOrderProducts){
+
+                return thisOrderProducts.reduce(function (total, curr) {
+                    return total + curr.line_item_total;
+                }, 0);
+            })
+        },
+        add_item_to_existing : function(productToAdd, quantity){
+            return this.addProduct(productToAdd, {
+             unit_price : productToAdd.price,
+             quantity : quantity })
+            .then(function(res){
+                return OrderProducts.findAll({
+                    where : {
+                        productId : productToAdd.id
+                    }
+                })
+
+            })
+            .then(res => res)
+        }
+    },
     hooks: {
         beforeCreate: function (order) {
             //don't allow a new order to be created as completed with either null address ids, or missing those fields
@@ -34,8 +67,9 @@ module.exports = db.define('orders', {
               //throw new Error('You must supply a shipping or billing address id');
               return sequelize.Promise.reject('You can\'t do that!');
             }
-            if(order.checkout_status === 'complete')
-            order.order_date = sequelize.fn('NOW');
+            if(order.checkout_status === 'complete'){
+             order.order_date = sequelize.fn('NOW');
+            }
         }
     }
 });
