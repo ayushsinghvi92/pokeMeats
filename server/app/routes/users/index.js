@@ -11,7 +11,7 @@ router.param('id', function (req, res, next, id) {
   Users.findById(_id)
   .then(function (user) {
     if (!user) throw HttpError(404);
-    req.user = user;
+    req.user = user; // OB/MS: watch out for req.user ("reserverd" by passport), could do req.requestedUser instead
     next();
   })
   .catch(next);
@@ -39,13 +39,14 @@ router.get('/:id/orders', function(req, res, next) {
 
 // THIS ROUTE IS INCOMPLETE
 router.post("/:id/orders", function(req, res, next){
-    req.user.createOrder(req.body)
+    req.user.createOrder(req.body) // OB/MS: watch out for abuse
     .then(function(order){
         res.json(order)
     })
     .catch(next);
 })
 
+// OB/MS: this could be in orders route handler
 router.get('/:id/orders/:orderID', function(req, res, next) {
     req.user.getOrders({
         where: {
@@ -60,6 +61,7 @@ router.get('/:id/orders/:orderID', function(req, res, next) {
 
 
 // THIS ROUTE IS INCOMPLETE
+// OB/MS: this could be in orders route handler
 router.put('/:id/orders/:orderID', function(req, res, next) {
     req.user.getOrders({
         where: {

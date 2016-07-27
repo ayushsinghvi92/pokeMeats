@@ -13,6 +13,7 @@ router.get('/', function (req, res, next){
 })
 
 router.get('/:id', function(req, res, next){
+	// OB/MS: watch out for ifs without elses
 	if (isNaN(req.params.id)) res.sendStatus(500);
 	Products.findById(req.params.id)
 	.then(function(product){
