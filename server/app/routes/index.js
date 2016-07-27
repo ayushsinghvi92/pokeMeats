@@ -3,6 +3,7 @@ var router = require('express').Router();
 module.exports = router;
 
 router.use('/users', require('./users'));
+router.use('/orders', require('./orders/order-routes'))
 
 router.use('/products', require('./products'));
 
