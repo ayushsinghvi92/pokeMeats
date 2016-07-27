@@ -3,6 +3,7 @@
 const Sequelize = require('sequelize');
 const db = require('../_db');
 
+// OB/MS: consider more validations
 module.exports = db.define('address', {
 	line1: {
 		type: Sequelize.STRING,
@@ -24,7 +25,7 @@ module.exports = db.define('address', {
 		allowNull: false
 	},
 	zipcode: {
-		type:Sequelize.INTEGER,
+		type:Sequelize.INTEGER, // OB/MS: watch out for leading zeros (my hometown!)
 		allowNull:false
 	}
 })

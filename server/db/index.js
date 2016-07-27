@@ -8,12 +8,12 @@ const Orders = require('./models/orders')
 const OrderProducts = require('./models/order_products')
 const Address = require('./models/address')
 
-User.hasMany(Orders);
+User.hasMany(Orders); // OB/MS: recommend singular style (drop the s)
 Orders.belongsTo(User);
 Orders.belongsToMany(Products, {through: OrderProducts});
 Products.belongsToMany(Orders, {through: OrderProducts});
 
-// Address.belongsTo(User, {as: 'shippingAddress'});
+// Address.belongsTo(User, {as: 'shippingAddress'}); // OB/MS: check out `foreignKey: ...` option
 // Address.belongsTo(User, {as: 'billingAddress'});
 
 
