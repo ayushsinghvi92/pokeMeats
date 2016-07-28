@@ -39,7 +39,7 @@ module.exports = db.define('orders', {
             })
         },
         add_item_to_existing : function(productToAdd, quantity){
-            return this.addProduct(productToAdd, {
+            return this.addProduct(productToAdd.id, {
              unit_price : productToAdd.price,
              quantity : quantity })
             .then(function(res){
@@ -50,7 +50,7 @@ module.exports = db.define('orders', {
                 })
 
             })
-            .then(res => res)
+            // .catch(console.error.bind(console))
         }
     },
     hooks: {
