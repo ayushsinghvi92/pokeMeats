@@ -32,7 +32,6 @@ module.exports = db.define('orders', {
                 }
             })
             .then(function(thisOrderProducts){
-
                 return thisOrderProducts.reduce(function (total, curr) {
                     return total + curr.line_item_total;
                 }, 0);
