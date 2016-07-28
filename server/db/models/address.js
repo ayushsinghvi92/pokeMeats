@@ -12,19 +12,20 @@ module.exports = db.define('address', {
 		type: Sequelize.STRING
 	},
 	city: {
-		type: Sequelize.STRING,
+		type: Sequelize.STRING(32),
 		allowNull: false
 	},
 	state_region: {
-		type: Sequelize.STRING,
+		type: Sequelize.STRING(32),
 		allowNull: false
 	},
 	country: {
-		type: Sequelize.STRING,
+		type: Sequelize.STRING(50),
 		allowNull: false
 	},
 	zipcode: {
-		type:Sequelize.INTEGER,
-		allowNull:false
+		type:Sequelize.STRING(16),
+    isNumeric : true,
+    allowNull:false
 	}
 })
