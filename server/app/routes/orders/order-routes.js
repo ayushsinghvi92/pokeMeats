@@ -28,7 +28,7 @@ router.post('/:id', function (req, res, next) {
 		userId = req.user.id;
 	}
 	if(verifyUser(userId, req.order)) {
-		let item = req.order.add_item_to_existing(req.body.product, req.body.quantity)
+		let item = req.order.add_item_to_existing(req.body.product.id, req.body.quantity)
 		console.log('this is the item\n\n', item)
 		res.send(item)
 	}
