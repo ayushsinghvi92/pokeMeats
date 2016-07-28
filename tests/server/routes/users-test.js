@@ -64,16 +64,16 @@ describe('Users Route', function () {
 		});
 
 		// COME BACK TO THIS TEST
-		// it('GET one', function (done) {
-		// 	agent
-		// 		.get('/api/users/1')
-		// 		.expect(200)
-		//         .end(function (err, res) {
-		//           if (err) return done(err);
-		//           expect(res.body).to.equal(user);
-		//           done();
-		//     });
-		// });
+		it('GET one', function (done) {
+			agent
+				.get('/api/users/1')
+				.expect(200)
+		        .end(function (err, res) {
+		          if (err) return done(err);
+		          expect(res.body.id).to.equal(user.id);
+		          done();
+		    });
+		});
 
 
 	});
@@ -98,7 +98,7 @@ describe('Users Route', function () {
 		          expect(res.body.first_name).to.equal("blah")
 		          done();
 				})
-				
+
 		});
 
 	});
@@ -112,8 +112,8 @@ describe('Users Route', function () {
 			agent = supertest.agent(app);
 		});
 
-		beforeEach('make an order', function (done){
-			return user.createOrder({
+		beforeEach('make an order', function (){
+			 return user.createOrder({
 				session_type: 'user',
 				order_status: 'in_progress'
 			})
@@ -132,10 +132,10 @@ describe('Users Route', function () {
 		          expect(res.body.session_type).to.equal("user");
 		          expect(res.body.checkout_status).to.equal("in_progress");
 		          done();
-				})			
+				})
 		});
 
-		it('checks that an order can be deleted', function () {
+		it('checks that an order can be deleted', function (done) {
 			agent
 				.delete('/api/users/1/orders')
 				.send({
@@ -147,9 +147,10 @@ describe('Users Route', function () {
 		          user.getOrders()
 		          .then(function(orders){
 		          	expect(orders.length).to.equal(0);
+		          	done();
 		          })
 				})
-				
+
 		});
 
 	});

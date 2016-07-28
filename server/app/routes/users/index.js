@@ -66,12 +66,11 @@ router.post("/:id/orders", function(req, res, next){
 })
 
 router.delete("/:id/orders", function(req, res, next){
-    console.log('this is req.body.orderId', req.body.orderId, '\n\n\n')
    Order.findById(req.body.orderId)
    .then(function(order){
-    console.log('we got an order right hereee', order, '\n\n\n')
-        order.destroy();
+        return order.destroy();
    })
+   .then(result => res.json(result))
    .catch(next);
 })
 
