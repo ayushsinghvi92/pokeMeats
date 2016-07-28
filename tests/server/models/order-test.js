@@ -9,12 +9,6 @@ const OrderProducts = db.model('order_products');
 const Product = db.model('product');
 
 let testProduct;
-// Product.findById(1).
-//  then(product => {
-//   testProduct = product
-// })
-
-
 
 function createUser () {
  return User.create({
