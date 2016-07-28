@@ -4,7 +4,7 @@ var Order = require('./orders');
 
 module.exports = db.define('order_products', {
     unit_price: {
-        type: sequelize.DECIMAL,
+        type: sequelize.INTEGER, //PRICE IN CENTS
         allowNull: false
     },
     quantity: {
@@ -15,7 +15,7 @@ module.exports = db.define('order_products', {
 }, {
     getterMethods: {
         line_item_total: function () {
-            return this.unit_price * this.quantity;
+            return (this.unit_price * this.quantity)/100;
         }
     },
     hooks : {

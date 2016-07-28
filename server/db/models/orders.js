@@ -21,7 +21,7 @@ module.exports = db.define('orders', {
         type: sequelize.INTEGER
     },
     total_amount : {
-        type: sequelize.DECIMAL
+        type: sequelize.INTEGER //PRICE IN CENTS
     }
 }, {
     instanceMethods : {

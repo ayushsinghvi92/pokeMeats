@@ -4,7 +4,7 @@ var sequelize = require ('sequelize');
 var Product = db.define('product', {
 	name: sequelize.STRING,
 	type: sequelize.STRING,
-	price: sequelize.FLOAT,
+	price: sequelize.INTEGER, //PRICE IN CENTS
 	description: sequelize.TEXT,
 	photo: sequelize.STRING,
 	inventoryAmount: sequelize.INTEGER,
