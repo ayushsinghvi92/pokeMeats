@@ -13,7 +13,7 @@ router.param('id', function (req, res, next, id) {
   Users.findById(_id)
   .then(function (user) {
     if (!user) throw new HttpError(404);
-    req.user = user;
+    else req.user = user;
     next();
   })
   .catch(next);
