@@ -16,4 +16,4 @@ Orders.hasMany(OrderProducts);
 OrderProducts.belongsTo(Orders);
 User.belongsToMany(Address, {as: 'shippingAddresses', through:'shippingAddress'});
 User.belongsToMany(Address, {as: 'billingAddresses', through:'billingAddress'});
-
+User.hasMany(Address)
