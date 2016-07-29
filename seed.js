@@ -20,8 +20,8 @@ name in the environment files.
 var chalk = require('chalk');
 var db = require('./server/db');
 var Product = db.model('product');
-var pokemon = require('./pokeSeed.json')
-var users = require("./userSeed.json")
+var pokemon = require('./seedDevelopment/pokeSeed.json')
+var users = require("./seedDevelopment/userSeed.json")
 var Promise = require('sequelize').Promise;
 var User = db.model('user');
 var Address = db.model('address')
