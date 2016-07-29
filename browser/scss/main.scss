@@ -2,8 +2,14 @@
   box-sizing: border-box;
 }
 
+
 body {
   background: #fdfdfd;
+}
+
+#main {
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 @mixin clearfix {

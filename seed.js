@@ -18,15 +18,16 @@ name in the environment files.
 
 */
 
-const chalk = require('chalk');
-const db = require('./server/db');
-const Product = db.model('product');
-const pokemon = require('./pokeSeed.json')
-const users = require("./userSeed.json")
-const Promise = require('sequelize').Promise;
-const User = db.model('user');
-const Address = db.model('address')
-const Order = db.model('orders')
+
+var chalk = require('chalk');
+var db = require('./server/db');
+var Product = db.model('product');
+var pokemon = require('./seedDevelopment/pokeSeed.json')
+var users = require("./seedDevelopment/userSeed.json")
+var Promise = require('sequelize').Promise;
+var User = db.model('user');
+var Address = db.model('address')
+var Order = db.model('orders')
 
 
 var seedProducts = function () {
