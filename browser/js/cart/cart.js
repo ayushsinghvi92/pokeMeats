@@ -41,7 +41,7 @@ app.factory('orderFactory', function ($http) {
 			.then(order => order.order_products)
 		},
 		deleteOrderProduct: function (orderId, product) {
-			return $http.delete('/api/orders/'+orderId, product)
+			return $http.delete('/api/orders/'+ orderId + '/product/' + product.id)
 			.then(getData)
 		},
 		addNewOrderProduct: function (orderId, product, quantity = 1) {

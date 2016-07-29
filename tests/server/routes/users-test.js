@@ -63,7 +63,6 @@ describe('Users Route', function () {
 			agent = supertest.agent(app);
 		});
 
-		// COME BACK TO THIS TEST
 		it('GET one', function (done) {
 			agent
 				.get('/api/users/1')

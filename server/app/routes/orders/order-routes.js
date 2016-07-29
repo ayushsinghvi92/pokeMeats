@@ -67,13 +67,13 @@ router.put('/:id', function(req, res, next){
   }
 })
 
-router.delete('/:id', function(req, res, next){
+router.delete('/:id/product/:productId', function(req, res, next){
   let userId = null;
   if (req.user) {
     userId = req.user.id;
   }
   if(verifyUser(userId, req.order)) {
-    return req.order.removeProduct(req.body.product.id)
+    return req.order.removeProduct(req.params.productId)
     .then(function(removedItem){
       res.json(removedItem);
     })
