@@ -1,3 +1,4 @@
+'use strict';
 /*
 
 This seed file is only a placeholder. It should be expanded and altered
@@ -17,11 +18,12 @@ name in the environment files.
 
 */
 
+
 var chalk = require('chalk');
 var db = require('./server/db');
 var Product = db.model('product');
-var pokemon = require('./pokeSeed.json')
-var users = require("./userSeed.json")
+var pokemon = require('./seedDevelopment/pokeSeed.json')
+var users = require("./seedDevelopment/userSeed.json")
 var Promise = require('sequelize').Promise;
 var User = db.model('user');
 var Address = db.model('address')
@@ -65,12 +67,33 @@ var seedUsers = function () {
     return Promise.all(creatingUsers);
 };
 
+const seedOrderProducts = function(){
+    let _order;
+    return Order.findById(1)
+    .then(function(order){
+        _order = order;
+        return _order.addProduct(1, {
+            unit_price: 11,
+            quantity: 1
+        });
+    })
+    .then(function(){
+        return _order.addProduct(2, {
+            unit_price: 22,
+            quantity: 2
+        });
+    });
+}
+
 db.sync({ force: true })
     .then(function () {
         return seedProducts();
     })
     .then(function (){
         return seedUsers();
+    })
+    .then(function(result){
+        return seedOrderProducts();
     })
     .then(function () {
         console.log(chalk.green('Seed successful!'));

@@ -1,4 +1,24 @@
 <section id="home">
-    <fullstack-logo></fullstack-logo>
-    <rando-greeting></rando-greeting>
+
+  <div class="input-group">
+    <span class="input-group-addon" id="pokeSearch">Pokemon</span>
+    <input type="text" class="form-control" placeholder="Pokemon" ng-model="pokeSearch">
+  </div>
+  <br>
+  <div class="row">
+      <div ng-repeat="product in pokemon | filter: pokeSearch">
+        <div class="clearfix" ng-if="$index % 3 == 0"></div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img ng-src={{product.photo}}>
+            <div class="caption" style='text-align: center'>
+              <h3>{{product.name}}</h3>
+              <span>${{product.price}}</span>
+              <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a> <a ui-sref="productDetail({id : product.id })" class="btn btn-default" role="button">View Details</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
 </section>

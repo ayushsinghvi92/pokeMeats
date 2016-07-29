@@ -69,6 +69,7 @@ router.put('/:id', function(req, res, next){
 
 router.delete('/:id/product/:productId', function(req, res, next){
   let userId = null;
+  console.log('this is the hot req.body', req.body)
   if (req.user) {
     userId = req.user.id;
   }

@@ -136,10 +136,7 @@ describe('Users Route', function () {
 
 		it('checks that an order can be deleted', function (done) {
 			agent
-				.delete('/api/users/1/orders')
-				.send({
-					orderId: 1
-				})
+				.delete('/api/users/1/orders/1')
 				.expect(200)
 				.end(function(err, res){
 		          if (err) return done(err);
