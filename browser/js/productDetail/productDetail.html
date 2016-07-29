@@ -1,20 +1,31 @@
 <section id="home">
-  <div class="col-sm-6 col-md-4">
-   <h1>{{product.name}}</h1>
-    <div class="thumbnail">
-      <img ng-src={{product.photo}}>
-      <div class="caption" style='text-align: center'>
+<div class="row">
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <img ng-src={{product.photo}}>
+        <div class="caption" style='text-align: center'></div>
       </div>
     </div>
-    <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a></p>
-    <h2>{{ product.price }}</h2>
-    <h2>This delicacy's type is {{ product.type }}!</h2>
-    <h2>{{ product.quantity }}</h2>
-    <h4>{{ product.description }}</h2>
-    <span>{{ product.tags.join(', ') }} </span>
-
-
-
+    <div class="col-md-6">
+        <h2>{{product.name}}</h2>
+        <h5>${{ product.price }}</h5>
+        <h4>This delicacy's type is {{ product.type }}!</h4>
+        <h2>{{ product.quantity }}</h2>
+        <p>{{ product.description }}</p>
+        <span ng-repeat='tag in product.tags'><a ui-sref="home({tag: tag})">{{ tag }}{{ $last ? '' : ', ' }}</a></span>
+    </div>
+    <div class="col-md-3" style='text-align:center'>
+      <div class="thumbnail"
+          <bold>Your Cart:</bold>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+          <br><br><br><br><br><br><br>
+          <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a></p>
+      </div>
+    </div>
 </div>
 
 </section>
