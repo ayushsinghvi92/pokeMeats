@@ -1,0 +1,28 @@
+<section ng-controller="CartController">
+  <h2>Shopping Cart</h2>
+  <div class="row" ng-repeat="product in products">
+     <hr>
+     <div class="clearfix"></div>
+      <div class="col-md-3 col-sm-12">
+         <img src="{{ product.photo}}">
+      </div>
+      <div class="col-md-5 col-sm-12">
+          <h4>{{product.name}}</h4>
+          <p>{{product.description}}</p>
+          <p><a href="#" class="btn btn-default" role="button">View Details</a></p>
+      </div>
+      <div class="col-md-4 col-sm-12">
+          <p><label>Unit Price: </label> ${{product.unit_price}}</p>
+          <p><label>Quantity: </label> <input value="{{product.quantity}}"></input></p>
+          <p><label>Sub Total: </label>
+          ${{product.quantity * product.unit_price}}</p>
+          <p><a href="#" class="btn btn-default" role="button">Delete</a></p>
+      </div>
+  </div>
+  <div class="row">
+      <div style="text-align:center">
+        <a href="#" class="btn btn-primary" role="button">Proceed to Checkout</a><br>
+        <a href="#">Continue Shopping</a>
+    </div>
+  </div>
+</section>
