@@ -113,7 +113,7 @@ describe("Orders Model", function () {
   it('allows you to add a product to an existing order', function (done) {
 
         Product.create({
-          "name":"Bulbasaur Liver","type":"grass","price":33.33,"description":"hello","photo":"/img/001 Bulbasaur.ico","inventoryAmount":10
+          "name":"Bulbasaur Liver","type":"grass","price":33,"description":"hello","photo":"/img/001 Bulbasaur.ico","inventoryAmount":10
           })
           .then(product => {testProduct = product; return testProduct})
           .then(function(){
