@@ -1,10 +1,10 @@
-[  
-   {  
+[
+   {
       "first_name":"Sean",
       "last_name":"Han",
       "email":"sean@pokeMeats.com",
       "password":"sean",
-      "addresses":{  
+      "addresses":{
          "line1":"5 Hanover Square",
          "line2":"Fullstack Academy",
          "city":"New York",
@@ -12,17 +12,17 @@
          "country":"USA",
          "zipcode":10001
       },
-      "orders":{  
+      "orders":{
          "session_type":"user",
          "checkout_status":"in_progress"
       }
    },
-   {  
+   {
       "first_name":"SJ",
       "last_name":"Kim",
       "email":"sj@pokeMeats.com",
       "password":"sj",
-      "addresses":{  
+      "addresses":{
          "line1":"5 Hanover Square",
          "line2":"Fullstack Academy",
          "city":"New York",
@@ -30,17 +30,17 @@
          "country":"USA",
          "zipcode":10001
       },
-      "orders":{  
+      "orders":{
          "session_type":"user",
          "checkout_status":"in_progress"
       }
    },
-   {  
+   {
       "first_name":"Jackson",
       "last_name":"Brietzke",
       "email":"jackson@pokeMeats.com",
       "password":"jackson",
-      "addresses":{  
+      "addresses":{
          "line1":"5 Hanover Square",
          "line2":"Fullstack Academy",
          "city":"New York",
@@ -48,17 +48,17 @@
          "country":"USA",
          "zipcode":10001
       },
-      "orders":{  
+      "orders":{
          "session_type":"user",
          "checkout_status":"in_progress"
       }
    },
-   {  
+   {
       "first_name":"Ayush",
       "last_name":"Singhvi",
       "email":"ayush@pokeMeats.com",
       "password":"ayush",
-      "addresses":{  
+      "addresses":{
          "line1":"5 Hanover Square",
          "line2":"Fullstack Academy",
          "city":"New York",
@@ -66,17 +66,17 @@
          "country":"USA",
          "zipcode":10001
       },
-      "orders":{  
+      "orders":{
          "session_type":"user",
          "checkout_status":"in_progress"
       }
    },
-   {  
+   {
       "first_name":"Omri",
       "last_name":"Bernstein",
       "email":"omri@pokeMeats.com",
       "password":"omri",
-      "addresses":{  
+      "addresses":{
          "line1":"5 Hanover Square",
          "line2":"Fullstack Academy",
          "city":"New York",
@@ -84,7 +84,7 @@
          "country":"USA",
          "zipcode":10001
       },
-      "orders":{  
+      "orders":{
          "session_type":"user",
          "checkout_status":"in_progress"
       }
