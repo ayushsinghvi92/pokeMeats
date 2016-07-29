@@ -5,4 +5,17 @@ app.controller("homeCtrl", function($scope, allProducts, $stateParams){
 			return pokemon.tags.includes($stateParams.tag)
 		})
 	}
+	$scope.toggleFilter = function (type) {
+		$scope.pokemon = allProducts.filter(function(pokemon){
+			return pokemon.type == type;
+		})
+	}
+
+	$scope.clearFilters = function () {
+		$scope.pokemon = allProducts;
+	}
+
+
+	
 })
+
