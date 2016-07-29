@@ -1,0 +1,28 @@
+<section>
+  <h2>Shopping Cart</h2>
+  <div class="row" ng-repeat="orderProduct in orderProducts">
+     <hr>
+     <div class="clearfix"></div>
+      <div class="col-md-3 col-sm-12">
+         <img src="{{ orderProduct.photo}}">
+      </div>
+      <div class="col-md-5 col-sm-12">
+          <h4>{{orderProduct.name}}</h4>
+          <p>{{orderProduct.description}}</p>
+          <p><a href="#" class="btn btn-default" role="button">View Details</a></p>
+      </div>
+      <div class="col-md-4 col-sm-12">
+          <p><label>Unit Price: </label> ${{orderProduct.unit_price}}</p>
+          <p><label>Quantity: </label><input ng-keyup="updateQuantity(orderProduct.orderId, orderProduct, updatedQuantity)" ng-model="updatedQuantity" ng-init="updatedQuantity=orderProduct.quantity"></input></p>
+          <p><label>Sub Total: </label>
+          ${{updatedQuantity * orderProduct.unit_price}}</p>
+          <p><a href="#" class="btn btn-default" role="button" ng-click="deleteOrderProduct(orderProduct.orderId, orderProduct)">Delete</a></p>
+      </div>
+  </div>
+  <div class="row">
+      <div style="text-align:center">
+        <a href="#" class="btn btn-primary" role="button">Proceed to Checkout</a><br>
+        <a href="#">Continue Shopping</a>
+    </div>
+  </div>
+</section>

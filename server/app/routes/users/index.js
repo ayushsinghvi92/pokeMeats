@@ -65,12 +65,10 @@ router.post("/:id/orders", function(req, res, next){
     .catch(next);
 })
 
-router.delete("/:id/orders", function(req, res, next){
-   Order.findById(req.body.orderId)
-   .then(function(order){
-        return order.destroy();
-   })
-   .then(result => res.json(result))
+router.delete("/:id/orders/:orderId", function(req, res, next){
+   Order.findById(req.params.orderId)
+   .then(order=>order.destroy())
+   .then(destroyedId => res.json(destroyedId))
    .catch(next);
 })
 

@@ -1,0 +1,92 @@
+[
+   {
+      "first_name":"Sean",
+      "last_name":"Han",
+      "email":"sean@pokeMeats.com",
+      "password":"sean",
+      "addresses":{
+         "line1":"5 Hanover Square",
+         "line2":"Fullstack Academy",
+         "city":"New York",
+         "state_region":"New York",
+         "country":"USA",
+         "zipcode":10001
+      },
+      "orders":{
+         "session_type":"user",
+         "checkout_status":"in_progress"
+      }
+   },
+   {
+      "first_name":"SJ",
+      "last_name":"Kim",
+      "email":"sj@pokeMeats.com",
+      "password":"sj",
+      "addresses":{
+         "line1":"5 Hanover Square",
+         "line2":"Fullstack Academy",
+         "city":"New York",
+         "state_region":"New York",
+         "country":"USA",
+         "zipcode":10001
+      },
+      "orders":{
+         "session_type":"user",
+         "checkout_status":"in_progress"
+      }
+   },
+   {
+      "first_name":"Jackson",
+      "last_name":"Brietzke",
+      "email":"jackson@pokeMeats.com",
+      "password":"jackson",
+      "addresses":{
+         "line1":"5 Hanover Square",
+         "line2":"Fullstack Academy",
+         "city":"New York",
+         "state_region":"New York",
+         "country":"USA",
+         "zipcode":10001
+      },
+      "orders":{
+         "session_type":"user",
+         "checkout_status":"in_progress"
+      }
+   },
+   {
+      "first_name":"Ayush",
+      "last_name":"Singhvi",
+      "email":"ayush@pokeMeats.com",
+      "password":"ayush",
+      "addresses":{
+         "line1":"5 Hanover Square",
+         "line2":"Fullstack Academy",
+         "city":"New York",
+         "state_region":"New York",
+         "country":"USA",
+         "zipcode":10001
+      },
+      "orders":{
+         "session_type":"user",
+         "checkout_status":"in_progress"
+      }
+   },
+   {
+      "first_name":"Omri",
+      "last_name":"Bernstein",
+      "email":"omri@pokeMeats.com",
+      "password":"omri",
+      "addresses":{
+         "line1":"5 Hanover Square",
+         "line2":"Fullstack Academy",
+         "city":"New York",
+         "state_region":"New York",
+         "country":"USA",
+         "zipcode":10001
+      },
+      "orders":{
+         "session_type":"user",
+         "checkout_status":"in_progress"
+      }
+   }
+]

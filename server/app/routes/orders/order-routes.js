@@ -1,13 +1,15 @@
 const router = require('express').Router();
 const db = require('../../../db');
 const Order = db.model('orders');
+const OrderProducts = db.model('order_products')
+const HttpError = require('../HttpError')
 
 
 router.param('id', function (req, res, next, id) {
   var _id = id;
-  Order.findById(_id)
+  Order.findById(_id, {include: [OrderProducts]})
   .then(function (order) {
-    if (!order) throw httpError(404);
+    if (!order) throw HttpError(404);
     else {
 	    req.order = order;
     }
@@ -22,6 +24,10 @@ function verifyUser (userId, order) {
   }
 	else return false;
 }
+
+router.get('/:id', function (req,res,next){
+  return res.send(req.order)
+})
 
 router.post('/:id', function (req, res, next) {
 	let userId = null;
@@ -61,13 +67,14 @@ router.put('/:id', function(req, res, next){
   }
 })
 
-router.delete('/:id', function(req, res, next){
+router.delete('/:id/product/:productId', function(req, res, next){
   let userId = null;
+  console.log('this is the hot req.body', req.body)
   if (req.user) {
     userId = req.user.id;
   }
   if(verifyUser(userId, req.order)) {
-    return req.order.removeProduct(req.body.product.id)
+    return req.order.removeProduct(req.params.productId)
     .then(function(removedItem){
       res.json(removedItem);
     })
