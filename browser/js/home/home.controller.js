@@ -5,6 +5,4 @@ app.controller("homeCtrl", function($scope, allProducts, $stateParams){
 			return pokemon.tags.includes($stateParams.tag)
 		})
 	}
-	// $console.log($scope.pokeSearch)
-	
 })
