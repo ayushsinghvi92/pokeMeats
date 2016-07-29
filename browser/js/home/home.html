@@ -1,10 +1,10 @@
 <section id="home">
-  
   <div class="input-group">
     <span class="input-group-addon" id="pokeSearch">Pokemon</span>
     <input type="text" class="form-control" placeholder="Pokemon" ng-model="pokeSearch">
   </div>
   <br>
+  <productfilter></productfilter>
   <div class="row">
       <div ng-repeat="product in pokemon | filter: pokeSearch">
         <div class="clearfix" ng-if="$index % 3 == 0"></div>
