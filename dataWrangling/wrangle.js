@@ -17,7 +17,7 @@ function pricing (x) {
 	return Number((100 / x).toFixed(2));
 }
 
-var items = ["Tail", "Feet", "Liver", "Tongue", "Belly", "Bacon", "Sausage"];
+var items = ["Tail", "Feet", "Liver", "Tongue", "Belly", "Bacon", "Sausage", "Brain", "Shoulder", "Ears"];
 var dummyParagraph = "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 for (_pokemon in pokemon) {
 	formattedPokemon.push({
@@ -32,7 +32,7 @@ for (_pokemon in pokemon) {
 }
 
 formattedPokemon = formattedPokemon.map(function(pokemon){
-	var index = Math.floor(Math.random() * 7)
+	var index = Math.floor(Math.random() * 10)
 	pokemon.name = pokemon.name + " " + items[index]
 	pokemon.tags.push("#" + items[index])
 	return pokemon;
