@@ -11,6 +11,7 @@ beforeEach('sync db', function () {
 	return db.sync({force:true})
 })
 
+
 let testUser;
 beforeEach('Creating a User', function(){
   return User.create({

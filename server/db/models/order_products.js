@@ -2,6 +2,7 @@ var db = require ('../_db');
 var sequelize = require ('sequelize');
 var Order = require('./orders');
 
+
 module.exports = db.define('order_products', {
     unit_price: {
         type: sequelize.INTEGER, //PRICE IN CENTS
