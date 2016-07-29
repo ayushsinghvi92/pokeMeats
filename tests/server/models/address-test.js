@@ -14,7 +14,7 @@ function createShippingAddress () {
 		state_region: 'new york',
 		country: 'USA',
 		zipcode: 12345
-	})	
+	})
 	.then(function (address) {
 		add = address;
 		return createUser();
@@ -34,7 +34,7 @@ function createBillingAddress () {
 		state_region: 'Washington',
 		country: 'USA',
 		zipcode: 11111
-	})	
+	})
 	.then(function (address) {
 		add = address;
 		return createUser();
@@ -54,6 +54,26 @@ function createUser () {
 	})
 }
 
+function createIncorrectBillingAddress () {
+  let add, usr;
+  return Address.create({
+    line1: 'this is a billing address',
+    city: 'Seattle',
+    state_region: 'Washington',
+    country: 'USA',
+    zipcode: 111111111111212212121212121212121212121212121212212121212121212121
+  })
+  .then(function (address) {
+    add = address;
+    return createUser();
+  })
+  .then(function (user) {
+    usr = user;
+    return user.addBillingAddress(add)
+  })
+  .then(address => usr)
+}
+
 
 
 beforeEach('Sync DB', function () {
@@ -68,8 +88,8 @@ describe("Address Model", function () {
 				expect(user.addBillingAddress).to.be.a('function');
 				expect(user.addShippingAddress).to.be.a('function');
 				done()
-	        })		
-	        .catch(done)		
+	        })
+	        .catch(done)
 		})
 		it('can get billing and shipping addresses', function (done) {
 			createUser()
@@ -93,7 +113,7 @@ describe("Address Model", function () {
 				done();
 			})
 			.catch(done)
-		
+
 		})
 		it('doesn\'t give us the shipping address if we set a billing address', function (done) {
 			createBillingAddress()
@@ -116,7 +136,7 @@ describe("Address Model", function () {
 				done();
 			})
 			.catch(done)
-		
+
 		})
 		it('should return the right billing address', function (done) {
 			createBillingAddress()
@@ -129,6 +149,14 @@ describe("Address Model", function () {
 			})
 			.catch(done)
 		})
+
+    it('should not allow the creation of a bad address', function (done) {
+      createIncorrectBillingAddress()
+      .catch(function(){
+        expect(true).to.be.equal(true);
+        done();
+      })
+    })
 
 	})
 

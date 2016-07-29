@@ -21,7 +21,7 @@ module.exports = db.define('orders', {
         type: sequelize.INTEGER
     },
     total_amount : {
-        type: sequelize.DECIMAL
+        type: sequelize.INTEGER //PRICE IN CENTS
     }
 }, {
     instanceMethods : {
@@ -32,7 +32,6 @@ module.exports = db.define('orders', {
                 }
             })
             .then(function(thisOrderProducts){
-
                 return thisOrderProducts.reduce(function (total, curr) {
                     return total + curr.line_item_total;
                 }, 0);

@@ -9,12 +9,6 @@ const OrderProducts = db.model('order_products');
 const Product = db.model('product');
 
 let testProduct;
-// Product.findById(1).
-//  then(product => {
-//   testProduct = product
-// })
-
-
 
 function createUser () {
  return User.create({
@@ -121,7 +115,7 @@ describe("Orders Model", function () {
         Product.create({
           "name":"Bulbasaur Liver","type":"grass","price":33.33,"description":"hello","photo":"/img/001 Bulbasaur.ico","inventoryAmount":10
           })
-          .then(product => {console.log(product); testProduct = product; return testProduct})
+          .then(product => {testProduct = product; return testProduct})
           .then(function(){
             return createUser()
           })

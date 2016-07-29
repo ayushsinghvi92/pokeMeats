@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon --watch server -e js,html server/start.js",
     "postinstall": "gulp build",
-    "test": "./node_modules/.bin/mocha -w tests/server/routes/orders-test.js"
+    "test": "./node_modules/.bin/mocha -w tests/server/models"
   },
   "engines": {
     "node": ">=4.0.0"
@@ -58,6 +58,7 @@
     "passport-twitter": "^1.0.2",
     "pg": "^4.5.5",
     "pg-hstore": "^2.3.2",
+    "pg-native": "^1.10.0",
     "run-sequence": "^1.0.2",
     "sequelize": "^3.23.3",
     "serve-favicon": "^2.2.0",
