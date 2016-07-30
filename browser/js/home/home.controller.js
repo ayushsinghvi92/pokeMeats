@@ -5,17 +5,22 @@ app.controller("homeCtrl", function($scope, allProducts, $stateParams){
 			return pokemon.tags.includes($stateParams.tag)
 		})
 	}
-	$scope.toggleFilter = function (type) {
+	$scope.filters = [];
+	$scope.isSelected = false;
+	$scope.toggleFilter = function (type, event) {
+		console.log(event)
+		$scope.isSelected = !$scope.isSelected;
+		$scope.filters.push(type);
 		$scope.pokemon = allProducts.filter(function(pokemon){
-			return pokemon.type == type;
+			return $scope.filters.includes(pokemon.type);
 		})
 	}
 
 	$scope.clearFilters = function () {
 		$scope.pokemon = allProducts;
+		$scope.filters = [];
 	}
 
 
-	
 })
 

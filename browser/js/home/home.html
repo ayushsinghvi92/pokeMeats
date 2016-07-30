@@ -1,12 +1,12 @@
 <section id="home">
-  <div class="input-group">
+  <div class="input-group" id="fixedElement">
     <span class="input-group-addon" id="pokeSearch">Pokemon</span>
     <input type="text" class="form-control" placeholder="Pokemon" ng-model="pokeSearch">
   </div>
   <br>
   <div class="row">
-      <div class = "col-md-2">
-      <productfilter toggle-filter="toggleFilter(type)" clear-filters="clearFilters()"></productfilter>
+      <div class = "col-md-1">
+      <productfilter toggle-filter="toggleFilter(type, event)" clear-filters="clearFilters()"></productfilter>
       </div>
       <div class = "col-md-10">
         <div ng-repeat="product in pokemon | filter: pokeSearch">
