@@ -28,5 +28,5 @@ app.controller("homeCtrl", function($scope, ProductFactory, $stateParams){
 		$scope.pokemon = allProducts;
 		$scope.filters = [];
 	}
-}
+});
 
