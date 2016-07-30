@@ -2,8 +2,14 @@
   box-sizing: border-box;
 }
 
+
 body {
   background: #fdfdfd;
+}
+
+#main {
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 @mixin clearfix {
@@ -17,6 +23,10 @@ body {
 #main {
   padding-top: 60px;
   margin: 0 auto;
+}
+
+.cartrow {
+  float: right;
 }
 
 @import 'directives/main';

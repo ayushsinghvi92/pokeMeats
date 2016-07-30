@@ -11,6 +11,7 @@ beforeEach('sync db', function () {
 	return db.sync({force:true})
 })
 
+
 let testUser;
 beforeEach('Creating a User', function(){
   return User.create({
@@ -110,10 +111,13 @@ describe('These are the Delete Routes: Where you can delete a product from an or
   });
 
   it('deletes the product from the order', function(done){
-    return agent.delete('/api/orders/' + order.id)
-    .send({product:product})
+    return agent.delete('/api/orders/' + order.id + '/product/'+product.id)
     .expect(200)
-    .end(done)
+    .end(function(err,res){
+      console.log(res)
+      expect(res.body).to.equal(product.id);
+      done();
+    })
   })
 })
 

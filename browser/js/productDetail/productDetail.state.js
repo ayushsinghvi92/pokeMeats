@@ -1,12 +1,12 @@
-// app.config(function ($stateProvider) {
-//     $stateProvider.state('productDetail', {
-//         url: '/',
-//         templateUrl: 'js/home/home.html',
-//         controller: 'homeCtrl',
-//         resolve: {
-//         	allProducts: function(ProductFactory) {
-//         		return ProductFactory.fetchAll();
-//         	}
-//         }
-//     });
-// });
+app.config(function ($stateProvider) {
+    $stateProvider.state('productDetail', {
+        url: '/products/:id',
+        templateUrl: 'js/productDetail/productDetail.html',
+        controller: 'productDetailCtrl',
+        resolve: {
+        	theProduct: function(ProductFactory, $stateParams) {
+        		return ProductFactory.fetchById($stateParams.id);
+        	}
+        }
+    });
+});
