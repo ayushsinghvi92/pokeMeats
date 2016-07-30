@@ -1,12 +1,10 @@
-app.controller('CartController', function ($scope, orderFactory) {
+app.controller('CartController', function (orderFactory, AuthService, $scope, userFactory) {
 
-    // Images of beautiful Fullstack people.
-
-    orderFactory.getAllOrderProducts(1) //don't forget to chagne this
+    userFactory.getActiveOrder()    
     .then(function (orderProducts){
       $scope.orderProducts = orderProducts;
     })
-
+ 
     console.log('updated quantity is ', $scope.updatedQuantity)
 
     $scope.deleteOrderProduct = orderFactory.deleteOrderProduct;
