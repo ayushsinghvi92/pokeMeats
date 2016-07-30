@@ -1,5 +1,5 @@
 <section id="home">
-<div class="row">
+<div class="row" id="main">
     <div class="col-md-3">
       <div class="thumbnail">
         <img ng-src={{product.photo}}>
@@ -15,15 +15,14 @@
         <span ng-repeat='tag in product.tags'><a ui-sref="home({tag: tag})">{{ tag }}{{ $last ? '' : ', ' }}</a></span>
     </div>
     <div class="col-md-3" style='text-align:center'>
-      <div class="thumbnail"
+      <div class="thumbnail">
           <bold>Your Cart:</bold>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
+          <ul ng-repeat = 'order in currentCart'>
+            <li>Quantity: {{ order.quantity }}, {{ order.name }}: Unit Price ${{ order.unit_price}}</li>
           </ul>
-          <br><br><br><br><br><br><br>
-          <p><a href="#" class="btn btn-primary" role="button">Add to Cart</a></p>
+          <!-- 5 just a placeholder for now while trying to figure out how this works -->
+          <h6>{{ 5 }}</h6>
+          <p><a ui-sref="cart" class="btn btn-primary" role="button">Add to Cart</a></p>
       </div>
     </div>
 </div>
