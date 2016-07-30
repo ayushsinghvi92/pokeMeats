@@ -2,6 +2,26 @@
   box-sizing: border-box;
 }
 
+productfilter {
+  position: fixed;
+}
+
+.typeIcons {
+  ul {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  li {
+    display: flex;
+    margin: 0;
+    button:hover {
+      background: #d3d3d3;
+    }
+    button:active {
+      background: #d3d3d3;
+    }
+  }
+}
 
 body {
   background: #fdfdfd;
