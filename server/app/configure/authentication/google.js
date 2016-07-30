@@ -14,7 +14,7 @@ module.exports = function (app, db) {
         clientSecret: googleConfig.clientSecret,
         callbackURL: googleConfig.callbackURL
     };
-
+//revisit whether we really need 'email' passed
     var verifyCallback = function (accessToken, refreshToken, profile, done) {
 
         User.findOne({
@@ -27,7 +27,8 @@ module.exports = function (app, db) {
                     return user;
                 } else {
                     return User.create({
-                        google_id: profile.id
+                        google_id: profile.id,
+                        email: profile.emails[0].value
                     });
                 }
             })
