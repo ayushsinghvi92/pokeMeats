@@ -6,6 +6,18 @@ productfilter {
   position: fixed;
 }
 
+
+.tooltip {
+  display:none;
+  position:absolute;
+  border:1px solid #333;
+  background-color:#161616;
+  border-radius:5px;
+  padding:10px;
+  color:#fff;
+  font-size:12px Arial;
+}
+
 .typeIcons {
   ul {
     list-style-type: none;
@@ -14,12 +26,17 @@ productfilter {
   li {
     display: flex;
     margin: 0;
+    button {
+      padding: 0;
+    }
     button:hover {
       background: #d3d3d3;
     }
     button:active {
-      background: #d3d3d3;
+      background: #2f4f4f;
     }
+
+
   }
 }
 

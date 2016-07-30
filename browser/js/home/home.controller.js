@@ -1,5 +1,5 @@
 app.controller("homeCtrl", function($scope, ProductFactory, $stateParams){
-	
+
 
 	ProductFactory.fetchAll()
 	.then(function (pokemon) {
@@ -12,14 +12,21 @@ app.controller("homeCtrl", function($scope, ProductFactory, $stateParams){
 		})
 	}
 
-	$scope.toggleFilter = function (type) {
+	$scope.filters = [];
+	$scope.isSelected = false;
+	$scope.toggleFilter = function (type, event) {
+		console.log(event)
+		$scope.isSelected = !$scope.isSelected;
+		$scope.filters.push(type);
+
 		$scope.pokemon = allProducts.filter(function(pokemon){
-			return pokemon.type == type;
+			return $scope.filters.includes(pokemon.type);
 		})
 	}
 
 	$scope.clearFilters = function () {
 		$scope.pokemon = allProducts;
+		$scope.filters = [];
 	}
-})
+}
 
