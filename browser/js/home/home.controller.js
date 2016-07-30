@@ -14,8 +14,5 @@ app.controller("homeCtrl", function($scope, allProducts, $stateParams){
 	$scope.clearFilters = function () {
 		$scope.pokemon = allProducts;
 	}
-
-
-	
 })
 
