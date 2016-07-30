@@ -167,6 +167,14 @@
     "inventoryAmount": 10,
     "tags": ["#poison", "#Feet"]
 }, {
+    "name": "Pikachu Tail",
+    "type": "electric",
+    "price": 500,
+    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "photo": "/025%20Pikachu.ico",
+    "inventoryAmount": 10,
+    "tags": ["#electric", "#Tail"]
+}, {
     "name": "Raichu Tongue",
     "type": "electric",
     "price": 100,
@@ -195,7 +203,7 @@
     "type": "poison",
     "price": 6.67,
     "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "photo": "/029%20Nidoran.ico",
+    "photo": "/029%20NidoranF.ico",
     "inventoryAmount": 10,
     "tags": ["#poison", "#Liver"]
 }, {
@@ -211,7 +219,7 @@
     "type": "poison",
     "price": 6.67,
     "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "photo": "/032%20Nidoran.ico",
+    "photo": "/032%20NidoranM.ico",
     "inventoryAmount": 10,
     "tags": ["#poison", "#Bacon"]
 }, {
@@ -558,6 +566,13 @@
     "photo": "/092%20Gastly.ico",
     "inventoryAmount": 10,
     "tags": ["#ghost", "#Feet"]
+}, {
+    "name" : "Haunter Claw",
+    "type": "ghost",
+    "price": "500",
+    "photo": "093%20Haunter.ico",
+    "inventoryAmount": 10,
+    "tags": ["#ghost", "#Claw"]
 }, {
     "name": "Gengar Tail",
     "type": "ghost",

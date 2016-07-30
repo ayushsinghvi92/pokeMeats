@@ -1,22 +1,21 @@
 <section>
     <div class="typeIcons">
       <ul style = 'list-style-type: none'>
-        <li><button><img src='water.png' height= 40px ng-click="toggleFilter({type:'water'})"></button>
-        <button><img src='fire.png'  height= 40px ng-click="toggleFilter({type:'fire'})"></button></li>
-        <li><button><img src='grass.png' height= 40px ng-click="toggleFilter({type:'grass'})"></button>
-        <button><img src='electric.png' height= 40px ng-click="toggleFilter({type:'electric'})"></button></li>
-        <li><button><img src='bug.png' height= 40px ng-click="toggleFilter({type:'bug'})"></button>
-        <button><img src='ghost.png' height= 40px ng-click="toggleFilter({type:'ghost'})"></button></li>
-        <li><button><img src='ground.png' height= 40px ng-click="toggleFilter({type:'ground'})"></button>
-        <button><img src='rock.png' height= 40px ng-click="toggleFilter({type:'rock'})"></button></li>
-        <li><button><img src='fighting.png' height= 40px ng-click="toggleFilter({type:'fighting'})"></button>
-        <button><img src='ice.png' height= 40px ng-click="toggleFilter({type:'ice'})"></button></li>
-        <li><button><img src='normal.png' height= 40px ng-click="toggleFilter({type:'normal'})"></button>
-        <button><img src='dragon.png' height= 40px ng-click="toggleFilter({type:'dragon'})"></button></li>
-        <li><button><img src='psychic.png' height= 40px ng-click="toggleFilter({type:'psychic'})"></button>
-        <button><img src='flying.png' height= 40px ng-click="toggleFilter({type:'flying'})"></button></li>
-        <li><button><img src='poison.png' height= 40px ng-click="toggleFilter({type:'poison'})"></button>
-        <button ng-click="clearFilters()">Clear</button></li>
+        <li><button><img src='water.png' height= "40px" class="masterTooltip" title ="Water" ng-click="toggleFilter({type:'water', event: $event})"/></button>
+        <button><img src='fire.png'  height= 40px class="masterTooltip" title ="Fire" ng-click="toggleFilter({type:'fire'})"></button></li>
+        <li><button><img src='grass.png' height= 40px class="masterTooltip" title ="Grass" ng-click="toggleFilter({type:'grass'})"></button>
+        <button><img src='electric.png' height= 40px class="masterTooltip" title ="Electric" ng-click="toggleFilter({type:'electric'})"></button></li>
+        <li><button><img src='bug.png' height= 40px class="masterTooltip" title ="Bug" ng-click="toggleFilter({type:'bug'})"></button>
+        <button><img src='ghost.png' height= 40px class="masterTooltip" title ="Ghost" ng-click="toggleFilter({type:'ghost'})"></button></li>
+        <li><button><img src='ground.png' height= 40px class="masterTooltip" title ="Ground" ng-click="toggleFilter({type:'ground'})"></button>
+        <button><img src='rock.png' height= 40px class="masterTooltip" title ="Rock" ng-click="toggleFilter({type:'rock'})"></button></li>
+        <li><button><img src='fighting.png' height= 40px class="masterTooltip" title ="Fighting" ng-click="toggleFilter({type:'fighting'})"></button>
+        <button><img src='ice.png' height= 40px class="masterTooltip" title ="Ice" ng-click="toggleFilter({type:'ice'})"></button></li>
+        <li><button><img src='normal.png' height= 40px class="masterTooltip" title ="Normal" ng-click="toggleFilter({type:'normal'})"></button>
+        <button><img src='dragon.png' height= 40px class="masterTooltip" title ="Dragon" ng-click="toggleFilter({type:'dragon'})"></button></li>
+        <li><button><img src='psychic.png' height= 40px class="masterTooltip" title ="Psychic" ng-click="toggleFilter({type:'psychic'})"></button>
+        <button><img src='poison.png' height= 40px class="masterTooltip" title ="Poison" ng-click="toggleFilter({type:'poison'})"></button></li>
+        <li><button ng-click="clearFilters()">Clear</button></li>
       </ul>
     </div>
 </section>
