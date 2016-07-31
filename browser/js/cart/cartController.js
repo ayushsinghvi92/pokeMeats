@@ -1,4 +1,4 @@
-app.controller('CartController', function (orderFactory, AuthService, $scope, userFactory) {
+app.controller('CartController', function ($state, orderFactory, AuthService, $scope, userFactory) {
 
     userFactory.getActiveOrder()    
     .then(function (orderProducts){
@@ -7,6 +7,11 @@ app.controller('CartController', function (orderFactory, AuthService, $scope, us
  
     console.log('updated quantity is ', $scope.updatedQuantity)
 
-    $scope.deleteOrderProduct = orderFactory.deleteOrderProduct;
+    $scope.deleteOrderProduct = function (orderId, orderProduct) {
+    	return orderFactory.deleteOrderProduct(orderId, orderProduct)
+    	.then(function () {
+    		$state.go($state.current, {}, {reload:true})
+    	})
+    }
 
 });
