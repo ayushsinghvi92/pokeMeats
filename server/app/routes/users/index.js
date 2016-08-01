@@ -13,7 +13,7 @@ router.param('id', function (req, res, next, id) {
   Users.findById(_id)
   .then(function (user) {
     if (!user) throw new HttpError(404);
-    else req.user = user;
+    else req.requestedUser = user;
     next();
   })
   .catch(next);
@@ -36,7 +36,7 @@ router.post('/', function(req, res, next){
 })
 
 router.put('/:id', function(req, res, next){
-    req.user.update(req.body)
+    req.requestedUser.update(req.body)
     .then(function(user){
         res.json(user);
     })
@@ -46,11 +46,11 @@ router.put('/:id', function(req, res, next){
 
 //test for this route not working
 router.get('/:id', function(req, res) {
-    res.json(req.user)
+    res.json(req.requestedUser)
 })
 
 router.get('/:id/orders', function(req, res, next) {
-    req.user.getOrders()
+    req.requestedUser.getOrders()
     .then(function(orders){
         res.json(orders);
     })
@@ -58,7 +58,7 @@ router.get('/:id/orders', function(req, res, next) {
 })
 
 router.post("/:id/orders", function(req, res, next){
-    req.user.createOrder(req.body)
+    req.requestedUser.createOrder(req.body)
     .then(function(order){
         res.json(order)
     })
