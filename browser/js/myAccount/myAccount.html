@@ -1,25 +1,84 @@
-<section id="userAddresses">
-  <h1>Your Addresses</h1>
-  <div ng-repeat="userAddress in userAddresses">
-    <h3>Address {{userAddress.addressCount+1}}</h3>
-    <form>
-    {{ anything }}
-    {{userAddress.line1}}
-    {{userAddress.line2}}
-    {{userAddress.city}}
-    {{userAddress.state_region}}
-    {{userAddress.country}}
-    {{userAddress.zipcode}}
-    </form>
-  </div>
-</section>
-
-<section id="pastOrders">
-  <h1>Your Orders</h1>
-  <div ng-repeat="userOrder in userOrders">
-    {{userOrder.id}}
-    {{orderProduct in userOrder.order_products}}
+<section>
+  <section id="userAddresses">
+    <h1>Your Addresses</h1>
+    <div ng-repeat="userAddress in userAddresses">
+      <h3>Address {{userAddress.addressCount+1}}</h3>
+      <form>
+      {{userAddress.line1}}
+      {{userAddress.line2}}
+      {{userAddress.city}}
+      {{userAddress.state_region}}
+      {{userAddress.country}}
+      {{userAddress.zipcode}}
+      </form>
     </div>
+  </section>
 
+  <section id="pastOrders">
+  <div ng-repeat="userOrder in userOrders" id="home">
+    <h1>Order #{{ userOrder.id}}</h1>
+      <hr>
+      <div class="row">
+       <div class="clearfix"></div>
+            <div class="col-md-1 col-md-offset-1 col-sm-12">
+               <label>Product Image</label>
+            </div>
+            <div class="col-md-1 col-sm-12">
+               <label>Product Name</label>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <label>Product Description</label>
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <label>Unit Price</label>
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <label>Quantity</label>
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <label>SubTotal</label>
+            </div>
+      </div>
+      <div class="row">
+        <div ng-repeat="userOrderProduct in userOrder.userOrderProducts">
+           <div class="clearfix"></div>
+            <div class="col-md-1 col-md-offset-1 col-sm-12">
+               <img width="100" src="{{ userOrderProduct.photo }}">
+            </div>
+            <div class="col-md-1 col-sm-12">
+               {{userOrderProduct.name}}
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <p>{{userOrderProduct.description | limitTo: 90 }}...</p>
+                <p><a ui-sref="productDetail({id : userOrderProduct.id })" class="btn btn-default" role="button">View Details</a></p>
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <p>${{userOrderProduct.unit_price}}</p>
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <p>{{ userOrderProduct.quantity }} </p>
+            </div>
+            <div class="col-md-1 col-sm-12">
+                ${{ userOrderProduct.line_item_total}}</p>
+            </div>
+          </div>
+        </div>
   </div>
+
+<!--     <h1>Your Orders</h1>
+    <div ng-repeat="userOrder in userOrders">
+      <label> Order #{{userOrder.id}}</label>
+      <div ng-repeat="userOrderProduct in userOrder.userOrderProducts">
+      {{ userOrderProduct.id }}
+      {{ userOrderProduct.name }}
+      <img src="{{ userOrderProduct.photo }}">
+      {{ userOrderProduct.unit_price }}
+      {{ userOrderProduct.quantity }}
+      {{ userOrderProduct.line_item_total }}
+      </div>
+
+    </div> -->
+  </section>
 </section>
+
+
