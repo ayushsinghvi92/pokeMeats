@@ -32,7 +32,6 @@ app.factory('orderFactory', function ($http) {
       .then(function(orderProducts){
         return Promise.all(orderProducts.map(appendDetails))
       })
-
     },
     deleteOrderProduct: function (orderId, product) {
       return $http.delete('/api/orders/'+ orderId + '/product/' + product.id)
