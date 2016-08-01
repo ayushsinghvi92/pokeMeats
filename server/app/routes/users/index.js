@@ -36,19 +36,23 @@ router.post('/', function(req, res, next){
 })
 
 router.put('/:id', function(req, res, next){
+    if (req.body.password) {
+        req.body.salt = Users.generateSalt();
+        req.body.password = User.encryptPassword(req.body.password, req.body.salt);
+    }
     req.requestedUser.update(req.body)
     .then(function(user){
         res.json(user);
     })
     .catch(next);
-
 })
 
 router.delete('/:id', function(req, res, next){
-    req.user.destroy()
+    req.requestedUser.destroy()
     .then(function(res){
-
+        res.sendStatus(204);
     })
+    .catch(next)
 
 
 })
