@@ -2,6 +2,7 @@ app.factory('userFactory', function (AuthService, $http, orderFactory) {
 
 	let getData = (res => res.data);
 	return {
+		// can be logically optimized
 		getActiveOrderId : function () {
 			return AuthService.getLoggedInUser()
 			.then(user=>user.id)

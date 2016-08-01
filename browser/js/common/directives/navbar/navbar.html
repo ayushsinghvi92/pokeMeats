@@ -11,10 +11,6 @@
             <li ng-show="user.isAdmin">
                 <a ui-sref="admin({id: user.id})">{{ admin.label }}</a>
             </li>
-
-            <div class="input-group" id="searchBox">
-                <input type="text" class="form-control" placeholder="Pokemon" ng-model="pokeSearch">
-            </div>
             
         </ul>
         <button ng-show="!user" ui-sref="login" class="btn login-button">Login</button>

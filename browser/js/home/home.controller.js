@@ -1,4 +1,3 @@
-
 app.controller("homeCtrl", function($scope, allProducts, $stateParams){
 	$scope.pokemon = allProducts;
 
@@ -36,6 +35,19 @@ app.controller("homeCtrl", function($scope, allProducts, $stateParams){
 		$scope.filters = [];
 		let buttons = $(".typeIcons button");
 		buttons.css("background-color", "");
+		$scope.toggleOrder("pokeID")
+	}
+
+	$scope.toggleOrder = function(filter) {
+		$scope.pokemon = allProducts.sort(function(a,b){
+			if (filter == "price") {
+				return a.price - b.price
+			}
+			else if (filter == "pokeID") {
+				return a.id - b.id;
+			}
+
+		})
 	}
 });
 
