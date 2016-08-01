@@ -27,6 +27,8 @@ app.controller("homeCtrl", function($scope, ProductFactory, $stateParams, allPro
 	$scope.clearFilters = function () {
 		$scope.pokemon = allProducts;
 		$scope.filters = [];
+		let buttons = $(".typeIcons button");
+		buttons.css("background-color", "");
 	}
 });
 
