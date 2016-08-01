@@ -1,7 +1,6 @@
 app.factory('UserFactory', function($http){
 
   let getData = function(result){
-    console.log(result.data)
     return result.data;
   }
 
