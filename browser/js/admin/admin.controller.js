@@ -1,9 +1,12 @@
-app.controller("adminCtrl", function($scope, theUser, ProductFactory, $state, allProducts, allUsers, userFactory){
-	console.log("in")
+app.controller("adminCtrl", function($scope, theUser, ProductFactory, $state, allProducts, allUsers, userFactory, $log){
 	$scope.isAdmin = theUser.isAdmin;
 	if (theUser.isAdmin) {
-		$scope.products = allProducts;
-		$scope.users = allUsers;
+		$scope.products = allProducts.sort(function(a,b){
+			return a.id - b.id;		
+		});
+		$scope.users = allUsers.sort(function(a,b){
+			return a.id - b.id;
+		});
 	}
 	else {
 		$scope.mssg = "You are not an admin!"
@@ -11,26 +14,29 @@ app.controller("adminCtrl", function($scope, theUser, ProductFactory, $state, al
 	$scope.deleteProduct = function (id) {
 		ProductFactory.destroyProduct(id)
 		.then(function(res){
-			$scope.resetProducts();
+			resetProducts();
 		})
+		.catch($log.error)
 	}
 	$scope.deleteUser = function (id) {
 		userFactory.destroyUser(id)
 		.then(function(res){
-			$scope.resetUsers();
+			resetUsers();
 		})
+		.catch($log.error)
 	}
-	$scope.resetProducts = function () {
+	function resetProducts () {
 		ProductFactory.fetchAll()
 		.then(function(theProducts){
 			$scope.products = theProducts;
 		})
+		.catch($log.error)
 	}
-	$scope.resetUsers = function () {
+	function resetUsers () {
 		userFactory.fetchAll()
 		.then(function(theUsers){
-			console.log(theUsers)
 			$scope.users = theUsers;
 		})
+		.catch($log.error)
 	}
 })

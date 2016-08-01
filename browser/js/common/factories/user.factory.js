@@ -29,6 +29,10 @@ app.factory('userFactory', function (AuthService, $http, orderFactory) {
 		destroyUser: function(id){
 			return $http.delete("/api/users/" + id)
 			.then(getData)
+		},
+		updateUser: function(id, updateObj){
+			return $http.put("/api/users/" + id, updateObj)
+			.then(getData)
 		}
 	}
 

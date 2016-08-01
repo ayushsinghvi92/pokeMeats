@@ -10,7 +10,7 @@
 			<tr ng-repeat="product in products"> 
 				<td>{{product.id}}</td>
 				<td>{{product.name}}</td>
-				<td><button class="btn btn-default" ui-sref="editProduct">Edit</button><button class="btn btn-danger" ng-click="deleteProduct(product.id)">Delete</button></td>
+				<td><button class="btn btn-default" ui-sref="editProduct({id: product.id})">Edit</button><button class="btn btn-danger" ng-click="deleteProduct(product.id)">Delete</button></td>
 			</tr>
 		</table>
 	</div>
@@ -24,7 +24,7 @@
 			<tr ng-repeat="user in users"> 
 				<td>{{user.id}}</td>
 				<td>{{user.first_name}} {{user.last_name }}</td>
-				<td><button class="btn btn-default" ui-sref="editUser">Edit</button><button class="btn btn-danger" ng-click="deleteUser(user.id)">Delete</button></td>
+				<td><button class="btn btn-default" ui-sref="editUsers({id: user.id})">Edit</button><button class="btn btn-danger" ng-click="deleteUser(user.id)">Delete</button></td>
 			</tr>
 		</table>
 	</div>

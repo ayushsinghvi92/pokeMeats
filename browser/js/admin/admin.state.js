@@ -1,12 +1,12 @@
 app.config(function ($stateProvider) {
 
     $stateProvider.state('admin', {
-        url: '/admin/:id',
+        url: '/admin',
         templateUrl: '/js/admin/admin.template.html',
         controller: "adminCtrl",
         resolve: {
-            theUser: function($stateParams, userFactory) {
-                return userFactory.fetchById($stateParams.id)
+            theUser: function(AuthService) {
+                return AuthService.getLoggedInUser();
             },
             allProducts: function(ProductFactory) {
                 return ProductFactory.fetchAll();
@@ -15,11 +15,6 @@ app.config(function ($stateProvider) {
                 return userFactory.fetchAll();
             }
 
-        },
-        // The following data.authenticate is read by an event listener
-        // that controls access to this state. Refer to app.js.
-        data: {
-            authenticate: true
         }
     });
 

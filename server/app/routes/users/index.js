@@ -45,11 +45,8 @@ router.put('/:id', function(req, res, next){
 })
 
 router.delete('/:id', function(req, res, next){
-    req.user.destroy()
-    .then(function(res){
-
-    })
-
+    req.user.destroy();
+    res.json(req.user)
 
 })
 

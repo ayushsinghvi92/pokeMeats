@@ -28,6 +28,27 @@ router.get('/:id', function(req, res, next){
 
 })
 
+router.put('/:id', function(req, res, next){
+	Products.findById(req.params.id) 
+	.then(function(product){
+		return product.update(req.body)
+	})
+	.then(function(updatedProduct){
+		res.json(updatedProduct);
+	})
+	.catch(next)
+
+})
+
+router.put('/:id', function(req, res, next){
+    req.user.update(req.body)
+    .then(function(user){
+        res.json(user);
+    })
+    .catch(next);
+
+})
+
 router.delete('/:id', function(req, res, next){
 	if (isNaN(req.params.id)) res.sendStatus(500);
 	else {
