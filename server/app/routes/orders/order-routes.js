@@ -11,7 +11,7 @@ router.param('id', function (req, res, next, id) {
   .then(function (order) {
     if (!order) throw HttpError(404);
     else {
-	    req.order = order;
+      req.order = order;
     }
 	next();
   })
@@ -25,11 +25,11 @@ function verifyUser (userId, order) {
 	else return false;
 }
 
-router.get('/:id', function (req,res,next){
+router.get('/:id', function (req,res){
   return res.send(req.order)
 })
 
-router.post('/:id', function (req, res, next) {
+router.post('/:id', function (req, res) {
 	let userId = null;
 	if (req.user) {
 		userId = req.user.id;
@@ -43,7 +43,7 @@ router.post('/:id', function (req, res, next) {
 
 })
 
-router.put('/:id', function(req, res, next){
+router.put('/:id', function(req, res){
   let userId = null;
   if (req.user) {
     userId = req.user.id;
@@ -67,7 +67,7 @@ router.put('/:id', function(req, res, next){
   }
 })
 
-router.delete('/:id/product/:productId', function(req, res, next){
+router.delete('/:id/product/:productId', function(req, res){
   let userId = null;
   console.log('this is the hot req.body', req.body)
   if (req.user) {

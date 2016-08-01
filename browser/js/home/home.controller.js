@@ -1,7 +1,14 @@
-app.controller("homeCtrl", function($scope, ProductFactory, $stateParams, allProducts){
 
-
+app.controller("homeCtrl", function($scope, allProducts, $stateParams){
 	$scope.pokemon = allProducts;
+
+
+	// if ($stateParams.tag.length) {
+	// 	$scope.pokemon = $scope.pokemon.filter(function(pokemon){
+	// 		return pokemon.tags.includes($stateParams.tag)
+	// 	})
+	// }
+
 	$scope.filters = [];
 	$scope.isSelected = false;
 	$scope.toggleFilter = function (type) {

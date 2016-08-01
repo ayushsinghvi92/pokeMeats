@@ -1,12 +1,12 @@
 app.config(function ($stateProvider) {
     $stateProvider.state('home', {
-        url: '/:tag',
+        url: '/',
         templateUrl: 'js/home/home.html',
         controller: 'homeCtrl',
         resolve: {
-        	allProducts: function(ProductFactory) {
-        		return ProductFactory.fetchAll();
-        	}
+            allProducts : function (ProductFactory) {
+                return ProductFactory.fetchAll();
+            }
         }
     });
 });
