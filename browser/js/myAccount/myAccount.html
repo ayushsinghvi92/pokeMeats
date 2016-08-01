@@ -1,0 +1,22 @@
+<section id="userAddresses">
+  <h1>Your Addresses</h1>
+  <div ng-repeat="userAddress in userAddresses">
+    <h3>Address {{userAddress.addressCount+1}}</h3>
+    <form>
+    {{ anything }}
+    {{userAddress.line1}}
+    {{userAddress.line2}}
+    {{userAddress.city}}
+    {{userAddress.state_region}}
+    {{userAddress.country}}
+    {{userAddress.zipcode}}
+    </form>
+  </div>
+</section>
+
+<section id="pastOrders">
+  <h1>Your Orders</h1>
+  <div ng-repeat="userOrder in userOrders">
+    {{userOrder.id}}
+  </div>
+</section>

@@ -7,8 +7,6 @@ app.controller('CartController', function ($scope, orderFactory) {
       $scope.orderProducts = orderProducts;
     })
 
-    console.log('updated quantity is ', $scope.updatedQuantity)
-
     $scope.deleteOrderProduct = orderFactory.deleteOrderProduct;
 
 });

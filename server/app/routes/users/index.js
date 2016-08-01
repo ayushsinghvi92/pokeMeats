@@ -3,6 +3,7 @@ let router = require('express').Router();
 const db = require('../../../db')
 const Users = db.model('user');
 const Order = db.model('orders');
+const Address = db.model('address');
 const HttpError = require("../HttpError")
 module.exports = router;
 var _ = require('lodash');
@@ -44,7 +45,6 @@ router.put('/:id', function(req, res, next){
 
 })
 
-//test for this route not working
 router.get('/:id', function(req, res, next) {
     res.json(req.user);
 })
@@ -72,7 +72,36 @@ router.delete("/:id/orders/:orderId", function(req, res, next){
    .catch(next);
 })
 
+router.get('/:id/addresses', function(req, res, next){
+    Address.findAll({
+        where: {
+            userId: req.user.id
+        }
+    })
+    .then(addresses => {
+        res.json(addresses)})
+    .catch(next)
+});
 
+router.post('/:id/addresses', function(req, res, next){
+    req.user.createAddress(req.body)
+    .then(address => res.json(address))
+    .catch(next);
+});
+
+router.put('/:id/addresses/:addressId', function(req, res, next){
+    Address.findById(req.params.addressId)
+    .then(address => address.update(req.body))
+    .then(updatedAddress => res.json(updatedAddress))
+    .catch(next);
+});
+
+router.delete('/:id/addresses/:addressId', function(req, res, next){
+    Address.findById(req.params.addressId)
+    .then(address => address.destroy())
+    .then(destroyedAddressId => res.json(destroyedAddressId))
+    .catch(next);
+})
 
 var ensureAuthenticated = function (req, res, next) {
     if (req.isAuthenticated()) {
