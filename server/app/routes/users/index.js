@@ -44,7 +44,15 @@ router.put('/:id', function(req, res, next){
 
 })
 
-//test for this route not working
+router.delete('/:id', function(req, res, next){
+    req.user.destroy()
+    .then(function(res){
+
+    })
+
+
+})
+
 router.get('/:id', function(req, res) {
     res.json(req.requestedUser)
 })

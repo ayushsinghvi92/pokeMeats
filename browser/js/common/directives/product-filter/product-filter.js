@@ -4,7 +4,8 @@ app.directive('productfilter', function () {
         templateUrl: 'js/common/directives/product-filter/pokemonTypes.html',
         scope: {
         	toggleFilter: "&",
-   			clearFilters: "&"
+   			clearFilters: "&",
+   			
         }
 
     };

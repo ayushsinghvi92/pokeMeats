@@ -17,6 +17,18 @@ app.factory('userFactory', function (AuthService, $http, orderFactory) {
 		getActiveOrder : function () {  
 			return this.getActiveOrderId()
 			.then(orderFactory.getAllOrderProducts)
+		},
+		fetchAll: function(){
+			return $http.get("/api/users")
+			.then(getData)
+		},
+		fetchById: function (id) {
+			return $http.get("/api/users/" + id)
+			.then(getData);
+		},
+		destroyUser: function(id){
+			return $http.delete("/api/users/" + id)
+			.then(getData)
 		}
 	}
 
