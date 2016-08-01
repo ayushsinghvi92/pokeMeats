@@ -45,8 +45,8 @@ router.put('/:id', function(req, res, next){
 })
 
 //test for this route not working
-router.get('/:id', function(req, res, next) {
-    res.json(req.user);
+router.get('/:id', function(req, res) {
+    res.json(req.user)
 })
 
 router.get('/:id/orders', function(req, res, next) {
