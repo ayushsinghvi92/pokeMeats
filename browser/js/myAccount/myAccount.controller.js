@@ -1,6 +1,5 @@
 app.controller('MyAccountController', function ($scope, UserFactory, AuthService, orderFactory) {
     AuthService.getLoggedInUser().then(function (user) {
-      console.log($scope.user, 'scopeuserrrr');
         $scope.user = user;
     });
 

@@ -19,7 +19,7 @@ module.exports = db.define('order_products', {
             return (this.unit_price * this.quantity)/100;
         }
     },
-    hooks : {
+    hooks: {
         afterCreate : function(order_products){
             var holderVar;
             order_products.getOrder()

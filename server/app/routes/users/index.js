@@ -51,7 +51,7 @@ router.get('/:id', function(req, res, next) {
 })
 
 router.get('/:id/orders', function(req, res, next) {
-    req.user.getOrders({include: [OrderProducts]}) // needed for myAccount stuff. May make other things easier too.
+    req.user.getOrders()
     .then(function(orders){
         res.json(orders);
     })
