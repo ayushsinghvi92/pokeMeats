@@ -1,27 +1,27 @@
-app.controller("homeCtrl", function($scope, ProductFactory, $stateParams){
+app.controller("homeCtrl", function($scope, ProductFactory, $stateParams, allProducts){
 
 
-	ProductFactory.fetchAll()
-	.then(function (pokemon) {
-		$scope.pokemon = pokemon;
-	})
-
-	if ($stateParams.tag.length) {
-		$scope.pokemon = $scope.pokemon.filter(function(pokemon){
-			return pokemon.tags.includes($stateParams.tag)
-		})
-	}
-
+	$scope.pokemon = allProducts;
 	$scope.filters = [];
 	$scope.isSelected = false;
-	$scope.toggleFilter = function (type, event) {
-		console.log(event)
-		$scope.isSelected = !$scope.isSelected;
-		$scope.filters.push(type);
+	$scope.toggleFilter = function (type) {
+		let ind = $scope.filters.indexOf(type);
+		if (ind == -1) {
+			$scope.filters.push(type);
+		}
+		else {
+			$scope.filters.splice(ind, 1)
+		}
+		if ($scope.filters.length) {
+			$scope.pokemon = allProducts.filter(function(pokemon){
+				return $scope.filters.includes(pokemon.type);
+			})
+		}
+		else {
+			$scope.pokemon = allProducts;
+		}
 
-		$scope.pokemon = allProducts.filter(function(pokemon){
-			return $scope.filters.includes(pokemon.type);
-		})
+
 	}
 
 	$scope.clearFilters = function () {

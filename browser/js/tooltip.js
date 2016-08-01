@@ -8,7 +8,7 @@ $(document).ready(function() {
         $('<p class="tooltip"></p>')
         .text(title)
         .appendTo('body')
-        .fadeIn('fast');
+
     }, function() {
         // Hover out code
         $(this).attr('title', $(this).data('tipText'));
@@ -20,5 +20,18 @@ $(document).ready(function() {
         .css({ top: mousey, left: mousex })
 
     })
-})
 
+})
+var gate = 0;
+function toggleColor(type) {
+    console.log("update")
+    var button = $("button#" + type);
+    if (gate == 0) {
+        button.css("background-color", "#2f4f4f");
+        gate = 1;
+    }
+    else {
+        button.css("background-color", "");
+        gate = 0;
+    }
+}

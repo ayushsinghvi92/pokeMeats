@@ -3,10 +3,16 @@
         <div class="navbar-header">
             <pokemeat-logo></pokemeat-logo>
         </div>
+        <br>
         <ul class="nav navbar-nav">
             <li ng-repeat="item in items" ng-show="!item.auth || isLoggedIn()">
                 <a ui-sref-active="active" ui-sref="{{ item.state }}">{{ item.label }}</a>
             </li>
+            <li></li>
+            <div class="input-group" id="searchBox">
+                <input type="text" class="form-control" placeholder="Pokemon" ng-model="pokeSearch">
+            </div>
+            
         </ul>
         <button ng-show="!user" ui-sref="login" class="btn login-button">Login</button>
         <div ng-show="user" class="welcome">
@@ -14,4 +20,5 @@
             <a ng-click="logout()">Logout</a>
         </div>
     </div>
+
 </nav>
