@@ -41,7 +41,7 @@ module.exports = db.define('orders', {
             return this.addProduct(productToAdd.id, {
              unit_price : productToAdd.price,
              quantity : quantity })
-            .then(function(res){
+            .then(function(){
                 return OrderProducts.findAll({
                     where : {
                         productId : productToAdd.id
