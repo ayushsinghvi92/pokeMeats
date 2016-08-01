@@ -18,6 +18,18 @@ app.factory('userFactory', function (AuthService, $http, orderFactory) {
 			return this.getActiveOrderId()
 			.then(orderFactory.getAllOrderProducts)
 		},
+    createUserAddress: function(userId, address){
+      return $http.post('/api/users/'+ userId + '/addresses', address)
+      .then(getData);
+    },
+    updateUserAddress: function(userId, address, addressId){
+      return $http.put('/api/users/'+ userId + '/addresses/' + addressId, address)
+      .then(getData);
+    },
+    deleteUserAddress: function(userId, addressId){
+      return $http.delete('/api/users/'+ userId + '/addresses/' + addressId)
+      .then(getData);
+    },
     fetchAllUserAddresses: function(userId){
       return $http.get('/api/users/'+ userId +'/addresses')
       .then(getData);

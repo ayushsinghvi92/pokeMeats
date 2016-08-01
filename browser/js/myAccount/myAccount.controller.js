@@ -1,20 +1,40 @@
-app.controller('MyAccountController', function ($scope, userFactory, AuthService, orderFactory) {
-    AuthService.getLoggedInUser().then(function (user) {
-        $scope.user = user;
-    });
+app.controller('MyAccountController', function ($scope, userFactory, AuthService, orderFactory, $state, user) {
 
-    userFactory.fetchAllUserAddresses(5) //don't forget to change this
+    var redirectAfterFunc = function () {
+        return $state.go($state.current, {}, {reload:true})
+      };
+
+    $scope.user = user;
+    $scope.showForm = false;
+
+    userFactory.fetchAllUserAddresses($scope.user.id)
     .then(function(userAddresses){
+      console.log('user is', $scope.user)
       $scope.userAddresses = userAddresses;
     })
 
-    userFactory.fetchAllUserOrders(5) // don't forget to change this - only orderId 1 has order Products, and orderId 1 belongs to userId 5
+    userFactory.fetchAllUserOrders($scope.user.id)
     .then(function(userOrders){
-      console.log(userOrders)
       $scope.userOrders = userOrders;
-      //this is almost working - need to figure out how to best get to Product details
     })
 
-    $scope.addressCount = 0
+    $scope.createAddress = function(form){
+      return userFactory.createUserAddress($scope.user.id, form)
+      .then(redirectAfterFunc);
+    }
+
+    $scope.updateAddress = function(form, addressId){
+      return userFactory.updateUserAddress($scope.user.id, form, addressId)
+      .then(redirectAfterFunc);
+    }
+
+    $scope.deleteAddress = function(addressId){
+      return userFactory.deleteUserAddress($scope.user.id, addressId)
+      .then(redirectAfterFunc);
+    }
+
+    $scope.toggleShowForm = function(){
+      $scope.showForm = !$scope.showForm;
+    }
 });
 
