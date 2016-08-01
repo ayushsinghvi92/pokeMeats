@@ -4,6 +4,7 @@ const db = require('../../../db')
 const Users = db.model('user');
 const Order = db.model('orders');
 const Address = db.model('address');
+const OrderProducts = db.model('order_products');
 const HttpError = require("../HttpError")
 module.exports = router;
 var _ = require('lodash');
@@ -50,7 +51,7 @@ router.get('/:id', function(req, res, next) {
 })
 
 router.get('/:id/orders', function(req, res, next) {
-    req.user.getOrders()
+    req.user.getOrders({include: [OrderProducts]}) // needed for myAccount stuff. May make other things easier too.
     .then(function(orders){
         res.json(orders);
     })

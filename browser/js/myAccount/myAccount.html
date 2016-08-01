@@ -18,5 +18,9 @@
   <h1>Your Orders</h1>
   <div ng-repeat="userOrder in userOrders">
     {{userOrder.id}}
+    <div ng-repeat="orderProduct in userOrder.order_products">
+      {{orderProduct.name}}
+    </div>
+
   </div>
 </section>

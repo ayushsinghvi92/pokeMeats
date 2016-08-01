@@ -4,16 +4,16 @@ app.controller('MyAccountController', function ($scope, UserFactory, AuthService
         $scope.user = user;
     });
 
-
-    UserFactory.fetchAllUserAddresses(1) //don't forget to chagne this
+    UserFactory.fetchAllUserAddresses(5) //don't forget to change this
     .then(function(userAddresses){
       $scope.userAddresses = userAddresses;
     })
 
-    UserFactory.fetchAllUserOrders(1)
+    UserFactory.fetchAllUserOrders(5) // don't forget to change this - only orderId 1 has order Products, and orderId 1 belongs to userId 5
     .then(function(userOrders){
       $scope.userOrders = userOrders;
-      //NEED TO THINK ABOUT HOW TO GET ALL ORDERPRODUCTS FOR THE RETURNED ARRAY OF ORDERS. PROMISE.ALL
+      $scope.userOrderProducts = userOrders.order_products;
+      //this is almost working - figure out why order_products isn't iterable.
     })
 
     $scope.addressCount = 0
