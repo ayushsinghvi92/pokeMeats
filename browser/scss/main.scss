@@ -4,8 +4,26 @@
 
 productfilter {
   position: fixed;
+  display: "block";
 }
 
+#searchBox {
+  padding-left: 15px;
+  padding-top: 10px; 
+}
+
+navbar {
+  position: fixed;
+  width: 100%;
+  display: "block"; 
+  z-index: 9
+}
+
+#home {
+  padding-top: 120px;
+  padding-right: 20px;
+
+}
 
 .tooltip {
   display:none;
