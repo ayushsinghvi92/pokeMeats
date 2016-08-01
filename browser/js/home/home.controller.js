@@ -1,10 +1,6 @@
-app.controller("homeCtrl", function($scope, ProductFactory, $stateParams){
+app.controller("homeCtrl", function($scope, allProducts, $stateParams){
 
-
-	ProductFactory.fetchAll()
-	.then(function (pokemon) {
-		$scope.pokemon = pokemon;
-	})
+	$scope.pokemon = allProducts;
 
 	if ($stateParams.tag.length) {
 		$scope.pokemon = $scope.pokemon.filter(function(pokemon){
