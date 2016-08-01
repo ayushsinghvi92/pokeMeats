@@ -9,10 +9,6 @@ app.config(function ($stateProvider) {
 });
 
 app.controller('LoginCtrl', function ($scope, AuthService, $state) {
-
-    $scope.login = {};
-    $scope.error = null;
-
     $scope.sendLogin = function (loginInfo) {
 
         $scope.error = null;
@@ -22,5 +18,6 @@ app.controller('LoginCtrl', function ($scope, AuthService, $state) {
         }).catch(function () {
             $scope.error = 'Invalid login credentials.';
         });
+
     };
 });
