@@ -14,6 +14,10 @@ app.factory("ProductFactory", function($http){
 		destroyProduct: function(id) {
 			return $http.delete("/api/products/" + id)
 			.then(getData);
+		},
+		updateProduct: function(id, updateObj) {
+			return $http.put("/api/products/" + id, updateObj)
+			.then(getData);
 		}
 	}
 })

@@ -53,8 +53,6 @@ router.delete('/:id', function(req, res, next){
         res.sendStatus(204);
     })
     .catch(next)
-
-
 })
 
 router.get('/:id', function(req, res) {
