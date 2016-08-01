@@ -1,16 +1,16 @@
 [{
-    "name": "Bulbasaur Shoulder",
+    "name": "Bulbasaur Bulb!",
     "type": "grass",
     "price": 33.33,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Bulbasaur resembles a small, squatting dinosaur that walks on four legs and has a large bulb on its back that it is able to shoot seeds out of. It also has large, red eyes and very sharp teeth. Its skin is a light, turquoise color with dark, green spots. It has three claws on all four of his legs. Its most notable feature, however, is the aforementioned bulb on its back, which as the Pokédex states, was planted on it at birth.",
     "photo": "/001%20Bulbasaur.ico",
     "inventoryAmount": 10,
-    "tags": ["#grass", "#Shoulder"]
+    "tags": ["#grass", "#Bulb"]
 }, {
     "name": "Ivysaur Ears",
     "type": "grass",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Ivysaur's appearance is very similar to that of its pre-evolved form, Bulbasaur. It still retains the turquoise skin and spots, along with its red eyes. Ivysaur's top fangs are now larger and are visible outside of the mouth. Also, its ears are now darkened to black in the center. The most notable change is that the bulb is starting to bloom, with pink petals visible, and large leaves on the bottom.",
     "photo": "/002%20Ivysaur.ico",
     "inventoryAmount": 10,
     "tags": ["#grass", "#Ears"]
@@ -18,7 +18,7 @@
     "name": "Venusaur Shoulder",
     "type": "grass",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Venusaur is a large, dinosaur-like Pokémon that is somewhat similar in appearance to its pre-evolved forms, Ivysaur and Bulbasaur. Its skin still retains a light turquoise color, but it no longer has the spots, and it appears more rough and scaly, with bumps here and there. The former bulb on its back has now fully bloomed into a gigantic flower and its ears have lightened up as well. ",
     "photo": "/003%20Venusaur.ico",
     "inventoryAmount": 10,
     "tags": ["#grass", "#Shoulder"]
@@ -26,7 +26,7 @@
     "name": "Charmander Bacon",
     "type": "fire",
     "price": 33.33,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Charmander is a small, bipedal, dinosaur-like Pokémon. Most of its body is colored orange, while its underbelly is a light yellow color. Charmander, along with all of its evolved forms, has a flame that is constantly burning on the end of their tails.",
     "photo": "/004%20Charmander.ico",
     "inventoryAmount": 10,
     "tags": ["#fire", "#Bacon"]
@@ -34,7 +34,7 @@
     "name": "Charmeleon Feet",
     "type": "fire",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Charmeleon is a small, bipedal, dinosaur-like Pokémon with an appearance similar to that of its pre-evolved form, Charmander. Charmeleon differs from Charmander in that it has a much darker red skin color, a larger body structure, claws, and a horn-like protrusion on the back of its head, similar to that of an ornithopod's. Its claws are razor sharp and its tail is very strong.",
     "photo": "/005%20Charmeleon.ico",
     "inventoryAmount": 10,
     "tags": ["#fire", "#Feet"]
@@ -42,7 +42,7 @@
     "name": "Charizard Liver",
     "type": "fire",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Charizard is a large, dragon-like Pokémon that differs greatly from its pre-evolved form. The red skin color of Charmeleon is no longer apparent, as Charizard appears to have reverted back to the orange/yellow color of Charmander. The single horn that was on the back of its head is now two, one on either side. The most notable difference between Charizard and its pre-evolved forms are the large wings that have developed on its back, which gives Charizard the capability of flying.",
     "photo": "/006%20Charizard.ico",
     "inventoryAmount": 10,
     "tags": ["#fire", "#Liver"]
@@ -50,7 +50,7 @@
     "name": "Squirtle Brain",
     "type": "water",
     "price": 33.33,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Squirtle is a small, light-blue Pokémon with an appearance similar to that of a turtle. Like turtles, Squirtle has a shell that covers its body with holes that allow its limbs, tail, and head to be exposed. Unlike a turtle, Squirtle is ordinarily bipedal.",
     "photo": "/007%20Squirtle.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Brain"]
@@ -58,7 +58,7 @@
     "name": "Wartortle Tail",
     "type": "water",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Wartortle are small, bipedal, turtle-like Pokémon with a similar appearance to that of their pre-evolved form, Squirtle. Some differences are that Wartortle have developed sharper and larger claws and teeth. Their tails are larger and fluffier than Squirtle's and Wartortle have developed large furry ears. Like its pre evolved form it can also use its shell to protect itself.",
     "photo": "/008%20Wartortle.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Tail"]
@@ -66,7 +66,7 @@
     "name": "Blastoise Tongue",
     "type": "water",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Blastoise are a large tortoise-like Pokémon with some features similar to those of its pre-evolved forms. Blastoise has a large blue body, cream-colored stomach, small fat arms and legs, and a large brown shell rimmed with white, featuring its water cannons. It is now noticeably bulkier than its previous evolutions. Like its pre-evolved forms, Blastoise has a shell which covers its entire body, which it can also be withdrawn into. Contrary to Squirtle and Wartortle, Blastoise has large, water cannons that are located on the top left and right sides. The water that comes out of the cannons is capable of punching holes through thick steel.",
     "photo": "/009%20Blastoise.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Tongue"]
@@ -74,23 +74,23 @@
     "name": "Caterpie Liver",
     "type": "bug",
     "price": 6.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Caterpie is a worm-like Pokémon that is mainly green in color with a tan underside. Just below its head are four tiny legs that are used only for movement. On top of its head is a red, y-shaped antenna, which can be used to produce an odor used in self-defense, in case something tries to hurt it.",
     "photo": "/010%20Caterpie.ico",
     "inventoryAmount": 10,
     "tags": ["#bug", "#Liver"]
 }, {
-    "name": "Butterfree Ears",
+    "name": "Butterfree Wings",
     "type": "bug",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Butterfree is an insect-like Pokémon appearing as a large butterfly. Butterfree has a large purple body with light blue limbs and a nose with very small fangs. Its eyes are quite large in proportion to its head and are a red color. Butterfree's large wings simply appear as black and white butterfly wings. The gender difference is the female has purple on the bottom of its wings and the male doesn't. ",
     "photo": "/012%20Butterfree.ico",
     "inventoryAmount": 10,
-    "tags": ["#bug", "#Ears"]
+    "tags": ["#bug", "#Wings"]
 }, {
     "name": "Weedle Brain",
     "type": "bug",
     "price": 6.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Weedle is a small insect-like Pokémon appearing as a brown caterpillar with large stingers on both its tail and head. Across Weedle's underside are small, pink nubs which it uses to move. On its head, Weedle has two beady black eyes above a large pink nose.",
     "photo": "/013%20Weedle.ico",
     "inventoryAmount": 10,
     "tags": ["#bug", "#Brain"]
@@ -98,7 +98,7 @@
     "name": "Pidgey Tail",
     "type": "normal",
     "price": 6.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Pidgey resembles a small, plump-bodied bird. It is brown in color, with a cream-colored throat and belly. The tips of its wings share the same color. Both its feet and beak are a pinkish-gray color. Its plumage is fairly nondescript, particularly compared to its evolutions, Pidgeotto and Pidgeot. It has black markings around its eyes and a small crest of brown and cream feathers above its eyes. It resembles other small flying-type Pokémon, such as Starly, Taillow, and Spearow. However, due to the fact that these Pokémon tend to be unique to a region, with the exception of Spearow, it is likely that they are a result of convergent evolution.",
     "photo": "/016%20Pidgey.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Tail"]
@@ -106,23 +106,23 @@
     "name": "Pidgeotto Sausage",
     "type": "normal",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Pidgeotto resembles a small bird and is brightly colored with red and yellow feathers. Due to similarities between Pidgeotto and its evolved form, Pidgeot, many players often get the two confused. Its beak and claws are as sharp as its eyesight.",
     "photo": "/017%20Pidgeotto.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Sausage"]
 }, {
-    "name": "Pidgeot Tongue",
+    "name": "Pidgeot Wings",
     "type": "normal",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Pidgeot resembles a large, feathery bird with huge wings. It has brightly colored feathers on its body and head like the shape of a flare of fire. It is easily confused with Pidgeotto, because the only difference without a relative size comparison is that Pigeot's tail and head hair coloring switch from those of Pidgeotto's.",
     "photo": "/018%20Pidgeot.ico",
     "inventoryAmount": 10,
-    "tags": ["#normal", "#Tongue"]
+    "tags": ["#normal", "#Wings"]
 }, {
     "name": "Rattata Liver",
     "type": "normal",
     "price": 5,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Rattata is mouse-like, with large incisors and a whisker on both sides. Female Rattata have shorter whiskers than the males. The fur is purple, with a white or cream colored underside. Rattata have red eyes, with no obvious pupils. The tail is long, and curled slightly at the tip. Rattata have three-toed paws, which are the same color as its underbelly.",
     "photo": "/019%20Rattata.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Liver"]
@@ -130,7 +130,7 @@
     "name": "Raticate Sausage",
     "type": "normal",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Compared to Rattata, Raticate is far more of a predator, and the majority of its features are adapted for this purpose. Its most notable feature are its large teeth; like most rodents, Raticate's teeth grow continuously throughout its life, and must be constantly worn down by gnawing. It is also known that Raticate's fangs are tough enough to break through concrete. It has long whiskers and a long tail. Raticate looks like a rat, just like Rattata. Raticate tends to stand on its hind legs, as opposed to its pre-evolution.",
     "photo": "/020%20Raticate.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Sausage"]
@@ -138,7 +138,7 @@
     "name": "Spearow Shoulder",
     "type": "normal",
     "price": 10,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Spearow are an avian species of Pokémon characterized by its short stature, brown body, and pale red wings. Its underbelly is beige while possessing a dark brown plumage on its head. Spearow's rear is black and its tail feathers are a shade of brown. Like all birds, it is equipped with talons used for manipulating objects or self-defense.",
     "photo": "/021%20Spearow.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Shoulder"]
@@ -146,7 +146,7 @@
     "name": "Fearow Tail",
     "type": "normal",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Fearow is a large, mostly brown bird Pokémon with a vulturine neck and broad, powerful wings. It has a large wingspan, an elongated neck, and a thin, long beak: all characteristics being a radical departure from its short-winged, stubby-beaked pre-evolved form, Spearow.",
     "photo": "/022%20Fearow.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Tail"]
@@ -154,23 +154,23 @@
     "name": "Ekans Tail",
     "type": "poison",
     "price": 6.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Ekans is a snake-like Pokémon with purple and yellow coloring. Its underside leading to its tail is yellow, and it has a yellow rattle at the tip of its tail. Ekans have large yellow eyes with slit reptilian pupils. Across its neck is a large yellow band.",
     "photo": "/023%20Ekans.ico",
     "inventoryAmount": 10,
     "tags": ["#poison", "#Tail"]
 }, {
-    "name": "Arbok Feet",
+    "name": "Arbok Eyes",
     "type": "poison",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "She bears a resemblance to a cobra, with the majority of her body being purple. Arbok has a hood much like a cobra, though it has never been shown to be able to retract her. There is a red, black and yellow pattern on her hood that looks somewhat like an angry face to intimidate other Pokémon. She is known that they are six different patterns on Arbok, each one appearing in a different generation ",
     "photo": "/024%20Arbok.ico",
     "inventoryAmount": 10,
-    "tags": ["#poison", "#Feet"]
+    "tags": ["#poison", "#Eyes"]
 }, {
     "name": "Pikachu Tail",
     "type": "electric",
     "price": 500,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Pikachu are small, chubby, and incredibly cute mouse-like Pokémon. They are almost completely covered by yellow fur. They have long yellow ears that are tipped with black. A Pikachu's back has two brown stripes, and its large tail is notable for being shaped like a lightning bolt. On its cheeks are two circle-shaped red pouches used for storing electricity. They turn yellow and spark with electricity when its about to use an Electric attack such as Thunderbolt. It has also been known to generate small surges of electrical energy in anger or for protection. A female Pikachu looks almost exactly the same as a male, with the exception of her tail. A female Pikachu's tail is rounded at the end and has an inward dent, giving it the appearance of a heart. However, in earlier anime episodes and in the games prior to Generation IV, female and male Pikachus look identical. When several of these Pokémon gather, their electricity can cause lightening storms.",
     "photo": "/025%20Pikachu.ico",
     "inventoryAmount": 10,
     "tags": ["#electric", "#Tail"]
@@ -178,7 +178,7 @@
     "name": "Raichu Tongue",
     "type": "electric",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Raichu is a rodent-like Pokémon, similar to its previous evolution forms. Unlike Pichu or Pikachu, which both have yellow fur, Raichu has orange-brown fur. It has long ears and feet, but has stubby arms with no noticeable fingers. Additionally, its electrical sacs are yellow, unlike its previous form's red coloring. It has a plump white belly, the tips of its arms and toes are brown. The soles of its feet are tan-colored and the paw pads on the undersides are yellowish orange. Raichu also have a long, thin, black tail that ends in a large lightning bolt shape. Male Raichu have larger lightning bolt tails than females. They are also bigger than their previous evolved forms.",
     "photo": "/026%20Raichu.ico",
     "inventoryAmount": 10,
     "tags": ["#electric", "#Tongue"]
@@ -186,7 +186,7 @@
     "name": "Sandshrew Sausage",
     "type": "ground",
     "price": 10,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Sandshrew has a white belly and a yellow back. Its back resembles bricked pavement or walls. It has a short tail, four, short legs, and a small head. Sandshrew resembles an armadillo, and can curl into a very tight ball: about the size of a basketball.",
     "photo": "/027%20Sandshrew.ico",
     "inventoryAmount": 10,
     "tags": ["#ground", "#Sausage"]
@@ -194,7 +194,7 @@
     "name": "Sandslash Feet",
     "type": "ground",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Sandslash is a tall, yellow, mammalian creature with brown spikes on its back. It has two very long claws on each hand used for digging and battling. Sandslash can curl up to a small size just like its pre-evolved form Sandshrew, but it is of a much larger stature which enhances its defense.",
     "photo": "/028%20Sandslash.ico",
     "inventoryAmount": 10,
     "tags": ["#ground", "#Feet"]
@@ -202,7 +202,7 @@
     "name": "Nidoran Liver",
     "type": "poison",
     "price": 6.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Nidoran♀ is a small, rabbit-shaped Pokémon with large whiskers and front teeth, it is said to resemble Nidoran♂, but is lavender-bluish and has a much smaller horn on its head. It has darker spots on its body.",
     "photo": "/029%20NidoranF.ico",
     "inventoryAmount": 10,
     "tags": ["#poison", "#Liver"]
@@ -210,7 +210,7 @@
     "name": "Nidoqueen Tongue",
     "type": "poison",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Nidoqueen is a large, powerful, bipedal Pokémon. They have thick yellow armor plates all over them. Its horn is smaller than Nidoking's, but it's still strong and produces large quantities of concentrated venom. Nidoqueen can use powerful moves such as Body Slam to paralyze its foes and then finish them off with Mega Punch or Iron Tail.",
     "photo": "/031%20Nidoqueen.ico",
     "inventoryAmount": 10,
     "tags": ["#poison", "#Tongue"]
@@ -218,23 +218,23 @@
     "name": "Nidoran Bacon",
     "type": "poison",
     "price": 6.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Nidoran♂ is a small, rabbit-based Pokémon with large ears, whiskers and front teeth. They are covered with spines, primarily on their back, which can release potent poisons if Nidoran♂ is threatened. Nidoran♂ have a larger forehead horn than their female counterparts, Nidoran♀. It has darker spots all over its body.",
     "photo": "/032%20NidoranM.ico",
     "inventoryAmount": 10,
     "tags": ["#poison", "#Bacon"]
 }, {
-    "name": "Nidoking Sausage",
+    "name": "Nidoking Horn",
     "type": "poison",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Nidoking is a large purple Pokémon with a very large horn and large ears. It has a large bulky tail and it has one toed feet and three fingered hands.",
     "photo": "/034%20Nidoking.ico",
     "inventoryAmount": 10,
-    "tags": ["#poison", "#Sausage"]
+    "tags": ["#poison", "#Horn"]
 }, {
     "name": "Ninetales Brain",
     "type": "fire",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Ninetales is a fox-like Pokémon that possesses nine tails, hence its name. Resembling the nine-tailed kitsune fox of Japanese folklore, they are mainly covered in sleek, luxurious golden-white fur, while the tips of their nine tails are orange. On top of their head is a large tuft of hair, similar to its pre-evolved form though much more unruly and spiky. It has sinister red eyes which give it the ability to psychically control the minds of people and Pokémon. Its ears are pointed and distinctly fox-like, and it has slender legs with three-toed paws and no visible claws. Additionally, there are no gender differences between male and female Ninetales. The shiny version of Ninetales has silver-gray fur instead of its usual light cream fur, and its tail is tipped in blue.",
     "photo": "/038%20Ninetales.ico",
     "inventoryAmount": 10,
     "tags": ["#fire", "#Brain"]
@@ -242,7 +242,7 @@
     "name": "Zubat Belly",
     "type": "poison",
     "price": 6.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Zubat resembles a blue bat. It has a short, round body, purple wings, and slim legs missing feet. Zubat has no eyes, so it uses sound waves to navigate, like a real bat does. A female Zubat has smaller teeth than those of a male's. Strangely, it can use the move Mean Look, despite not having any eyes.",
     "photo": "/041%20Zubat.ico",
     "inventoryAmount": 10,
     "tags": ["#poison", "#Belly"]
@@ -250,23 +250,23 @@
     "name": "Golbat Tongue",
     "type": "poison",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Golbat is a large blue bat with super long wings. Unlike its pre-evolved form, Golbat has eyes. A female Golbat has smaller teeth than those of a male. It also has two long skinny feet. The most distinct feature of Golbat is its large mouth with four teeth.",
     "photo": "/042%20Golbat.ico",
     "inventoryAmount": 10,
     "tags": ["#poison", "#Tongue"]
 }, {
-    "name": "Paras Ears",
+    "name": "Paras Shell",
     "type": "bug",
     "price": 6.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Paras is very crablike, as it has six legs. The front two legs are very large, allowing Paras to grip on to prey and its environment. The most distinct feature are the two mushrooms on its back. It also has very large eyes on the top of its head.",
     "photo": "/046%20Paras.ico",
     "inventoryAmount": 10,
-    "tags": ["#bug", "#Ears"]
+    "tags": ["#bug", "#Shell"]
 }, {
     "name": "Parasect Bacon",
     "type": "bug",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Parasect, like its pre-evolution Paras, is a crab-like Pokémon. Parasect has a large, red, orange-spotted mushroom on its back and six legs. Parasect's two front legs are larger than its other four, which are used to grip its prey.",
     "photo": "/047%20Parasect.ico",
     "inventoryAmount": 10,
     "tags": ["#bug", "#Bacon"]
@@ -274,7 +274,7 @@
     "name": "Venonat Liver",
     "type": "bug",
     "price": 12.5,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Venonat is covered with large purple fur. The feet of Venonat are brown and are about half as long as Venonat itself. Venonat have two white antennae that stick out of their head. The most notable feature of Venonat is their large red eyes. It also has a small nose just under its eyes.",
     "photo": "/048%20Venonat.ico",
     "inventoryAmount": 10,
     "tags": ["#bug", "#Liver"]
@@ -282,23 +282,23 @@
     "name": "Venomoth Sausage",
     "type": "bug",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Venomoth is a purple moth Pokémon. The eyes of Venomoth are black and much smaller than its pre-evolved form. Venomoth has two white fangs protruding from its mouthpart. Venomoth has head, thorax, and abdomen, unlike some other Bug Pokémon. The wings of Venomoth are larger than its body, with the top sections of its wings being much larger than the bottoms. Its shiny incarnation has a pale blue wing coloration, head and upper body, whereas its lower body (abdomen) and legs are a light brown.",
     "photo": "/049%20Venomoth.ico",
     "inventoryAmount": 10,
     "tags": ["#bug", "#Sausage"]
 }, {
-    "name": "Diglett Feet",
+    "name": "Diglett Eyes",
     "type": "ground",
     "price": 6.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Digletts are small, brown moles with two small eyes and a large pink/red nose. Since part of its body is underground, we don't know whether or not Diglett has feet, tail(s), etc. However, in Pokémon Mystery Dungeon Red Rescue Team and Blue Rescue Team, the rescued Diglett (after Skarmory kidnapped him) claimed to say his feet were getting cold (Which thereafter caused an awkward moment of silence).",
     "photo": "/050%20Diglett.ico",
     "inventoryAmount": 10,
-    "tags": ["#ground", "#Feet"]
+    "tags": ["#ground", "#Eyes"]
 }, {
     "name": "Dugtrio Tongue",
     "type": "ground",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Dugtrio looks like a trio of Diglett. Although they look the same, the heights are varied. The middle body is the tallest, the left body is the 2nd tallest, and the right body is the shortest. The holes that Dugtrio make are bigger due to the increase in size during evolution. It's brown and it looks similar to a mole but with a large pink nose.",
     "photo": "/051%20Dugtrio.ico",
     "inventoryAmount": 10,
     "tags": ["#ground", "#Tongue"]
@@ -306,7 +306,7 @@
     "name": "Meowth Sausage",
     "type": "normal",
     "price": 10,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Meowth has two white whiskers on each side of its oval shaped face and two hairs sticking up on either side of the coin-like gem on its forehead, and highly resembles a cat. Meowth's tail and feet are cream colored like the rest of it, but they are brown at the end. It has small paw pads on the undersides of its heels and toes. It is much like a Maneki Neko, a toy of Japanese descent known for bobbing its arm and hand up and down.",
     "photo": "/052%20Meowth.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Sausage"]
@@ -314,7 +314,7 @@
     "name": "Persian Tail",
     "type": "normal",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Persian resembles a large cat or a bit like Lynx. Its fur is beige in color, and it has a curly tail. There is also a small, red gem on its forehead, which is said to give the Pokémon power. The Persian is named after the Persian breed of cat, although it resembles a cougar, with a yellowish white fur color. It may possibly be an albino cougar. Another possibility is that it is based on a Siamese cat. It also has a beige coloring and black ears much like Persian and has medium sized whiskers. This Pokémon, while very beautiful and elegant is not the best pet especially for new trainers. The reason for this is that Persians are known to have unpredictable temperaments and are apt to turn vicious in the blink of an eye, one moment it might be contentedly purring and rubbing its head against it's trainer's hand while it is being petted, the next it could unsheath its claws and scratch the hand that was petting it.",
     "photo": "/053%20Persian.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Tail"]
@@ -322,7 +322,7 @@
     "name": "Psyduck Tongue",
     "type": "water",
     "price": 6.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Psyduck is a medium sized yellow duck Pokémon. Only the feet and the bill are tan. The other body parts are all yellow. Psyduck has three black hairs on top of its head, and its hands are on its head due to its constant headache.",
     "photo": "/054%20Psyduck.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Tongue"]
@@ -330,23 +330,23 @@
     "name": "Golduck Bacon",
     "type": "water",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Golduck is a blue duck Pokémon. Its hands and feet are now webbed, which results in Golduck's superior swimming skills. Golduck has red eyes and has a red gem on its head. Its head has four spikes on top. It has a long tail and its hands and feet have three long claws.",
     "photo": "/055%20Golduck.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Bacon"]
 }, {
-    "name": "Mankey Ears",
+    "name": "Mankey Toes",
     "type": "fighting",
     "price": 12.5,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Mankey is a small, monkey like Pokémon which also is like a pig. They are a mostly tan in color, with a round body, long limbs and a tail. They have a pig nose due to it being the Pig Monkey species. Mankey are also renowned for their pointy ears and medium length fur. They have triangular eyes with a red iris, this clearly represents the anger this Pokémon is known for.",
     "photo": "/056%20Mankey.ico",
     "inventoryAmount": 10,
-    "tags": ["#fighting", "#Ears"]
+    "tags": ["#fighting", "#Toes"]
 }, {
     "name": "Primeape Belly",
     "type": "fighting",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Primeape is a monkey Pokémon. It has messy white fur that covers its round body which also has arms and legs that are brown in colour. Around its wrists and ankles there are metal shackles. It also has some sort of stress mark on the left of its forehead.",
     "photo": "/057%20Primeape.ico",
     "inventoryAmount": 10,
     "tags": ["#fighting", "#Belly"]
@@ -354,7 +354,7 @@
     "name": "Arcanine Belly",
     "type": "fire",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Arcanine is a large, bulky canine Pokémon that also possesses traits of tigers and lions. It has a distinct long dog-like muzzle with a large round black nose. Its eyes are triangular in shape, with black pupils. It has short diamond-shaped orange ears with cream colored insides. The majority of Arcanine's body is covered with bright orange fur with jagged black stripes, resembling the fur of a tiger. Its most of its head and face, and its chest, legs, are covered in light cream colored fluffy tufts of fur. It has a long puffy cream-colored tail.",
     "photo": "/059%20Arcanine.ico",
     "inventoryAmount": 10,
     "tags": ["#fire", "#Belly"]
@@ -362,7 +362,7 @@
     "name": "Poliwag Tongue",
     "type": "water",
     "price": 16.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "It is so soft its organs are actually visible. It also has trouble walking on its feet due to its lack of arms which causes it to be unbalanced.",
     "photo": "/060%20Poliwag.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Tongue"]
@@ -370,7 +370,7 @@
     "name": "Poliwrath Liver",
     "type": "water",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "",
     "photo": "/062%20Poliwrath.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Liver"]
@@ -378,7 +378,7 @@
     "name": "Alakazam Sausage",
     "type": "psychic",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Alakazam is a human-like Pokémon. It is colored yellow and brown, and it has some fox-like features. It is also shown carrying two spoons, which it uses to fight with strong, telekinetic powers. Like Kadabra, Alakazam's gender can be identified by the length of its mustache.",
     "photo": "/065%20Alakazam.ico",
     "inventoryAmount": 10,
     "tags": ["#psychic", "#Sausage"]
@@ -386,7 +386,7 @@
     "name": "Machop Brain",
     "type": "fighting",
     "price": 8.33,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Machop is a bluish-gray Pokémon with large arm muscles. It has three brown ridges on its head, rib-like protrusions on its sides, has a tail, and resembles a human child.",
     "photo": "/066%20Machop.ico",
     "inventoryAmount": 10,
     "tags": ["#fighting", "#Brain"]
@@ -394,23 +394,23 @@
     "name": "Machamp Tail",
     "type": "fighting",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Machamp is a large four-armed Pokémon. Machamp's physical appearance is similar to Machoke's, except without the snout, red lines on its arms, and the belt.",
     "photo": "/068%20Machamp.ico",
     "inventoryAmount": 10,
     "tags": ["#fighting", "#Tail"]
 }, {
-    "name": "Bellsprout Bacon",
+    "name": "Bellsprout Roots",
     "type": "grass",
     "price": 6.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Bellsprout is a plant-like Pokémon. The body is a thin brown root and stem system. Bellsprout has two root-like legs. It has two leaves on each side. Its head is yellow and shaped like a bulb, the tip is colored pink, and it has the smallest amount of dirt on its feet.",
     "photo": "/069%20Bellsprout.ico",
     "inventoryAmount": 10,
-    "tags": ["#grass", "#Bacon"]
+    "tags": ["#grass", "#Roots"]
 }, {
     "name": "Victreebel Belly",
     "type": "grass",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Victreebel is the only member in its evolutionary family to have visible teeth. Two sharp teeth are located at its large mouth. Its eyes are located directly under the mouth. It has two vines, one with a large leaf, and the other with a bulb at the end.",
     "photo": "/071%20Victreebel.ico",
     "inventoryAmount": 10,
     "tags": ["#grass", "#Belly"]
@@ -418,31 +418,31 @@
     "name": "Tentacool Shoulder",
     "type": "water",
     "price": 10,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Tentacool is an aquatic Pokémon based on the box jellyfish. Tentacool have two long tentacles that extend from the base of its large, blue head. There are three red gems on this Pokémon's head: two on the sides of its head and one on its forehead.",
     "photo": "/072%20Tentacool.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Shoulder"]
 }, {
-    "name": "Tentacruel Ears",
+    "name": "Tentacruel Eyes",
     "type": "water",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Tentacruel has only a few differences from its pre-evolved form. It now has 14 long tentacles. It also has a beak; the mouthparts are on the front and back of Tentacruel's head. Also, as seen in the image above, Tentacruel has Two Huge eyes below its head.",
     "photo": "/073%20Tentacruel.ico",
     "inventoryAmount": 10,
-    "tags": ["#water", "#Ears"]
+    "tags": ["#water", "#Eyes"]
 }, {
-    "name": "Geodude Ears",
+    "name": "Geodude Eyes",
     "type": "rock",
     "price": 6.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "This Pokémon has a rock for a head, no nose, and two long arms that start with a bulging muscle and end with rock hands resembling a human's.",
     "photo": "/074%20Geodude.ico",
     "inventoryAmount": 10,
-    "tags": ["#rock", "#Ears"]
+    "tags": ["#rock", "#Eyes"]
 }, {
     "name": "Golem Liver",
     "type": "rock",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Golem's body resembles a large boulder. It has claws on its ",
     "photo": "/076%20Golem.ico",
     "inventoryAmount": 10,
     "tags": ["#rock", "#Liver"]
@@ -450,7 +450,7 @@
     "name": "Ponyta Ears",
     "type": "fire",
     "price": 16.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Ponyta is a horse Pokémon that has cream colored fur. Rather than having a fur mane, Ponyta has one made of fire, which burns when it is happy or excited. On its heels are streaks of fire. About an hour after birth, its fiery mane and tail grow out, giving it an impressive appearance.",
     "photo": "/077%20Ponyta.ico",
     "inventoryAmount": 10,
     "tags": ["#fire", "#Ears"]
@@ -458,7 +458,7 @@
     "name": "Rapidash Bacon",
     "type": "fire",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Rapidash is a cream-colored equine Pokémon with red eyes and a long horn atop its head, similar to a unicorn. Its mane and tail are comprised of red and yellow flames, while smaller embers trail from its fetlocks.",
     "photo": "/078%20Rapidash.ico",
     "inventoryAmount": 10,
     "tags": ["#fire", "#Bacon"]
@@ -466,39 +466,39 @@
     "name": "Slowpoke Feet",
     "type": "water",
     "price": 20,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Slowpoke is a mostly pink Pokémon that doesn't look much like a water type Pokémon at all. It stands on four legs, and has a long tail that is used like a fishing pole. It's mouth is a pale brown color.",
     "photo": "/079%20Slowpoke.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Feet"]
 }, {
-    "name": "Slowbro Brain",
+    "name": "Slowbro Shell",
     "type": "water",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "When Shellder bites Slowpoke's tail, it is now bipedal. Its feet are more muscular, and its belly has scales to protect it, compared to Slowpoke.",
     "photo": "/080%20Slowbro.ico",
     "inventoryAmount": 10,
-    "tags": ["#water", "#Brain"]
+    "tags": ["#water", "#Shell"]
 }, {
-    "name": "Magnemite Tail",
+    "name": "Magnemite Eyes",
     "type": "electric",
     "price": 12.5,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Magnemite has light-blue steel body in the shape of a sphere which is kept bound together with the two screws and one large screw at the top of its head. It has one big eye that is as big as the magnets it uses; which can launch electric attacks. On the side of its body are two horseshoe magnets which expel antigravity, allowing it to float in mid-air.",
     "photo": "/081%20Magnemite.ico",
     "inventoryAmount": 10,
-    "tags": ["#electric", "#Tail"]
+    "tags": ["#electric", "#Eyes"]
 }, {
-    "name": "Magneton Tail",
+    "name": "Magneton Eyes",
     "type": "electric",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Magneton are simply three Magnemite linked together by magnetism.",
     "photo": "/082%20Magneton.ico",
     "inventoryAmount": 10,
-    "tags": ["#electric", "#Tail"]
+    "tags": ["#electric", "#Eyes"]
 }, {
     "name": "Farfetch'd Liver",
     "type": "normal",
     "price": 12.5,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Farfetch'd is an avian Pokémon that bears resemblance to a duck. It is brown in color; contrasted with a yellow bill and white underbelly. The wings of a Farfetch'd show a dexterous quality, as they are equally adapted to manipulate objects much like hands in addition of being used for flight. Farfetch'd has webbed feet, a characteristic common with most ducks. Its face is adorned with a black V shaped marking along with a trio of feathers that crown its head. It is also holding a leek stalk, which it brandishes as a weapon.",
     "photo": "/083%20Farfetch'd.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Liver"]
@@ -506,7 +506,7 @@
     "name": "Doduo Shoulder",
     "type": "normal",
     "price": 12.5,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Doduo is a tall, bird Pokémon resembling an ostrich. It has two heads that are exactly identical. Doduo is covered in brown down and has large taloned feet. The difference between a male and female Doduo is the neck. A males neck is black while a female is white.",
     "photo": "/084%20Doduo.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Shoulder"]
@@ -514,7 +514,7 @@
     "name": "Dodrio Brain",
     "type": "normal",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Dodrio has three heads that have a black V-shaped crest on top. The body is nearly all covered in brown down. It has large clawed feet. Its tail is made up of large red feathers. Even though no wings are seen it is still Flying-type. Unlike its pre-evolved form, the faces on Dodrio's faces look different, with each one representing an emotion: joy, sadness, and anger. Like Doduo, the males have black necks while the females have white necks.",
     "photo": "/085%20Dodrio.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Brain"]
@@ -522,7 +522,7 @@
     "name": "Seel Tail",
     "type": "water",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Seel is a Sea Lion Pokémon. It is covered with dense white fur to keep it warm underwater. The mouth of Seel has jowls and two fangs. Its tongue also sticks out of its mouth. Seel has a short horn upon its head.",
     "photo": "/086%20Seel.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Tail"]
@@ -530,46 +530,47 @@
     "name": "Dewgong Belly",
     "type": "water",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Dewgong is a long, completely white Pokémon. It has billowing fins. There is also a horn on its head that is useful for bashing through thick ice. It is somewhat just a more elegant version of Seel.",
     "photo": "/087%20Dewgong.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Belly"]
 }, {
-    "name": "Grimer Shoulder",
+    "name": "Grimer Belly",
     "type": "poison",
     "price": 10,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Grimer was created when sludge in a dirty stream was exposed to the moon's X-rays. It is composed primarily of putrid, hardened sludge and grime. It smells incredibly foul, and can influence the abandonment of entire cities due to its polluting nature－even weeds don't grow where a Grimer has appeared. Grimer thrives in filthy areas, such as factories, garbage dumps, sewers and polluted water systems. It survives and matures by sucking up polluted sludge that is pumped out of factories, adding toxic waste to its already toxic girth.",
     "photo": "/088%20Grimer.ico",
     "inventoryAmount": 10,
-    "tags": ["#poison", "#Shoulder"]
+    "tags": ["#poison", "#Belly"]
 }, {
     "name": "Muk Sausage",
     "type": "poison",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Muk is a large purple mass of sludge, toxic fluids, and other filthy materials. It has two large arms that capture prey and its eyes are barely visible through the sludge.",
     "photo": "/089%20Muk.ico",
     "inventoryAmount": 10,
     "tags": ["#poison", "#Sausage"]
 }, {
-    "name": "Cloyster Feet",
+    "name": "Cloyster Shell",
     "type": "water",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Cloyster is actually a black pearl within two shells. The first shell is purple and rugged, while the second shell is gray. When the second shell is opened, a spike is revealed. Its face has a cruel look upon it.",
     "photo": "/091%20Cloyster.ico",
     "inventoryAmount": 10,
-    "tags": ["#water", "#Feet"]
+    "tags": ["#water", "#Shell"]
 }, {
-    "name": "Gastly Feet",
+    "name": "Gastly Gas",
     "type": "ghost",
     "price": 10,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Gastly's appearance consists of a dark sphere (its head) surrounded by a light purple gas. Gastly have big, white eyes and a mouth with a pair of fangs in it.",
     "photo": "/092%20Gastly.ico",
     "inventoryAmount": 10,
-    "tags": ["#ghost", "#Feet"]
+    "tags": ["#ghost", "#Gas"]
 }, {
     "name" : "Haunter Claw",
     "type": "ghost",
     "price": "500",
+    "description": "This Pokémon takes the shape of a sinister looking, angular floating face with fangs, and it has disembodied, clawed hands. When approached by people, it has a habit of reverting to a spherical form that obscures its eyes, mouth, and hands. Haunter also likes to transform into solid things just to scare people. If you are sleeping or unconscious, Haunter can grab you and turn you into a ghost. But will return you into your body shortly afterwards. It can sap the life-force from a target by licking it. If it chooses to do so the victim will not stop shaking until it dies. Although it can lick other organisms without killing them.",
     "photo": "093%20Haunter.ico",
     "inventoryAmount": 10,
     "tags": ["#ghost", "#Claw"]
@@ -577,7 +578,7 @@
     "name": "Gengar Tail",
     "type": "ghost",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Gengar is a shadow-like round-bodied Pokémon with two large pointed ears and short spikes lining its back. Gengar has two red eyes and a toothy sinister smile. It has claws on its hands. Gengar stands on its two short legs, but it can Levitate as well.",
     "photo": "/094%20Gengar.ico",
     "inventoryAmount": 10,
     "tags": ["#ghost", "#Tail"]
@@ -585,7 +586,7 @@
     "name": "Onix Tail",
     "type": "rock",
     "price": 12.5,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Onix is a Rock Snake Pokémon. Its serpentine body is made up of large boulders and little pebbles. It has a long horn atop its head and small eyes.",
     "photo": "/095%20Onix.ico",
     "inventoryAmount": 10,
     "tags": ["#rock", "#Tail"]
@@ -593,7 +594,7 @@
     "name": "Drowzee Liver",
     "type": "psychic",
     "price": 12.5,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Drowzee is a tapir-like Pokémon that is mostly yellow. The bottom half of its body is covered in mud, as if it was bathing in it. When Drowzee uses Hypnosis, its eyes glow a light blue.",
     "photo": "/096%20Drowzee.ico",
     "inventoryAmount": 10,
     "tags": ["#psychic", "#Liver"]
@@ -601,7 +602,7 @@
     "name": "Hypno Brain",
     "type": "psychic",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Hypno is a human-like Pokémon with yellow skin. On the top of its head are large, cat-like ears. Its eyes are usually squinted, and lower down. It also has a large nose. On its neck, Hypno has a large white mane, which stretches completely around. Hypno also has human-like arms and hands, which both have five digits. It is also always carrying a small pendulum, which it uses in most of its Psychic based attacks.",
     "photo": "/097%20Hypno.ico",
     "inventoryAmount": 10,
     "tags": ["#psychic", "#Brain"]
@@ -609,7 +610,7 @@
     "name": "Krabby Sausage",
     "type": "water",
     "price": 16.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Krabby is a River Crab Pokémon. It is red on top and mostly tan on the bottom. Its signature feature are the two long pincers it has.",
     "photo": "/098%20Krabby.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Sausage"]
@@ -617,7 +618,7 @@
     "name": "Kingler Brain",
     "type": "water",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Kingler is a Pincer Pokémon. It has a crest on top of its head. It has two pincers with different sizes.",
     "photo": "/099%20Kingler.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Brain"]
@@ -625,23 +626,23 @@
     "name": "Voltorb Liver",
     "type": "electric",
     "price": 16.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Voltorb are Pokémon that look like a large Poké Ball. Spherical in shape, Voltorb's top half is colored red while its bottom half is white. Voltorb do not have much else in features besides its eyes, which usually indicate that it is angry.",
     "photo": "/100%20Voltorb.ico",
     "inventoryAmount": 10,
     "tags": ["#electric", "#Liver"]
 }, {
-    "name": "Electrode Tail",
+    "name": "Electrode Eyes",
     "type": "electric",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Electrode is a spherical Pokémon that bears a resemblance to an upside-down PokéBall. Its top half is white, and its bottom half is red. Electrode has two small beady black eyes, large prominent eyebrows, and a wide mischievously grinning mouth.",
     "photo": "/101%20Electrode.ico",
     "inventoryAmount": 10,
-    "tags": ["#electric", "#Tail"]
+    "tags": ["#electric", "#Eyes"]
 }, {
     "name": "Exeggutor Liver",
     "type": "grass",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Exeggutor is the Coconut Pokémon. This Pokémon looks like a walking palm tree with eggs for coconuts. It has two stubby legs.",
     "photo": "/103%20Exeggutor.ico",
     "inventoryAmount": 10,
     "tags": ["#grass", "#Liver"]
@@ -649,7 +650,7 @@
     "name": "Cubone Brain",
     "type": "ground",
     "price": 20,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Cubone, known as the Lonely Pokémon, appears to be a small, brown dinosaur-like Pokémon that constantly wears its deceased mother's skull like a helmet. The skull masks its true face from view, which makes it a puzzlement for many Trainers and researchers. Its cries echo within the skull and it comes out as a pained and sad melody. On the night of a full moon, it cries, for it seems to recognize its mother's face in the moon. Its tears create stains on the skull. Cubone has a plump body with a paler-colored underbelly, with strong, clawed limbs to carry a bone as a weapon around wherever it goes. Cubone has a single, nailed toe on each foot, with two spikes on its back. A small tail is also present for balance, but it can be used for attacking.",
     "photo": "/104%20Cubone.ico",
     "inventoryAmount": 10,
     "tags": ["#ground", "#Brain"]
@@ -657,7 +658,7 @@
     "name": "Marowak Belly",
     "type": "ground",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Marowak is the Bone Keeper Pokémon. It has a brown body with a sandy-colored underside. It has a single claw on its hands and feet. Its tail has a single protrusion near the end. The Pokémon's head seems to be an exoskeleton helmet and wields a long bone.",
     "photo": "/105%20Marowak.ico",
     "inventoryAmount": 10,
     "tags": ["#ground", "#Belly"]
@@ -665,31 +666,31 @@
     "name": "Hitmonlee Ears",
     "type": "fighting",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Hitmonlee is a Kicking Pokémon. It is brown in color with tape markings wrapped around its forearms and legs. While it looks like it has tape wrapped around its legs, the tape is actually its legs coiled like a spring which stretch to increase the distance of its kicks.",
     "photo": "/106%20Hitmonlee.ico",
     "inventoryAmount": 10,
     "tags": ["#fighting", "#Ears"]
 }, {
-    "name": "Hitmonchan Tail",
+    "name": "Hitmonchan Toes",
     "type": "fighting",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Hitmonchan's appearance is very similar to a human, when compared to other Pokémon. The color of its skin is a light brown color. It wears a purple skirt and bright red boxing gloves. Its feet are also a purple color, giving it the appearance that it is wearing shoes. Its enlarged shoulders appear as large shoulder pads. The very top of its head is separated into five sections, and its face has visible eyes and a mouth but no nose.",
     "photo": "/107%20Hitmonchan.ico",
     "inventoryAmount": 10,
-    "tags": ["#fighting", "#Tail"]
+    "tags": ["#fighting", "#Toes"]
 }, {
-    "name": "Lickitung Shoulder",
+    "name": "Lickitung Tongue",
     "type": "normal",
     "price": 10,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Lickitung is a pink reptilian Pokémon with some white designs on its stomach, legs, and hands. It has a bulky body with a long tail and most importantly, long tongue.",
     "photo": "/108%20Lickitung.ico",
     "inventoryAmount": 10,
-    "tags": ["#normal", "#Shoulder"]
+    "tags": ["#normal", "#Tongue"]
 }, {
     "name": "Koffing Tongue",
     "type": "poison",
     "price": 16.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Koffing is a Poison Gas Pokémon. Its body is cloud-shaped with a skull and crossbones on the lower parts of its body. It has openings that allow gases to escape. A Koffing will spew a harmless gas if its happy, and a poisonous gas if it's angry.",
     "photo": "/109%20Koffing.ico",
     "inventoryAmount": 10,
     "tags": ["#poison", "#Tongue"]
@@ -697,39 +698,39 @@
     "name": "Weezing Liver",
     "type": "poison",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Weezing is a masculine Poison Gas Pokémon. He is a two-headed, purple Pokémon. They often have gases around them because they are so toxic. The biggest head has a skull and crossbones on his chest. His mid-sized head only has a circle. Apparently, they can also have three heads according to the DPP Pokédex, possibly a deformed conjoined circle between the two.",
     "photo": "/110%20Weezing.ico",
     "inventoryAmount": 10,
     "tags": ["#poison", "#Liver"]
 }, {
-    "name": "Rhyhorn Brain",
+    "name": "Rhyhorn Horn",
     "type": "ground",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Rhyhorn is a rhino-like Pokémon that is rock hard. It has spikes on top of it to protect itself from its foes. It walks on four legs and has a horn that can be used as a drill. And it has two toes on each foot and two sharp teeth sticking out of its mouth. The male's horn is longer than the female's.",
     "photo": "/111%20Rhyhorn.ico",
     "inventoryAmount": 10,
-    "tags": ["#ground", "#Brain"]
+    "tags": ["#ground", "#Horn"]
 }, {
-    "name": "Rhydon Brain",
+    "name": "Rhydon Horn",
     "type": "ground",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "It is a rock-hard Pokémon that developed a long tail and learned to stand bipedally, meaning on two legs. It is a rhino-like creature that can crush rocks and has a long drill that can drill through rocks. A female Rhydon is similar in appearance to a male Rhydon. However, her horn is shorter than that of a male Rhydon.",
     "photo": "/112%20Rhydon.ico",
     "inventoryAmount": 10,
-    "tags": ["#ground", "#Brain"]
+    "tags": ["#ground", "#Horn"]
 }, {
-    "name": "Chansey Tail",
+    "name": "Chansey Belly",
     "type": "normal",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Chansey is an Egg Pokémon. It has three strands of hair sticking out on each side. Chansey is entirely light pink, except for its egg and tips of its",
     "photo": "/113%20Chansey.ico",
     "inventoryAmount": 10,
-    "tags": ["#normal", "#Tail"]
+    "tags": ["#normal", "#Belly"]
 }, {
     "name": "Tangela Shoulder",
     "type": "grass",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Tangela is a Vine Pokémon. Its body is covered with blue vines covered with tiny hairs that grow to give the impression that Tangela is circular in shape. Two big eyes are all people see inside the vines and there are no visible arms. It also wears two red shoes that poke out of the vines.",
     "photo": "/114%20Tangela.ico",
     "inventoryAmount": 10,
     "tags": ["#grass", "#Shoulder"]
@@ -737,7 +738,7 @@
     "name": "Kangaskhan Shoulder",
     "type": "normal",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Kangaskhan is a Parent Pokémon. She resembles a large kangaroo. Her baby is often seen in its pouch. When Mega Evolution is activated, the adult remains unchanged physically, while her young emerges from the pouch and increases in size and power.",
     "photo": "/115%20Kangaskhan.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Shoulder"]
@@ -745,7 +746,7 @@
     "name": "Horsea Tongue",
     "type": "water",
     "price": 10,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Horsea is a Water Pokémon that resembles a seahorse. It is a small, light blue seahorse with tiny scales. Its belly and fin are cream colored. Its tail is always curled up tightly, and it has a single fin on its back that is used for locomotion in the water.",
     "photo": "/116%20Horsea.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Tongue"]
@@ -753,7 +754,7 @@
     "name": "Seadra Tail",
     "type": "water",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "It has a long snout and a number of spikes on its head, to the sides and on the top. Its torso is covered with rough, cream-colored scales. Seadra's pectoral fins have sharp, pointed, cream-colored tips from which it exudes venom. Seadra also have a large tail which is generally coiled up. Seadra's quills can render its victim unconscious.",
     "photo": "/117%20Seadra.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Tail"]
@@ -761,7 +762,7 @@
     "name": "Goldeen Liver",
     "type": "water",
     "price": 8.33,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Goldeen is a fish-like Pokémon, with long, billowing fins. It is colored orange and white. Goldeen also has a horn on its forehead which it uses to attack foes. The male's horn is longer than the female's.",
     "photo": "/118%20Goldeen.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Liver"]
@@ -769,7 +770,7 @@
     "name": "Seaking Tail",
     "type": "water",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Seaking is a Goldfish Pokémon. Its body is orange with black marks. Its fins are long and white. It has a long horn atop of its head.",
     "photo": "/119%20Seaking.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Tail"]
@@ -777,7 +778,7 @@
     "name": "Starmie Belly",
     "type": "water",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Interestingly Starmie's back-half has been depicted several different ways. In the anime Starmie has the appearance of two starfish fused together; while in more modern games the back-half has been shown to spin wildly completely independent of the front-half of the Pokémon. Many fans tend to think of the anime's depiction as the more realistic of the two, considering the rapid spinning would obviously get in the way of any trainer trying to surf on this particular Pokémon. Starmie's core shines in a rainbow of seven colors, some people value this core as a type of jewellery.",
     "photo": "/121%20Starmie.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Belly"]
@@ -785,7 +786,7 @@
     "name": "Mr. mime Shoulder",
     "type": "psychic",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Mr. Mime was conceived and developed by Ken Sugimori for the first generation of Pocket Monsters games Red and Green, known outside of Japan as Pokémon Red and Blue. Its name originates from its appearance and hobby, that of a mime. Mr. Mime can be a female because its Japanese name didn't involve Mr. or Ms. Appearing as an anthropomorphic creature, it has a pink head with red cheeks and blue, frizzy hair, a round, white body with a red spot in the middle, light-pink arms and legs are connected to its body by red spheres, white, five-fingered hands, and black feet that curl upward at the tips. Their hands are depicted with four fingers and an opposable thumb, with larger fingertips and red dots on their underside. However, game representations of the character featured only three fingers on each hand until the release of Pokémon Ruby and Sapphire. Despite their localized name, any one Mr. Mime can be either male or female.",
     "photo": "/122%20Mr. mime.ico",
     "inventoryAmount": 10,
     "tags": ["#psychic", "#Shoulder"]
@@ -793,7 +794,7 @@
     "name": "Scyther Shoulder",
     "type": "bug",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Scyther is a Mantis Pokémon. It is green with two wings that enable flight. It has two razor-sharp scythes for arms.",
     "photo": "/123%20Scyther.ico",
     "inventoryAmount": 10,
     "tags": ["#bug", "#Shoulder"]
@@ -801,7 +802,7 @@
     "name": "Jynx Feet",
     "type": "ice",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Jynx are the most humanoid Pokémon in the franchise. She strongly resembles a blonde woman with a dark complexion in a flowing, deep-red dress, the bottom of which flows around her, while the top of which has a yellow chest plate with two red circular objects that most closely resemble female breasts, as well as luscious lips. The unbelievably rare, Shiny version is a Jynx with a much brighter shade of purple skin, vermilion dress color, and near white blonde hair. Jynx originally had black skin. This was dropped due to many people thinking her was a racist stereotype known as blackface, when someone would paint their face black and apply pink makeup around ",
     "photo": "/124%20Jynx.ico",
     "inventoryAmount": 10,
     "tags": ["#ice", "#Feet"]
@@ -809,7 +810,7 @@
     "name": "Electabuzz Tail",
     "type": "electric",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Electabuzz is a type of bipedal feline-like Pokémon with bright yellow coloring and black stripes. It has lightning bolt shapes on its body and large forearms. Some of its feline properties are its long tail and large fangs. Its two legs are short, and its feet are large with two sharp claws on either one. The more human aspects of its appearance are its long arms and five digit hands.",
     "photo": "/125%20Electabuzz.ico",
     "inventoryAmount": 10,
     "tags": ["#electric", "#Tail"]
@@ -817,7 +818,7 @@
     "name": "Magmar Feet",
     "type": "fire",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Magmar's body is designed to let it camouflage in fire, so it is mainly red and yellow all over. It has a flame pattern on its torso, and a fire on its tail, similar to Charmander and Chimchar (though Chimchar's fire actually is its tail). It has a large beak that can spit out fire thus giving it the species name the 'Spitfire' Pokémon.",
     "photo": "/126%20Magmar.ico",
     "inventoryAmount": 10,
     "tags": ["#fire", "#Feet"]
@@ -825,7 +826,7 @@
     "name": "Pinsir Sausage",
     "type": "bug",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "They seem to be based on a flat-stag beetle and have long, pricked horns on its head. Its whole body is a light brown with three claws on each toe.",
     "photo": "/127%20Pinsir.ico",
     "inventoryAmount": 10,
     "tags": ["#bug", "#Sausage"]
@@ -833,7 +834,7 @@
     "name": "Tauros Tail",
     "type": "normal",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Tauros resembles a bull. It is a tan color, with a brown mane that covers part of its body. Tauros has blue hooves and horns. It also has three long tails. On its head it has three blue circles from its forehead down to its eyes.",
     "photo": "/128%20Tauros.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Tail"]
@@ -841,7 +842,7 @@
     "name": "Magikarp Tail",
     "type": "water",
     "price": 6.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Magikarp is a Fish Pokémon. Its body is made up of/covered in red scales. Its fins are either yellow or white. They also have whiskers or Maxilliary Barbells. Female Magikarp have white barbells while male Magikarp have yellow barbells. Magikarp refers to them as his magnificent barbs in PokéPark Wii: Pikachu's Adventure. The way to tell a male and female Margikarp apart is that a male Magikarp has gold whiskers whilest a female has white whiskers.",
     "photo": "/129%20Magikarp.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Tail"]
@@ -849,7 +850,7 @@
     "name": "Gyarados Bacon",
     "type": "water",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "It is a dragon-like Pokémon which is serpentine in shape and covered in blue and yellow scales. It has white fins on top of its body and it has a tan underbelly. It has fins on the side of its face and a large blue crest on its forehead. Like Magikarp, it has whiskers",
     "photo": "/130%20Gyarados.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Bacon"]
@@ -857,7 +858,7 @@
     "name": "Lapras Sausage",
     "type": "water",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Lapras are a very large type of Water/Ice that resemble a plesiosaur. Its skin is mainly a light blue with a cream/white underside. It has a very long neck with a rounded head. Its ears are shaped like a spiral and it has a small horn on its forehead. Having no legs, it instead has four flippers for easy mobility in the water. Lapras also have large, gray shells on their backs with knobs covering them.",
     "photo": "/131%20Lapras.ico",
     "inventoryAmount": 10,
     "tags": ["#water", "#Sausage"]
@@ -865,7 +866,7 @@
     "name": "Eevee Ears",
     "type": "normal",
     "price": 12.5,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Eevee is a small, fennec fox-like creature with bushy, brown fur. Its muzzle is very cat-like, with a small, black, triangular nose. It has a fluffy cream-colored mane around its neck and a short, bushy, fox-like tail with a cream tip. Eevee has round, deep-brown eyes, long, rabbit-like ears, and pink paw pads on its little feet. Its paws are small with three toes and no visible claws. Eevee, as well as its evolutions, possesses traits from different animals. Eevee shares most traits with the fennec fox. However, it's also based on dogs, cats and rabbits. Eevee is said to have an irregularly-shaped genetic structure, enabling it to evolve into multiple Pokémon. Its possible moves are: Tackle, Tail Whip, Helping Hand, Sand Attack, Growl, Quick Attack, Bite, Baton Pass, Take Down, Last Resort, and Trump Card.",
     "photo": "/133%20Eevee.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Ears"]
@@ -873,7 +874,7 @@
     "name": "Jolteon Belly",
     "type": "electric",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Jolteon is a quadruped mammalian Pokémon with some traits of a herding dog as seen in Get Along, Little Pokémon, when Ethan used Jolteon as a sheep dog to herd the Magnemite. Jolteon's body is covered in spiny bright yellow fur. It has long ears resembling a rabbit, deep purple almond-shaped eyes, and a blunt cat-like muzzle with a small black triangular nose. It has a spiky white mane encircling its neck. Its legs and paws are slender and fox-like, with three toes on each and no visible claws; however, in The Electric Tale of Pikachu manga, Sparky's Jolteon is shown to be able to extend and retract its claws like most felines. Jolteon has a spiny fringe of fur covering its backside, and it has a small short spike-like tail that is not often visible (but seen in games such as Pokémon Stadium). Its back legs seems to be powerfully-built, allowing it to run at high speeds like a cheetah.",
     "photo": "/135%20Jolteon.ico",
     "inventoryAmount": 10,
     "tags": ["#electric", "#Belly"]
@@ -881,7 +882,7 @@
     "name": "Flareon Tail",
     "type": "fire",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Flareon is a quadruped mammalian Pokémon. It has vivid flame-orange fur with a bushy yellow mane, a wide, fluffy flame-shaped tail, and a tuft of yellow fur atop its head, . It has a short cat-like muzzle, wide black almond-shaped eyes, and a small black triangular nose. Its ears are long and rabbit-like, with flare-like tips. It has large, bulky paws with no visible claws. Its body is generally bulkier than most of the Eeveelutions. Of all the Eeveelutions, Flareon resembles Eevee the most. It's bushy mane and flame shaped tail make it almost resemble a Pomeranian dog and a lion's mane.",
     "photo": "/136%20Flareon.ico",
     "inventoryAmount": 10,
     "tags": ["#fire", "#Tail"]
@@ -889,23 +890,23 @@
     "name": "Porygon Shoulder",
     "type": "normal",
     "price": 25,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Porygon is a Virtual Pokémon. It is based on early 3D animation models, and is thus created completely out of polygons. The various parts of Porygon's body are colored red, white, and blue. Its eyes are in the shape of hexagons.",
     "photo": "/137%20Porygon.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Shoulder"]
 }, {
-    "name": "Omanyte Sausage",
+    "name": "Omanyte Shell",
     "type": "rock",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Omanyte is a snail-like Pokémon that died out millions of years ago. It has many tentacles, which it used to crawl along the muddy seafloor. It has two large eyes that just stick out under its curvy shell. It is based on the ancient sea-creatures Ammonites.",
     "photo": "/138%20Omanyte.ico",
     "inventoryAmount": 10,
-    "tags": ["#rock", "#Sausage"]
+    "tags": ["#rock", "#Shell"]
 }, {
     "name": "Omastar Brain",
     "type": "rock",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Omastar looks a lot like a Nautilus, a prehistoric creature related to squids. Omastar has a spiked spiral shell, which is heavy enough that it is hard for Omastar to swim. It has eight blue tentacles all over its body. Omastar also has a mouth that has two pairs of mandibles. It has yellow eyes with a slight black split pupil. Its face resembles that of a seastar, except for that the top of the star is cut off by the spiral shell.",
     "photo": "/139%20Omastar.ico",
     "inventoryAmount": 10,
     "tags": ["#rock", "#Brain"]
@@ -913,7 +914,7 @@
     "name": "Kabuto Bacon",
     "type": "rock",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "While concealed, Kabuto leaves exposed only its hard shell, which protects it from predators, while the small black eyes on its back allow it to continue monitoring its surroundings. If it is flipped upside down, it becomes helpless and defenseless as it is unable to flip over on its own. It may be based on a Horseshoe crab.",
     "photo": "/140%20Kabuto.ico",
     "inventoryAmount": 10,
     "tags": ["#rock", "#Bacon"]
@@ -921,7 +922,7 @@
     "name": "Kabutops Feet",
     "type": "rock",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Kabuto's four insect-like legs have vanished and two long feet stand in their place. Two long, sharp claws (or sickles) extend from Kabutops's exoskeleton and several plates close the opening that used to be there. There are six hard spikes going down from the back of its neck, three on each side that lead down towards the beginning of its tail. Its head is covered in a rock-hard, semicircular-shaped armor. A tail protrudes from its back, bearing the same color as approximately seventy-five percent of its body.",
     "photo": "/141%20Kabutops.ico",
     "inventoryAmount": 10,
     "tags": ["#rock", "#Feet"]
@@ -929,7 +930,7 @@
     "name": "Aerodactyl Ears",
     "type": "rock",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Aerodactyl is from the prehistoric age, and because of this its name and physical characteristics are based on that of a pterodactyl.",
     "photo": "/142%20Aerodactyl.ico",
     "inventoryAmount": 10,
     "tags": ["#rock", "#Ears"]
@@ -937,7 +938,7 @@
     "name": "Snorlax Sausage",
     "type": "normal",
     "price": 50,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Snorlax is a very large and fat bear-like Pokémon that has grayish-blue fur and an apricot-color underbelly. Its eyes are always closed, making it look as if it is sleeping.",
     "photo": "/143%20Snorlax.ico",
     "inventoryAmount": 10,
     "tags": ["#normal", "#Sausage"]
@@ -945,7 +946,7 @@
     "name": "Articuno Tongue",
     "type": "ice",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Articuno is a large bird with blue plumage. Its colouring is darkest on its head crest and long, streaming tail. Its body is coloured sky-blue, while growing lighter on its front, and its chest is a lighter blue then anything. Its most distinctive trait is its large wings, which are said to be made of ice. Its eyes are a medium shade of red. In the second Pokémon movie, Articuno also played a major role because only the chosen one (Ash) could place the orb on the altar to end the war of the three legendary birds.",
     "photo": "/144%20Articuno.ico",
     "inventoryAmount": 10,
     "tags": ["#ice", "#Tongue"]
@@ -953,7 +954,7 @@
     "name": "Zapdos Feet",
     "type": "electric",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "This legendary bird Pokémon is said to appear when the sky turns dark and lightning showers down.",
     "photo": "/145%20Zapdos.ico",
     "inventoryAmount": 10,
     "tags": ["#electric", "#Feet"]
@@ -961,7 +962,7 @@
     "name": "Moltres Feet",
     "type": "fire",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "A legendary bird Pokémon. As it flaps its flaming wings, even the night sky will turn red.",
     "photo": "/146%20Moltres.ico",
     "inventoryAmount": 10,
     "tags": ["#fire", "#Feet"]
@@ -969,7 +970,7 @@
     "name": "Dratini Ears",
     "type": "dragon",
     "price": 16.67,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "It has a white circle like gem on its forehead, and its eyes are light purple. It has two developing wings at the sides of its head, which grow to be enormous as it evolves. It has a white belly, and is light blue the rest of the way. Dratini looks like some sort of snake or sea monster. Dratini are born large, and as they shed their skin, they grow larger. They have a massive amount of energy rapidly increasing inside of their bodies, hence, they have great strength which grows exponentially as they evolve.",
     "photo": "/147%20Dratini.ico",
     "inventoryAmount": 10,
     "tags": ["#dragon", "#Ears"]
@@ -977,7 +978,7 @@
     "name": "Dragonair Bacon",
     "type": "dragon",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Dragonair's appearance are like sea serpents with long, sleek, bodies. The upper part of their body is light blue while its underside is white. They have a small, white horn on the forehead and two wing-shaped protuberances on the sides of the head which are often said to be ears, but are in fact wings, as evidenced in the short film preceding Pokémon: The Movie 2000. They have a blue orb placed at the neck and another two near the tip of the tail. Along with Dratini, it's mouth is rarely seen. It is unknown if it even has a mouth. The shiny Pokémon version of Dragonair has lavender-pink-colored skin on its upper body as opposed to light blue skin.",
     "photo": "/148%20Dragonair.ico",
     "inventoryAmount": 10,
     "tags": ["#dragon", "#Bacon"]
@@ -985,7 +986,7 @@
     "name": "Dragonite Liver",
     "type": "dragon",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Dragonite greatly differ from their sea serpent-like pre-evolved forms. Both Dratini and Dragonair had a blue coloring with no limbs or wings (excluding the wing-like ears of Dragonair). Dragonite are large, orange, bipedal dragons, with two turquoise wings on its back. Dragonite largely resembles a Charizard, as both have the same orange colouring, and the same blue underside of their wings, except for its lack of a flame on the end of their tails, and a somewhat rounder, and friendlier appearance. However, in the anime, Dragonite is rarely seen smiling. Dragonite resembles a proper looking dragon, unlike it's pre-evolved forms Dratini and Dragonair.",
     "photo": "/149%20Dragonite.ico",
     "inventoryAmount": 10,
     "tags": ["#dragon", "#Liver"]
@@ -993,7 +994,7 @@
     "name": "Mewtwo Tongue",
     "type": "psychic",
     "price": 100,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Mewtwo is a bipedal feline-like Pokémon. Its appearance is loosely based on Mew, with a more of a mutated humanoid look in addition to its feline traits. Its body is purple and it has three fingers on each hand. Mewtwo projects a faint purple aura when at full power.",
     "photo": "/150%20Mewtwo.ico",
     "inventoryAmount": 10,
     "tags": ["#psychic", "#Tongue"]
@@ -1001,7 +1002,7 @@
     "name": "Mew Ears",
     "type": "psychic",
     "price": 333.33,
-    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Mew is a small, cat-like Pokémon with large feet with three toes, blue eyes, small, pointed ears and a long, skinny tail. It is covered with a layer of fine, pink hair, only visible with the aid of a microscope. It has short arms with three fingers on each paw, and has small, orange, paw pads on the undersides of its feet.",
     "photo": "/151%20Mew.ico",
     "inventoryAmount": 10,
     "tags": ["#psychic", "#Ears"]

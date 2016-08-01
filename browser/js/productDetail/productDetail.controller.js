@@ -1,13 +1,22 @@
-app.controller('productDetailCtrl', function($scope, theProduct, orderFactory){
+app.controller('productDetailCtrl', function($scope, userFactory, theProduct, orderFactory){
   $scope.product = theProduct;
 
-  orderFactory.getAllOrderProducts(1) //don't forget to chagne this
-    .then(function (orderProducts){
-      $scope.currentCart = orderProducts;
-    })
+  $scope.addToCart = orderFactory.addNewOrderProduct;
 
-  orderFactory.getAllOrderProducts(1)
-  .then(function(allOrders){
-    $scope.totalOrder = allOrders;
+  userFactory.getActiveOrder()
+  .then(function (orderProducts) {
+  	$scope.currentCart = orderProducts;
   })
+
+  userFactory.getActiveOrderId()
+  .then(function (orderId) {
+  	$scope.orderId = orderId;
+  })
+
+  // What does this do? Didn't delete incase I missed something...
+
+  // orderFactory.getAllOrderProducts(1)
+  // .then(function(allOrders){
+  //   $scope.totalOrder = allOrders;
+  // })
 })

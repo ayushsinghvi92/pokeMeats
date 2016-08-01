@@ -22,7 +22,7 @@
           </ul>
           <!-- 5 just a placeholder for now while trying to figure out how this works -->
           <h6>{{ 5 }}</h6>
-          <p><a ui-sref="cart" class="btn btn-primary" role="button">Add to Cart</a></p>
+          <p><a ui-sref="cart" ng-click="addToCart(orderId, product)" class="btn btn-primary" role="button">Add to Cart</a></p>
       </div>
     </div>
 </div>

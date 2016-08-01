@@ -1,12 +1,15 @@
-app.controller('CartController', function ($scope, orderFactory) {
+app.controller('CartController', function ($state, orderFactory, AuthService, $scope, userFactory) {
 
-    // Images of beautiful Fullstack people.
-
-    orderFactory.getAllOrderProducts(1) //don't forget to chagne this
+    userFactory.getActiveOrder()
     .then(function (orderProducts){
       $scope.orderProducts = orderProducts;
     })
 
-    $scope.deleteOrderProduct = orderFactory.deleteOrderProduct;
 
+    $scope.deleteOrderProduct = function (orderId, orderProduct) {
+    	return orderFactory.deleteOrderProduct(orderId, orderProduct)
+    	.then(function () {
+    		$state.go($state.current, {}, {reload:true})
+    	})
+    }
 });
