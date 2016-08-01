@@ -10,6 +10,10 @@ app.factory("ProductFactory", function($http){
 		fetchById: function(id){
 			return $http.get("/api/products/" + id)
 			.then(getData);
+		},
+		destroyProduct: function(id) {
+			return $http.delete("/api/products/" + id)
+			.then(getData);
 		}
 	}
 })
