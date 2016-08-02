@@ -17,8 +17,9 @@ app.factory('userFactory', function (AuthService, $q, $http, orderFactory) {
 		getActiveOrder : function () {  
 			if(!AuthService.isAuthenticated()) {
 				let orderProducts = JSON.parse(localStorage.getItem('pokeMeatProducts'));
-
-				return $q.when(Array.prototype.slice.apply(orderProducts))
+				if(orderProducts) {
+					return $q.when(Array.prototype.slice.apply(orderProducts))
+				}
 			}
 			return this.getActiveOrderId()
 			.then(orderFactory.getAllOrderProducts)

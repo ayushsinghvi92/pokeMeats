@@ -28,7 +28,13 @@ router.get('/', function(req, res, next) {
 })
 
 router.post('/', function(req, res, next){
-    Users.create(req.body)
+    req.body["orders"] = {
+        session_type: "user"
+    }
+    
+    Users.create(req.body, {
+        include: [ Order ]
+    })
     .then(function(user){
         res.json(user)
     })

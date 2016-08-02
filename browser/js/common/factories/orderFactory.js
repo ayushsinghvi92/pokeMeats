@@ -16,6 +16,19 @@ app.factory('orderFactory', function ($http, AuthService, $q) {
     })
   }
 
+  function getOrderProductsFromCache () {
+    let orderProducts = localStorage.getItem("pokeMeatProducts")
+    orderProducts = JSON.parse(orderProducts)
+    if(!orderProducts) orderProducts = [];
+    else orderProducts = Array.prototype.slice.apply(orderProducts)
+    return orderProducts;
+  }
+
+  function setOrderProductsToCache (orderProducts) {
+    orderProducts = JSON.stringify(orderProducts);
+    localStorage.setItem('pokeMeatProducts', orderProducts);
+  }
+
   return {
     updateQuantity: function (orderId, product, quantity) {
       return $http.put('/api/orders/'+ orderId, {
@@ -34,25 +47,31 @@ app.factory('orderFactory', function ($http, AuthService, $q) {
       })
     },
     deleteOrderProduct: function (orderId, product) {
+      if(!AuthService.isAuthenticated()) {
+        let orderProducts = getOrderProductsFromCache();
+        let index = -1;
+        orderProducts.forEach(function (e, idx) {
+          if(e.id === product.id){
+            index = idx;
+          }
+        });
+        let destroyedProduct = orderProducts.splice(index, 1);
+        setOrderProductsToCache(orderProducts);
+        return $q.when(destroyedProduct)
+      }
+
       return $http.delete('/api/orders/'+ orderId + '/product/' + product.id)
       .then(getData)
     },
     addNewOrderProduct: function (orderId, product, quantity = 1) {
       if(!AuthService.isAuthenticated()) {
-        let orderProducts = localStorage.getItem("pokeMeatProducts")
         
-        orderProducts = JSON.parse(orderProducts)
-        
-        if(!orderProducts) orderProducts = [];
-        else orderProducts = Array.prototype.slice.apply(orderProducts)
-        
-        product[quantity] = quantity;
+        let orderProducts = getOrderProductsFromCache()
+        product['unit_price'] = product.price;
+        console.log(product.unit_price)
+        product['quantity'] = quantity;
         orderProducts.push(product);
-        
-        orderProducts = JSON.stringify(orderProducts)
-        
-        localStorage.setItem("pokeMeatProducts", orderProducts);
-        
+        setOrderProductsToCache(orderProducts)        
         return $q.when(orderProducts)
       }
       
