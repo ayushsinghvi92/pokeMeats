@@ -49,12 +49,14 @@ router.put('/:id', function(req, res){
     userId = req.user.id;
   }
   if(verifyUser(userId, req.order)) {
-    return req.order.getProducts({
+    console.log('req.order is hereeee \n\n\n', req.order.__proto__)
+    return req.order.getOrder_products({
       where : {
-        id : req.body.product.id
+        productId : req.body.product.id
       }
     })
     .spread(function(product){
+      console.log('product \n\n\n\n', product)
       return product.update({
         quantity : req.body.quantity
       })
