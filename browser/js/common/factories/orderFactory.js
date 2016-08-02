@@ -1,4 +1,4 @@
-app.factory('orderFactory', function ($http) {
+app.factory('orderFactory', function ($http, AuthService, $q) {
 
   function getData (res) {
     return res.data;
@@ -38,6 +38,24 @@ app.factory('orderFactory', function ($http) {
       .then(getData)
     },
     addNewOrderProduct: function (orderId, product, quantity = 1) {
+      if(!AuthService.isAuthenticated()) {
+        let orderProducts = localStorage.getItem("pokeMeatProducts")
+        
+        orderProducts = JSON.parse(orderProducts)
+        
+        if(!orderProducts) orderProducts = [];
+        else orderProducts = Array.prototype.slice.apply(orderProducts)
+        
+        product[quantity] = quantity;
+        orderProducts.push(product);
+        
+        orderProducts = JSON.stringify(orderProducts)
+        
+        localStorage.setItem("pokeMeatProducts", orderProducts);
+        
+        return $q.when(orderProducts)
+      }
+      
       return $http.post('/api/orders/'+orderId, {
         product:product,
         quantity:quantity

@@ -1,4 +1,4 @@
-app.factory('userFactory', function (AuthService, $http, orderFactory) {
+app.factory('userFactory', function (AuthService, $q, $http, orderFactory) {
 
 	let getData = (res => res.data);
 	return {
@@ -15,6 +15,11 @@ app.factory('userFactory', function (AuthService, $http, orderFactory) {
 			.then(orders => orders[0].id)			
 		},
 		getActiveOrder : function () {  
+			if(!AuthService.isAuthenticated()) {
+				let orderProducts = JSON.parse(localStorage.getItem('pokeMeatProducts'));
+
+				return $q.when(Array.prototype.slice.apply(orderProducts))
+			}
 			return this.getActiveOrderId()
 			.then(orderFactory.getAllOrderProducts)
 		}
