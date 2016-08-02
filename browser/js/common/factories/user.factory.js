@@ -1,4 +1,4 @@
-app.factory('userFactory', function (AuthService, $http, orderFactory) {
+app.factory('userFactory', function (AuthService, $q, $http, orderFactory) {
 
 	let getData = (res => res.data);
 	return {
@@ -16,8 +16,30 @@ app.factory('userFactory', function (AuthService, $http, orderFactory) {
 			.then(orders => orders[0].id)
 		},
 		getActiveOrder : function () {
-			return this.getActiveOrderId()
+			if(!AuthService.isAuthenticated()) {
+				let orderProducts = JSON.parse(localStorage.getItem('pokeMeatProducts'));
+				if(orderProducts) {
+					return $q.when(Array.prototype.slice.apply(orderProducts))
+				}
+			}
+      return this.getActiveOrderId()
 			.then(orderFactory.getAllOrderProducts)
+		},
+		fetchAll: function(){
+			return $http.get("/api/users")
+			.then(getData)
+		},
+		fetchById: function (id) {
+			return $http.get("/api/users/" + id)
+			.then(getData);
+		},
+		destroyUser: function(id){
+			return $http.delete("/api/users/" + id)
+			.then(getData)
+		},
+		updateUser: function(id, updateObj){
+			return $http.put("/api/users/" + id, updateObj)
+			.then(getData)
 		},
     createUserAddress: function(userId, address){
       return $http.post('/api/users/'+ userId + '/addresses', address)

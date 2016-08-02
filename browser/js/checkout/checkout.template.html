@@ -1,1 +1,19 @@
-
+<div id="home">
+  <div class="col-md-4">
+  <h1>Order Summary</h1>
+    <div class="thumbnail">
+        <span style="font-weight:bold; text-align:center">Your Cart:</span><br>
+          <div ng-repeat="product in currentCart" style="display:inline; font-size: 20pt;">
+            <p>{{ product.quantity }} x <a ui-sref="productDetail({id: product.id})">{{ product.name }}</a> = ${{product.subtotal}}</p>
+          </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <h1>Shipping Address</h1>
+    <div class="checkbox">
+      <div ng-repeat= 'address in addresses'>
+        <p>{{address.line1}}, {{address.line2}}, {{address.city}}, {{address.state_region}}, {{address.zipcode}}, {{address.country}}</p>
+      </div>
+    </div>
+  </div>
+</div>
