@@ -49,9 +49,9 @@ router.put('/:id', function(req, res){
     userId = req.user.id;
   }
   if(verifyUser(userId, req.order)) {
-    return req.order.getProducts({
+    return req.order.getOrder_products({
       where : {
-        id : req.body.product.id
+        productId : req.body.product.id
       }
     })
     .spread(function(product){
@@ -69,7 +69,6 @@ router.put('/:id', function(req, res){
 
 router.delete('/:id/product/:productId', function(req, res){
   let userId = null;
-  console.log('this is the hot req.body', req.body)
   if (req.user) {
     userId = req.user.id;
   }
