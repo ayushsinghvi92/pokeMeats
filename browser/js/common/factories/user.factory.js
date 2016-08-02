@@ -4,6 +4,9 @@ app.factory('userFactory', function (AuthService, $q, $http, orderFactory) {
 	return {
 		// can be logically optimized
 		getActiveOrderId : function () {
+			if(!AuthService.isAuthenticated()) {
+				return $q.when(undefined);
+			}
 			return AuthService.getLoggedInUser()
 			.then(user=>user.id)
 			.then(userId => $http.get('/api/users/' + userId + '/orders/'))

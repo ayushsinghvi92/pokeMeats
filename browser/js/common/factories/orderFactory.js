@@ -20,7 +20,6 @@ app.factory('orderFactory', function ($http, AuthService, $q) {
     let orderProducts = localStorage.getItem("pokeMeatProducts")
     orderProducts = JSON.parse(orderProducts)
     if(!orderProducts) orderProducts = [];
-    else orderProducts = Array.prototype.slice.apply(orderProducts)
     return orderProducts;
   }
 
@@ -35,11 +34,24 @@ app.factory('orderFactory', function ($http, AuthService, $q) {
       .then(getData)
     },
     updateQuantity: function (orderId, product, quantity) {
-      return $http.put('/api/orders/'+ orderId, {
-        product:product,
-        quantity:quantity
-      })
-      .then(getData)
+
+      if(!AuthService.isAuthenticated()) {
+        let orderProducts = getOrderProductsFromCache();
+        orderProducts = orderProducts.map(function (e) {
+          if(e.id === product.id) {
+            e.quantity = quantity;
+          }
+          return e;
+        })
+        setOrderProductsToCache(orderProducts);
+      }else {
+        return $http.put('/api/orders/'+ orderId, {
+          product:product,
+          quantity:quantity
+        })
+        .then(getData)        
+      }
+
     },
     getAllOrderProducts: function (orderId) {
       return $http.get('/api/orders/' + orderId)
@@ -73,7 +85,6 @@ app.factory('orderFactory', function ($http, AuthService, $q) {
 
         let orderProducts = getOrderProductsFromCache()
         product['unit_price'] = product.price;
-        console.log(product.unit_price)
         product['quantity'] = quantity;
         orderProducts.push(product);
         setOrderProductsToCache(orderProducts)
