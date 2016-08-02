@@ -15,7 +15,9 @@
         <button id="dragon" onclick="toggleColor('dragon')"><img src='dragon.png' height= 40px class="masterTooltip" title ="Dragon" ng-click="toggleFilter({type:'dragon'})"></button></li>
         <li><button id="psychic" onclick="toggleColor('psychic')"><img src='psychic.png' height= 40px class="masterTooltip" title ="Psychic" ng-click="toggleFilter({type:'psychic'})"></button>
         <button id="poison" onclick="toggleColor('poison')"><img src='poison.png' height= 40px class="masterTooltip" title ="Poison" ng-click="toggleFilter({type:'poison'})"></button></li>
-        <li><button ng-click="clearFilters()">Clear</button></li>
       </ul>
     </div>
+    <button ng-click="toggleOrder({filter: 'price'})">Price</button><br>
+    <button ng-click="toggleOrder({filter: 'pokeID'})">Pokedex</button><br>
+    <button ng-click="clearFilters()">Clear All</button>
 </section>

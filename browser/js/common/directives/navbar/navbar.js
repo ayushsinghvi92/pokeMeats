@@ -12,6 +12,7 @@ app.directive('navbar', function ($rootScope, AuthService, AUTH_EVENTS, $state) 
                 { label: 'Admin', state: 'admin', auth: true }
             ];
 
+            scope.admin = { label: 'Admin', state: 'admin', auth: true };
             scope.user = null;
 
             scope.isLoggedIn = function () {

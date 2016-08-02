@@ -1,3 +1,32 @@
 <div id="home">
-	<p>hi</p>
+	<h3 ng-show="!isAdmin">{{ mssg }}</h3>
+	<div ng-show='isAdmin'>
+		<button class="btn btn-default" ui-sref="addProduct">Add Product</button>
+		<table class="table-striped">
+			<tr>
+				<th>Product ID</th>
+				<th>Name</th>
+				<th>Actions</th>
+			</tr>
+			<tr ng-repeat="product in products"> 
+				<td>{{product.id}}</td>
+				<td>{{product.name}}</td>
+				<td><button class="btn btn-default" ui-sref="editProduct({id: product.id})">Edit</button><button class="btn btn-danger" ng-click="deleteProduct(product.id)">Delete</button></td>
+			</tr>
+		</table>
+	</div>
+	<div ng-show='isAdmin'>
+		<table class="table-striped">
+			<tr>
+				<th>User ID</th>
+				<th>Name</th>
+				<th>Actions</th>
+			</tr>
+			<tr ng-repeat="user in users"> 
+				<td>{{user.id}}</td>
+				<td>{{user.first_name}} {{user.last_name }}</td>
+				<td><button class="btn btn-default" ui-sref="editUsers({id: user.id})">Edit</button><button class="btn btn-danger" ng-click="deleteUser(user.id)">Delete</button></td>
+			</tr>
+		</table>
+	</div>
 </div>

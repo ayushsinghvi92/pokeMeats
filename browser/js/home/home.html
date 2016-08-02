@@ -1,8 +1,10 @@
-<section id="home">
-  <br>
+<section id="home">        
+  <div class="input-group" id="searchBox">
+      <input type="text" class="form-control" placeholder="Pokemon" ng-model="pokeSearch">
+  </div>    
   <div class="row">
       <div class = "col-md-1">
-        <productfilter toggle-filter="toggleFilter(type, event)" clear-filters="clearFilters()"></productfilter>
+        <productfilter toggle-filter="toggleFilter(type, event)" clear-filters="clearFilters()" toggle-order='toggleOrder(filter)'></productfilter>
       </div>
       <div class = "col-md-11">
         <div ng-repeat="product in pokemon | filter: pokeSearch">

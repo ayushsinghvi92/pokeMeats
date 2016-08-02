@@ -1,0 +1,41 @@
+<section id="home">
+<h3 ng-show="!isAdmin">{{ mssg }}</h3>
+<div class="row" id="main" ng-if="isAdmin">
+    <div class="col-md-3">
+      <div class="thumbnail">
+        <img ng-src={{product.photo}}>
+        <div class="caption" style='text-align: center'></div>
+      </div>
+    </div>
+    <div class="col-md-6">
+		<form name="productForm" ng-submit="update()">
+			<fieldset>
+				<div class="form-group">	
+				     <label>Name</label>
+				   	<input class="form-control" name="name" type="text" ng-model="product.name" />
+				</div>
+				<div class="form-group">	
+					<label>Price</label>
+				   	<input class="form-control" name="price" type="text" ng-model="product.price" />
+				</div>
+				<div class="form-group">	
+					<label>Type</label>
+				   	<input class="form-control" name="type" type="text" ng-model="product.type" />
+				</div>
+				<div class="form-group">	
+					<label>Inventory</label>
+				   	<input class="form-control" name="quantity" type="text" ng-model="product.inventoryAmount" />
+				</div>
+				<div class="form-group">
+					<label>Description</label>	
+				   	<textarea rows='6' cols='77' ng-model="product.description"></textarea>
+				</div>
+
+				<div class="form-group">
+					<button type="submit" class="btn btn-success">Update Product</button>
+				</div>
+			<fieldset>
+		</form>
+    </div>
+</div>
+

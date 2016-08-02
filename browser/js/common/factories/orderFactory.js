@@ -30,6 +30,10 @@ app.factory('orderFactory', function ($http, AuthService, $q) {
   }
 
   return {
+    fetchById: function(id) {
+      return $http.get("/api/orders/" + id)
+      .then(getData)
+    },
     updateQuantity: function (orderId, product, quantity) {
       return $http.put('/api/orders/'+ orderId, {
         product:product,
@@ -64,17 +68,18 @@ app.factory('orderFactory', function ($http, AuthService, $q) {
       .then(getData)
     },
     addNewOrderProduct: function (orderId, product, quantity = 1) {
+
       if(!AuthService.isAuthenticated()) {
-        
+
         let orderProducts = getOrderProductsFromCache()
         product['unit_price'] = product.price;
         console.log(product.unit_price)
         product['quantity'] = quantity;
         orderProducts.push(product);
-        setOrderProductsToCache(orderProducts)        
+        setOrderProductsToCache(orderProducts)
         return $q.when(orderProducts)
       }
-      
+
       return $http.post('/api/orders/'+orderId, {
         product:product,
         quantity:quantity

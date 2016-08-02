@@ -1,14 +1,5 @@
-
 app.controller("homeCtrl", function($scope, allProducts, $stateParams){
 	$scope.pokemon = allProducts;
-
-
-	// if ($stateParams.tag.length) {
-	// 	$scope.pokemon = $scope.pokemon.filter(function(pokemon){
-	// 		return pokemon.tags.includes($stateParams.tag)
-	// 	})
-	// }
-
 	$scope.filters = [];
 	$scope.isSelected = false;
 	$scope.toggleFilter = function (type) {
@@ -36,6 +27,19 @@ app.controller("homeCtrl", function($scope, allProducts, $stateParams){
 		$scope.filters = [];
 		let buttons = $(".typeIcons button");
 		buttons.css("background-color", "");
+		$scope.toggleOrder("pokeID")
+	}
+
+	$scope.toggleOrder = function(filter) {
+		$scope.pokemon = $scope.pokemon.sort(function(a,b){
+			if (filter == "price") {
+				return a.price - b.price
+			}
+			else if (filter == "pokeID") {
+				return a.id - b.id;
+			}
+
+		})
 	}
 });
 
