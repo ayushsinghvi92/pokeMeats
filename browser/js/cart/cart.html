@@ -14,12 +14,12 @@
           <p><label>Unit Price: </label> ${{orderProduct.unit_price}}</p>
           <p><label>Quantity: </label><input ng-keyup="updateQuantity(orderProduct.orderId, orderProduct, updatedQuantity)" ng-model="updatedQuantity" ng-init="updatedQuantity=orderProduct.quantity"></input></p>
           <p><label>Sub Total: </label>
-          ${{updatedQuantity * orderProduct.unit_price}}</p>
+          ${{updatedQuantity * orderProduct.unit_price}}</p> <!-- currency filter -->
           <p><a href="#" class="btn btn-default" role="button" ng-click="deleteOrderProduct(orderProduct.orderId, orderProduct)">Delete</a></p>
       </div>
   </div>
   <div class="row">
-      <div style="text-align:center">
+      <div style="text-align:center"> <!-- you have css files for a reason -->
         <a href="#" class="btn btn-primary" role="button">Proceed to Checkout</a><br>
         <a ui-sref="home">Continue Shopping</a>
     </div>

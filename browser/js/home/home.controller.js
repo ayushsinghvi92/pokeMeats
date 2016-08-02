@@ -25,13 +25,13 @@ app.controller("homeCtrl", function($scope, allProducts, $stateParams){
 	$scope.clearFilters = function () {
 		$scope.pokemon = allProducts;
 		$scope.filters = [];
-		let buttons = $(".typeIcons button");
+		let buttons = $(".typeIcons button"); //no direct dom manipulation 
 		buttons.css("background-color", "");
 		$scope.toggleOrder("pokeID")
 	}
 
 	$scope.toggleOrder = function(filter) {
-		$scope.pokemon = $scope.pokemon.sort(function(a,b){
+		$scope.pokemon = $scope.pokemon.sort(function(a,b){ //sort by filter?? also sort mutates(evolves) original. no need for reassignment
 			if (filter == "price") {
 				return a.price - b.price
 			}

@@ -11,12 +11,12 @@ app.controller('MyAccountController', function ($scope, userFactory, AuthService
     .then(function(userAddresses){
       console.log('user is', $scope.user)
       $scope.userAddresses = userAddresses;
-    })
+    }) //add to resolve block
 
     userFactory.fetchAllUserOrders($scope.user.id)
     .then(function(userOrders){
       $scope.userOrders = userOrders;
-    })
+    }) //add to resolve block 
 
     $scope.createAddress = function(form){
       return userFactory.createUserAddress($scope.user.id, form)

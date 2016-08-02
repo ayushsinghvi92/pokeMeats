@@ -13,7 +13,7 @@ app.config(function ($stateProvider) {
             },
             allUsers: function(userFactory){
                 return userFactory.fetchAll();
-            }
+            } //yayy!! resolve block
 
         }
     });

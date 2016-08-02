@@ -97,7 +97,7 @@
         this.signup = function (credentials) {
             return $http.post('/api/users', credentials)
             .catch(function (err){
-                return $q.reject({message: "Invalid sign-up information, failed validations" + err})
+                return $q.reject({message: "Invalid sign-up information, failed validations" + err}) //trying to concat object. not gonna work
             })
         }
 

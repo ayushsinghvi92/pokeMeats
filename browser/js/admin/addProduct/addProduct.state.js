@@ -1,5 +1,4 @@
 app.config(function ($stateProvider) {
-
     $stateProvider.state('addProduct', {
         url: '/addProduct/',
         templateUrl: '/js/admin/AddProduct/addProduct.template.html',

@@ -8,9 +8,9 @@ app.config(function ($stateProvider) {
 
 app.controller('SignupCtrl', function ($scope, AuthService, $state){
 	$scope.sendCredentials = function (credentials) {
-		AuthService.signup(credentials)
+		AuthService.signup(credentials) 
 		.then(function () {
-		AuthService.login(credentials)
+		AuthService.login(credentials) //why two ajax requests? why not returning??
 		})
 		.then(function () {
 			$state.go('home')

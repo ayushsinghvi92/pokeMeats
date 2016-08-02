@@ -7,7 +7,7 @@ app.factory('orderFactory', function ($http, AuthService, $q) {
   function appendDetails(orderProduct){
     return $http.get('/api/products/' + orderProduct.productId)
     .then(getData)
-    .then(function(product){
+    .then(function(product){ //definitely should be done on backend, try to mizimize ajax
       orderProduct.name = product.name;
       orderProduct.description = product.description;
       orderProduct.photo = product.photo;
@@ -17,10 +17,10 @@ app.factory('orderFactory', function ($http, AuthService, $q) {
   }
 
   function getOrderProductsFromCache () {
-    let orderProducts = localStorage.getItem("pokeMeatProducts")
-    orderProducts = JSON.parse(orderProducts)
+    let orderProducts = localStorage.getItem("pokeMeatProducts") 
+    orderProducts = JSON.parse(orderProducts) //ng-local-storage
     if(!orderProducts) orderProducts = [];
-    else orderProducts = Array.prototype.slice.apply(orderProducts)
+    else orderProducts = Array.prototype.slice.apply(orderProducts) // Array.from? explain??
     return orderProducts;
   }
 
@@ -36,7 +36,7 @@ app.factory('orderFactory', function ($http, AuthService, $q) {
     },
     updateQuantity: function (orderId, product, quantity) {
       return $http.put('/api/orders/'+ orderId, {
-        product:product,
+        product:product, //es6: enhanced object literal syntax 
         quantity:quantity
       })
       .then(getData)
@@ -47,7 +47,7 @@ app.factory('orderFactory', function ($http, AuthService, $q) {
       .then(order => {
         return order.order_products})
       .then(function(orderProducts){
-        return Promise.all(orderProducts.map(appendDetails))
+        return Promise.all(orderProducts.map(appendDetails)) //tons of ajax - bad
       })
     },
     deleteOrderProduct: function (orderId, product) {
@@ -56,12 +56,12 @@ app.factory('orderFactory', function ($http, AuthService, $q) {
         let index = -1;
         orderProducts.forEach(function (e, idx) {
           if(e.id === product.id){
-            index = idx;
+            index = idx; //lodash _.find, _.without  
           }
         });
-        let destroyedProduct = orderProducts.splice(index, 1);
+        let destroyedProduct = orderProducts.splice(index, 1); //mutability of operation
         setOrderProductsToCache(orderProducts);
-        return $q.when(destroyedProduct)
+        return $q.when(destroyedProduct) //nice!! great abstraction of authentication
       }
 
       return $http.delete('/api/orders/'+ orderId + '/product/' + product.id)

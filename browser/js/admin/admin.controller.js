@@ -1,7 +1,7 @@
 app.controller("adminCtrl", function($scope, theUser, ProductFactory, $state, allProducts, allUsers, userFactory, $log){
 	$scope.isAdmin = theUser.isAdmin;
 	if (theUser.isAdmin) {
-		$scope.products = allProducts.sort(function(a,b){
+		$scope.products = allProducts.sort(function(a,b){ //why is the frontend sorting things?
 			return a.id - b.id;		
 		});
 		$scope.users = allUsers.sort(function(a,b){
@@ -11,7 +11,7 @@ app.controller("adminCtrl", function($scope, theUser, ProductFactory, $state, al
 	else {
 		$scope.mssg = "You are not an admin!"
 	}
-	$scope.deleteProduct = function (id) {
+	$scope.deleteProduct = function (id) { //security issues, shouldn't expose ui to non-admins and should do admin checks on backend
 		ProductFactory.destroyProduct(id)
 		.then(function(res){
 			resetProducts();

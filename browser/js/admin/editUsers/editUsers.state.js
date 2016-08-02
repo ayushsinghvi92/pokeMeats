@@ -1,10 +1,9 @@
-app.config(function ($stateProvider) {
-
+app.config(function ($stateProvider) { //have you considered child states?
     $stateProvider.state('editUsers', {
         url: '/editUsers/:id',
         templateUrl: '/js/admin/editUsers/editUsers.template.html',
         controller: "editUserCtrl",
-        resolve: {
+        resolve: { //redundant resolve??
         	currUser: function(AuthService) {
                 return AuthService.getLoggedInUser();
             },

@@ -3,7 +3,7 @@ app.controller('CartController', function ($state, orderFactory, AuthService, $s
     userFactory.getActiveOrder()
     .then(function (orderProducts){
       $scope.orderProducts = orderProducts;
-    })
+    })// RESOLVE BLOCKS!!! 
 
 
     $scope.deleteOrderProduct = function (orderId, orderProduct) {

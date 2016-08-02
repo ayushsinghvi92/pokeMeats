@@ -1,4 +1,4 @@
-app.factory('orderFactory', function ($http) {
+app.factory('orderFactory', function ($http) { //Two order factories??? Probably not good.
 
   function getData (res) {
     return res.data;
