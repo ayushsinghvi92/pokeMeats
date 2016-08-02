@@ -1,4 +1,6 @@
-app.controller('CartController', function ($state, orderFactory, AuthService, $scope, userFactory) {
+app.controller('CartController', function (theUser, $state, orderFactory, AuthService, $scope, userFactory) {
+
+    $scope.user = theUser;
 
     userFactory.getActiveOrder()
     .then(function (orderProducts){

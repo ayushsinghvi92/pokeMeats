@@ -21,9 +21,10 @@ app.factory('userFactory', function (AuthService, $q, $http, orderFactory) {
 				if(orderProducts) {
 					return $q.when(Array.prototype.slice.apply(orderProducts))
 				}
+			} else {
+	     		return this.getActiveOrderId()
+				.then(orderFactory.getAllOrderProducts)
 			}
-      return this.getActiveOrderId()
-			.then(orderFactory.getAllOrderProducts)
 		},
 		fetchAll: function(){
 			return $http.get("/api/users")
