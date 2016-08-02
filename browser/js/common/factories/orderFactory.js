@@ -1,4 +1,4 @@
-app.factory('orderFactory', function ($http) {
+app.factory('orderFactory', function ($http, AuthService, $q) {
 
   function getData (res) {
     return res.data;
@@ -14,6 +14,19 @@ app.factory('orderFactory', function ($http) {
       orderProduct.id = product.id;
       return orderProduct;
     })
+  }
+
+  function getOrderProductsFromCache () {
+    let orderProducts = localStorage.getItem("pokeMeatProducts")
+    orderProducts = JSON.parse(orderProducts)
+    if(!orderProducts) orderProducts = [];
+    else orderProducts = Array.prototype.slice.apply(orderProducts)
+    return orderProducts;
+  }
+
+  function setOrderProductsToCache (orderProducts) {
+    orderProducts = JSON.stringify(orderProducts);
+    localStorage.setItem('pokeMeatProducts', orderProducts);
   }
 
   return {
@@ -34,10 +47,34 @@ app.factory('orderFactory', function ($http) {
       })
     },
     deleteOrderProduct: function (orderId, product) {
+      if(!AuthService.isAuthenticated()) {
+        let orderProducts = getOrderProductsFromCache();
+        let index = -1;
+        orderProducts.forEach(function (e, idx) {
+          if(e.id === product.id){
+            index = idx;
+          }
+        });
+        let destroyedProduct = orderProducts.splice(index, 1);
+        setOrderProductsToCache(orderProducts);
+        return $q.when(destroyedProduct)
+      }
+
       return $http.delete('/api/orders/'+ orderId + '/product/' + product.id)
       .then(getData)
     },
     addNewOrderProduct: function (orderId, product, quantity = 1) {
+      if(!AuthService.isAuthenticated()) {
+        
+        let orderProducts = getOrderProductsFromCache()
+        product['unit_price'] = product.price;
+        console.log(product.unit_price)
+        product['quantity'] = quantity;
+        orderProducts.push(product);
+        setOrderProductsToCache(orderProducts)        
+        return $q.when(orderProducts)
+      }
+      
       return $http.post('/api/orders/'+orderId, {
         product:product,
         quantity:quantity
