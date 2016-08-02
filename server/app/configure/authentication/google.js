@@ -6,6 +6,7 @@ var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 module.exports = function (app, db) {
 
     var User = db.model('user');
+    var Order = db.model('orders');
 
     var googleConfig = app.getValue('env').GOOGLE;
 
@@ -28,7 +29,12 @@ module.exports = function (app, db) {
                 } else {
                     return User.create({
                         google_id: profile.id,
-                        email: profile.emails[0].value
+                        email: profile.emails[0].value,
+                        orders : {
+                            session_type: "user"
+                        }
+                    }, {
+                        include: [Order ]
                     });
                 }
             })
