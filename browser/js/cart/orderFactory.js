@@ -38,12 +38,17 @@ app.factory('orderFactory', function ($http) {
       return $http.delete('/api/orders/'+ orderId + '/product/' + product.id)
       .then(getData)
     },
+    completeOrder : function(id, obj){
+      return $http.put('api/orders/' + id, obj)
+      .then(getData)
+    },
     addNewOrderProduct: function (orderId, product, quantity = 1) {
       return $http.post('/api/orders/'+orderId, {
         product:product,
         quantity:quantity
       })
     }
+
   }
 
 })

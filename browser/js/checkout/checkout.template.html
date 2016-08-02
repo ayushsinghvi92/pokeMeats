@@ -6,14 +6,20 @@
           <div ng-repeat="product in currentCart" style="display:inline; font-size: 20pt;">
             <p>{{ product.quantity }} x <a ui-sref="productDetail({id: product.id})">{{ product.name }}</a> = ${{product.subtotal}}</p>
           </div>
+          <p><a ui-sref="cart" class="btn btn-primary" role="button">Edit Cart</a></p>
     </div>
   </div>
   <div class="col-md-6">
-    <h1>Shipping Address</h1>
-    <div class="checkbox">
+    <h1>Shipping Addresses</h1>
+    <div class="radio">
       <div ng-repeat= 'address in addresses'>
-        <p>{{address.line1}}, {{address.line2}}, {{address.city}}, {{address.state_region}}, {{address.zipcode}}, {{address.country}}</p>
+        <label>
+          <input type="radio" name="optionsRadio" id="address.id" value="address.id"> {{address.line1}}, {{address.line2}}, {{address.city}}, {{address.state_region}}, {{address.zipcode}}, {{address.country}}
+        </label>
       </div>
     </div>
+  </div>
+  <div class="col-md-2">
+    <button type="button" class="btn btn-success" ng-click = complete(currentOrderId)>Complete Order</button>
   </div>
 </div>
