@@ -5,7 +5,7 @@ app.directive('productfilter', function () {
         scope: {
         	toggleFilter: "&",
    			clearFilters: "&",
-   			
+   			toggleOrder: "&"
         }
 
     };

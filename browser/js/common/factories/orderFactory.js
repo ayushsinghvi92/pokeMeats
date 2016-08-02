@@ -17,6 +17,10 @@ app.factory('orderFactory', function ($http) {
   }
 
   return {
+    fetchById: function(id) {
+      return $http.get("/api/orders/" + id)
+      .then(getData)
+    },
     updateQuantity: function (orderId, product, quantity) {
       return $http.put('/api/orders/'+ orderId, {
         product:product,
@@ -38,7 +42,7 @@ app.factory('orderFactory', function ($http) {
       .then(getData)
     },
     addNewOrderProduct: function (orderId, product, quantity = 1) {
-      return $http.post('/api/orders/'+orderId, {
+      return $http.post('/api/orders/'+ orderId, {
         product:product,
         quantity:quantity
       })

@@ -14,15 +14,14 @@
         <p>{{ product.description }}</p>
 <!--         <span ng-repeat='tag in product.tags'><a ui-sref="home({tag: tag})">{{ tag }}{{ $last ? '' : ', ' }}</a></span> -->
     </div>
-    <div class="col-md-3" style='text-align:center'>
-      <div class="thumbnail">
-          <bold>Your Cart:</bold>
-          <ul ng-repeat = 'order in currentCart'>
-            <li>Quantity: {{ order.quantity }}, {{ order.name }}: Unit Price ${{ order.unit_price}}</li>
-          </ul>
+    <div class="col-md-3">
+      <div class="thumbnail">    
+          <span style="font-weight:bold; text-align:center">Your Cart:</span><br>
+            <div ng-repeat="product in currentCart" style="display:inline">
+              <p>{{ product.quantity }} x <a ui-sref="productDetail({id: product.id})">{{ product.name }}</a> = ${{product.subtotal}}</p>
+            </div>
           <!-- 5 just a placeholder for now while trying to figure out how this works -->
-          <h6>{{ 5 }}</h6>
-          <p><a ui-sref="cart" ng-click="addToCart(orderId, product)" class="btn btn-primary" role="button">Add to Cart</a></p>
+          <p><a ui-sref="cart" ng-click="addToCart(orderId, product)" class="btn btn-primary" role="button">Add to Cart</a> Total: ${{ totalCost }}</p> 
       </div>
     </div>
 </div>

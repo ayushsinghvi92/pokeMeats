@@ -1,6 +1,7 @@
 <div id="home">
 	<h3 ng-show="!isAdmin">{{ mssg }}</h3>
 	<div ng-show='isAdmin'>
+		<button class="btn btn-default" ui-sref="addProduct">Add Product</button>
 		<table class="table-striped">
 			<tr>
 				<th>Product ID</th>
