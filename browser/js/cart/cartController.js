@@ -1,9 +1,10 @@
 app.controller('CartController', function ($state, orderFactory, AuthService, $scope, userFactory) {
 
-    userFactory.getActiveOrder()    
+    userFactory.getActiveOrder()
     .then(function (orderProducts){
       $scope.orderProducts = orderProducts;
     })
+
 
     $scope.deleteOrderProduct = function (orderId, orderProduct) {
     	return orderFactory.deleteOrderProduct(orderId, orderProduct)
