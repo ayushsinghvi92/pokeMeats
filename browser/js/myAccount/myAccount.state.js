@@ -1,7 +1,12 @@
-app.config(function($stateProvider){
-  $stateProvider.state('myAccount',{
+app.config(function ($stateProvider) {
+  $stateProvider.state('myAccount', {
     url: '/myAccount',
-    template: 'js/myAccount/myAccount.html',
-
-  })
-})
+    templateUrl: 'js/myAccount/myAccount.html',
+    controller: 'MyAccountController',
+    resolve: {
+      user: function(AuthService){
+         return AuthService.getLoggedInUser()
+      }
+    }
+  });
+});

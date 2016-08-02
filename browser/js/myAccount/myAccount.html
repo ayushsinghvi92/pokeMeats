@@ -1,0 +1,121 @@
+
+<section id="home">
+    <h1>Your Addresses</h1>
+    <div ng-repeat="userAddress in userAddresses | orderBy: 'id'">
+      <h2>Address {{ $index+1 }}</h2>
+      <div class="row">
+       <div class="clearfix"></div>
+            <div class="col-md-3 col-md-offset-1 col-sm-12">
+            <form name="updateAddressForm" ng-submit="updateAddress(form, userAddress.id)">
+               <label>Address</label>
+               <br>
+               <input type="text" ng-model="form.line1" ng-init="form.line1=userAddress.line1">
+               </input>
+               <br>
+               <input type="text" ng-model="form.line2" ng-init="form.line2=userAddress.line2">
+               <br>
+                <label>City</label>
+                <input type="text" ng-model="form.city" ng-init="form.city=userAddress.city">
+                <br>
+                <label>State/Region</label>
+                <input type="text" ng-model="form.state_region" ng-init="form.state_region=userAddress.state_region">
+                <br>
+                <label>Country</label>
+                <input type="text" ng-model="form.country" ng-init="form.country=userAddress.country">
+                <br>
+                <label>Zipcode</label>
+                <input type="text" ng-model="form.zipcode" ng-init="form.zipcode=userAddress.zipcode">
+                <br>
+                <button type="submit" class="btn btn-default">Update</button>
+                <button type="delete" class="btn btn-default" ng-click="deleteAddress(userAddress.userId, userAddress.id)">Delete</button>
+              </form>
+            </div>
+      </div>
+    </div>
+
+    <button class="btn btn-default" ng-click="toggleShowForm()">Add Address</button>
+    <div id="newAddress" ng-show="showForm">
+      <div class="row">
+       <div class="clearfix"></div>
+        <div class="col-md-3 col-md-offset-1 col-sm-12">
+          <form name="createAddressForm" ng-submit="createAddress(form)">
+             <label>Address</label>
+             <br>
+             <input type="text" ng-model="form.line1">
+             </input>
+             <br>
+             <input type="text" ng-model="form.line2">
+             <br>
+              <label>City</label>
+              <input type="text" ng-model="form.city">
+              <br>
+              <label>State/Region</label>
+              <input type="text" ng-model="form.state_region">
+              <br>
+              <label>Country</label>
+              <input type="text" ng-model="form.country">
+              <br>
+              <label>Zipcode</label>
+              <input type="text" ng-model="form.zipcode">
+              <br>
+              <button type="submit" class="btn btn-default">Create</button>
+            </form>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="pastOrders">
+  <div ng-repeat="userOrder in userOrders" id="home">
+    <h1>Order #{{ userOrder.id}}</h1>
+      <hr>
+      <div class="row">
+       <div class="clearfix"></div>
+            <div class="col-md-1 col-md-offset-1 col-sm-12">
+               <label>Product Image</label>
+            </div>
+            <div class="col-md-1 col-sm-12">
+               <label>Product Name</label>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <label>Product Description</label>
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <label>Unit Price</label>
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <label>Quantity</label>
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <label>SubTotal</label>
+            </div>
+      </div>
+      <div class="row">
+        <div ng-repeat="userOrderProduct in userOrder.userOrderProducts">
+           <div class="clearfix"></div>
+            <div class="col-md-1 col-md-offset-1 col-sm-12">
+               <img width="100" src="{{ userOrderProduct.photo }}">
+            </div>
+            <div class="col-md-1 col-sm-12">
+               {{userOrderProduct.name}}
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <p>{{userOrderProduct.description | limitTo: 90 }}...</p>
+                <p><a ui-sref="productDetail({id : userOrderProduct.id })" class="btn btn-default" role="button">View Details</a></p>
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <p>${{userOrderProduct.unit_price}}</p>
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <p>{{ userOrderProduct.quantity }} </p>
+            </div>
+            <div class="col-md-1 col-sm-12">
+                ${{ userOrderProduct.line_item_total}}</p>
+            </div>
+          </div>
+        </div>
+  </div>
+  </section>
+
+
+
