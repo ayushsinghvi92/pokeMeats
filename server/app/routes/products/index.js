@@ -49,6 +49,15 @@ router.put('/:id', function(req, res, next){
 
 })
 
+router.post('/', function(req, res, next){
+	console.log(req.body)
+	Products.create(req.body)
+	.then(function(response){
+		res.sendStatus(204);
+	})
+	.catch(next);
+})
+
 router.delete('/:id', function(req, res, next){
 	if (isNaN(req.params.id)) res.sendStatus(500);
 	else {

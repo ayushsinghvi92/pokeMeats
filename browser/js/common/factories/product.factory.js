@@ -18,6 +18,10 @@ app.factory("ProductFactory", function($http){
 		updateProduct: function(id, updateObj) {
 			return $http.put("/api/products/" + id, updateObj)
 			.then(getData);
+		},
+		createProduct: function(prodObj) {
+			return $http.post("/api/products", prodObj)
+			.then(getData)
 		}
 	}
 })
