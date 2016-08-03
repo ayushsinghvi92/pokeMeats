@@ -22,6 +22,7 @@ app.factory('userFactory', function (AuthService, $q, $http, orderFactory) {
 				if(orderProducts) {
 					return $q.when(Array.prototype.slice.apply(orderProducts))
 				}
+				else return $q.when(undefined)
 			} else {
 	     		return this.getActiveOrderId()
 				.then(orderFactory.getAllOrderProducts)
